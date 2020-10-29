@@ -1,6 +1,3 @@
-// Filters
-const dateFilter = require("./src/filters/date-filter.js");
-
 // Transforms
 const htmlMinTransform = require("./src/transforms/html-min-transform.js");
 
@@ -15,9 +12,6 @@ module.exports = (config) => {
     if (isProduction) {
         config.addTransform("htmlmin", htmlMinTransform);
     }
-
-    // Add filters
-    config.addFilter("dateFilter", dateFilter);
 
     // Returns work items, sorted by display order
     config.addCollection("work", (collection) => {
