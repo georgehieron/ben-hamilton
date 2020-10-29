@@ -7,15 +7,12 @@
             </a>
             {# Show breadcrumb navigation if not on home page #}
             {% if 'layouts/home.html' != layout %}
-                <nav class="nav site-head__nav" aria-label="Primary navigation">
+                <nav class="nav site-breadcrumb" aria-label="Breadcrumb">
                     <ul class="nav__list">
-                        {% for item in navigation.items %}
-                            <li>
-                                <a href="{{ item.url }}"
-                                    {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-                            </li>
-                            <span>›</span>
-                        {% endfor %}
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <span>›</span>
                         <li>
                             <span>{{ title }}</span>
                         </li>
