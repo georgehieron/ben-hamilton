@@ -3,17 +3,17 @@
 {% block content %}
 <div class="wrapper">
     <article>
-        <div>
+        <div id="intro">
+            <a href="#intro">Intro</a>
             <h1>{{ intro.main }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
-        </div>
-        <div>
             <p>{{ intro.summary }}</p>
             <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
         </div>
         <div>
             <img src="{{ intro.image }}" alt="{{ intro.imageAlt }}" />
         </div>
-        <div class="wrapper">
+        <div id="work">
+            <a href="#work">Work</a>
             <h2>Workies!&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
             <article>
                 {% for item in collections.work %}
