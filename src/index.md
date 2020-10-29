@@ -3,7 +3,7 @@ title: "Ben Hamilton"
 metaDesc: 'Portfolio site for Ben Hamilton'
 layout: "layouts/home.html"
 intro:
-    main: "Main Intro"
+    main: "Hi, I'm Ben Hamilton"
     summary: "Summary here"
     buttonText: "Call to action"
     buttonUrl: "/work"

@@ -3,10 +3,6 @@
         {
             "text": "Home",
             "url": "/"
-        },
-        {
-            "text": "Work",
-            "url": "/work/"
         }
     ]
 }
