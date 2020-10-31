@@ -13,11 +13,11 @@ module.exports = (config) => {
         config.addTransform("htmlmin", htmlMinTransform);
     }
 
-    // Returns work items, sorted by display order
-    config.addCollection("work", (collection) => {
+    // Returns work items, sorted by display order then filtered by featured
+    config.addCollection("featuredWork", (collection) => {
         return sortByDisplayOrder(
             collection.getFilteredByGlob("./src/work/*.md")
-        );
+        ).filter((x) => x.data.featured);
     });
 
     // Tell 11ty to use the .eleventyignore and ignore our .gitignore file

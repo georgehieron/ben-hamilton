@@ -4,35 +4,54 @@
 <div class="wrapper">
     <article>
         <div id="intro">
-            <a href="#intro">Intro</a>
+            <a href="#intro">{{ intro.title }}</a>
             <h1>{{ intro.main }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
             <p>{{ intro.summary }}</p>
-            <a href="{{ intro.buttonUrl }}" class="button">{{ intro.buttonText }}</a>
-        </div>
-        <div>
-            <img src="{{ intro.image }}" alt="{{ intro.imageAlt }}" />
         </div>
         <div id="work">
-            <a href="#work">Work</a>
-            <h2>Workies!&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
+            <a href="#work">{{ work.title }}</a>
+            <h2>{{ work.main }}&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
             <article>
-                {% for item in collections.work %}
+                {% for item in collections.featuredWork %}
                 <figure>
                     <div>
                         <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
                     </div>
                     <figcaption>
-                        <h2>
+                        <h3>
                             {{ item.data.title }}
-                        </h2>
+                        </h3>
                         <p>
                             {{ item.data.summary }}
                         </p>
-                        <a href="{{ item.url }}" class="button">See this work</a>
+                        <a href="{{ item.url }}" class="button">{{ work.itemLink }}</a>
                     </figcaption>
                 </figure>
                 {% endfor %}
             </article>
+        </div>
+        <div id="writing">
+            <a href="#writing">{{ writing.title }}</a>
+            <h2>{{ writing.main }}&nbsp;<span class="emoji" role="img" aria-label="brain">🧠</span></h2>
+            <p>{{ writing.summary }}</p>
+            <ul>
+                <li>
+                    <time datetime="2020-08-20">20.08.2020</time>
+                    <a href="#">New website launch</a>
+                </li>
+                <li>
+                    <time datetime="2020-08-20">20.08.2020</time>
+                    <a href="#">Nurturing great relationships between design and development teams</a>
+                </li>
+                <li>
+                    <time datetime="2020-08-20">20.08.2020</time>
+                    <a href="#">Developing a design library for ForrestBrown</a>
+                </li>
+                <li>
+                    <time datetime="2020-08-20">20.08.2020</time>
+                    <a href="#">Switching to Figma: what I've found out in the first 6 weeks</a>
+                </li>
+            </ul>
         </div>
     </article>
 </div>
