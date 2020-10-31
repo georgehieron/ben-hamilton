@@ -14,4 +14,9 @@ writing:
     title: "Writing"
     main: "Thinkings"
     summary: "I occasionally write things about design, creativity and the web. Here are some recent articles:"
+footer:
+    main: "You have reached the end"
+    summary: "Before you go, would you like to sign up to my mailing list? It is very unlikely you will receive more than 4 things per year from me because I am a terrible person."
+    buttonUrl: "#"
+    buttonText: "Sign up"
 ---

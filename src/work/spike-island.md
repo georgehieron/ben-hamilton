@@ -1,6 +1,7 @@
 ---
 title: 'Spike Island'
-summary: 'Spike Island is an artspace, gallery, venue, café, shop and more.'
-displayOrder: 1
+excerpt: 'Spike Island is an artspace, gallery, venue, café, shop and more.'
+summary: 'In fact the first challenge with this project was to audit the many strands of the organisation, and present the visitor with an updated, intuitive navigation system through the site.'
+displayOrder: 3
 featured: true
 ---

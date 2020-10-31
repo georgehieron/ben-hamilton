@@ -21,9 +21,6 @@
                         <h3>
                             {{ item.data.title }}
                         </h3>
-                        <p>
-                            {{ item.data.summary }}
-                        </p>
                         <a href="{{ item.url }}" class="button">{{ work.itemLink }}</a>
                     </figcaption>
                 </figure>
@@ -54,5 +51,20 @@
             </ul>
         </div>
     </article>
+    <footer role="contentinfo" class="site-footer">
+        <div class="wrapper">
+            <h2>{{ footer.main }}&nbsp;<span class="emoji" role="img" aria-label="wide eyes">👀</span></h2>
+            <p>{{ footer.summary }}</p>
+
+            {% set currentYear = global.currentYear() %}
+            <p>&#169; {{ title }} {{ currentYear }}</p>
+            <p>Design: Me, obvs.</p>
+            <p>Code: <a href="https://github.com/georgehieron/" rel="nofollow">George Hieron</a></p>
+            <p>Type: Opposit, by <a href="https://www.goodtypefoundry.com/opposit" rel="nofollow">Good Type Foundry</a>
+                <br>
+                Manrope, by <a href="https://fonts.google.com/specimen/Manrope" rel="nofollow">Mikhail Sharanda</a></p>
+            </p>
+        </div>
+    </footer>
 </div>
 {% endblock %}

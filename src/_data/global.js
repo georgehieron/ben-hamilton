@@ -7,4 +7,11 @@ module.exports = {
         };
         return `${segment()}-${segment()}-${segment()}`;
     },
+
+    currentYear() {
+        var d = new Date();
+        var y = d.getFullYear();
+
+        return y;
+    }
 };
