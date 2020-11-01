@@ -3,31 +3,33 @@
 {% block content %}
 <div class="wrapper">
     <article>
-        <div id="intro">
+        <section id="intro">
             <a href="#intro">{{ intro.title }}</a>
             <h1>{{ intro.main }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
             <p>{{ intro.summary }}</p>
-        </div>
-        <div id="work">
+        </section>
+        <section id="work">
             <a href="#work">{{ work.title }}</a>
             <h2>{{ work.main }}&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
-            <article>
+            <div class="work-items">
                 {% for item in collections.featuredWork %}
-                <figure>
+                <figure id="work-item--{{ loop.index }}" class="work-items__item">
                     <div>
                         <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
                     </div>
                     <figcaption>
-                        <h3>
+                        <span>
                             {{ item.data.title }}
-                        </h3>
-                        <a href="{{ item.url }}" class="button">{{ work.itemLink }}</a>
+                        </span>
+                        <a href="{{ item.url }}" class="work-items__item__link">
+                            {{ work.itemLink }}
+                        </a>
                     </figcaption>
                 </figure>
                 {% endfor %}
-            </article>
-        </div>
-        <div id="writing">
+            </div>
+        </section>
+        <section id="writing">
             <a href="#writing">{{ writing.title }}</a>
             <h2>{{ writing.main }}&nbsp;<span class="emoji" role="img" aria-label="brain">🧠</span></h2>
             <p>{{ writing.summary }}</p>
@@ -49,7 +51,7 @@
                     <a href="#">Switching to Figma: what I've found out in the first 6 weeks</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </article>
     <footer role="contentinfo" class="site-footer">
         <div class="wrapper">
