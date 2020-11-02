@@ -13,6 +13,9 @@ module.exports = (config) => {
         config.addTransform("htmlmin", htmlMinTransform);
     }
 
+    // Layout aliases
+    config.addLayoutAlias('home', 'layouts/home.html');
+
     // Returns work items, sorted by display order then filtered by featured
     config.addCollection("featuredWork", (collection) => {
         return sortByDisplayOrder(

@@ -1,7 +1,7 @@
 ---
 title: "Ben Hamilton"
 metaDesc: 'Portfolio site for Ben Hamilton'
-layout: "layouts/home.html"
+layout: "home"
 intro:
     title: "Intro"
     main: "Hi, I'm Ben Hamilton"
