@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: trunk
+  name: github
+  repo: georgehieron/ben-hamilton
 publish_mode: editorial_workflow
 media_folder: "src/images"
 public_folder: "/images"
