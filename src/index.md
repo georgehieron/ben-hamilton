@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Ben Hamiltonzz
+title: Ben Hamilton
 metaDesc: Portfolio site for Ben Hamilton
 intro:
-  title: Intro
-  main: Hi, I'm Ben Hamilton
+  title: Introzzz
+  main: Hi, I'm Ben Hamiltonzzz
   summary: I’m a graphic designer with 12 years’ experience creating works for
     print and digital applications. Specialising in User Interface and User
     Experience design, I work as Design Lead with the awesome team at Atomic
