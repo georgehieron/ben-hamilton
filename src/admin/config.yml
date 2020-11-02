@@ -20,8 +20,8 @@ collections:
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - label: Intro
-            name: intro
+            name: "intro"
             widget: object
             fields:
-              - {label: Title, name: title, widget: string, default: "Intro"}
-              - {label: Main, name: main, widget: string, default: "Hi, I'm Ben Hamilton"}
+              - {label: Title, name: "title", widget: string, default: "Intro"}
+              - {label: Main, name: "main", widget: string, default: "Hi, I'm Ben Hamilton"}
