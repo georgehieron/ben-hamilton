@@ -14,7 +14,7 @@ collections:
         file: "src/index.md"
         slug: "{{slug}}"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/njk.njk"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.html"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
