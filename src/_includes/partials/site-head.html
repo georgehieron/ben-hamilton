@@ -1,24 +1,19 @@
-<a class="skip-link button" href="#main-content">Skip to content</a>
 <header role="banner" class="site-head">
-    <div class="wrapper">
-        <div class="site-head__inner">
-            <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
-                {% include "partials/bh-hanger.svg" %}
-            </a>
-            {# Show breadcrumb navigation if not on home page #}
-            {% if 'home' != layout %}
-                <nav class="nav site-breadcrumb" aria-label="Breadcrumb">
-                    <ul class="nav__list">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <span>›</span>
-                        <li>
-                            <span>{{ title }}</span>
-                        </li>
-                    </ul>
-                </nav>
-            {% endif %}
-        </div>
+    <a class="skip-link button" href="#main-content">Skip to content</a>
+    <div class="wrapper site-head__inner">
+        {# Show breadcrumb navigation if not on home page #}
+        {% if 'home' != layout %}
+            <nav class="nav site-breadcrumb" aria-label="Breadcrumb">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <span>›</span>
+                    <li>
+                        <span>{{ title }}</span>
+                    </li>
+                </ul>
+            </nav>
+        {% endif %}
     </div>
 </header>
