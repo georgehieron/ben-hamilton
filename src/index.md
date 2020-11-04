@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Ben Hamiltonn
+title: Ben Hamilton
 metaDesc: Portfolio site for Ben Hamilton
 intro:
-  title: Intro
+  title: Intro!
   main: Hi, I'm Ben Hamilton!
   summary: I’m a graphic designer with 12 years’ experience creating works for
     print and digital applications. Specialising in User Interface and User
