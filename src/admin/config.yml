@@ -59,7 +59,8 @@ collections:
         delete: false
         file: "src/_data/sidebar.json"
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt Text", name: "imageAlt", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
           - {label: "Email Address", name: "email", widget: "string", required: false}
