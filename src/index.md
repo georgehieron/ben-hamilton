@@ -3,20 +3,20 @@ layout: home
 title: Ben Hamilton
 metaDesc: Portfolio site for Ben Hamilton
 intro:
-  introTitle: Intro
-  introHeading: Hi, I'm Ben Hamilton
-  introCopy: I’m a graphic designer with 12 years’ experience creating works for
+  title: Intro
+  heading: Hi, I'm Ben Hamilton
+  copy: I’m a graphic designer with 12 years’ experience creating works for
     print and digital applications. Specialising in User Interface and User
     Experience design, I work as Design Lead with the awesome team at Atomic
     Smash in the beautiful city of Bristol, UK
 work:
-  workTitle: Work
-  workHeading: Workies!
-  workItemLinkText: View case study
+  title: Work
+  heading: Workies!
+  itemLinkText: View case study
 writing:
-  writingTitle: Writing
-  writingHeading: Thinkings
-  writingCopy: "I occasionally write things about design, creativity and the web. Here are some recent articles:"
+  title: Writing
+  heading: Thinkings
+  copy: "I occasionally write things about design, creativity and the web. Here are some recent articles:"
 footer:
   main: You have reached the end
   summary: Before you go, would you like to sign up to my mailing list? It is very
