@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Ben Hamilton
+title: Ben Hamiltonnn
 metaDesc: Portfolio site for Ben Hamilton
 intro:
   title: Intro
