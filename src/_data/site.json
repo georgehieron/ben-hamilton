@@ -2,5 +2,6 @@
     "name": "Ben Hamilton",
     "url": "https://ben-hamilton.co.uk",
     "authorName": "Ben Hamilton",
-    "authorEmail": ""
+    "authorEmail": "",
+    "faviconPath": "/images/meta/bh-hanger.svg"
 }

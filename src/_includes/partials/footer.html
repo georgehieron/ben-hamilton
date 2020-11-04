@@ -1,7 +1,8 @@
 <footer role="contentinfo" class="site-footer">
     <div class="wrapper">
-        <h2>{{ footer.main }}&nbsp;<span class="emoji" role="img" aria-label="wide eyes">👀</span></h2>
-        <p>{{ footer.summary }}</p>
+        <h2>{{ footer.heading }}&nbsp;<span class="emoji" role="img" aria-label="wide eyes">👀</span></h2>
+        <p>{{ footer.copy }}</p>
+        <a href="{{ footer.buttonUrl }}">{{ footer.buttonText }}</a>
 
         {% set currentYear = global.currentYear() %}
         <p>&#169; {{ title }} {{ currentYear }}</p>

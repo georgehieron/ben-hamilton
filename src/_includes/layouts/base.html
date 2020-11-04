@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.html" %}
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
     <style>{% include "css/critical.css"%}</style>
 
     {# Add facility for pages to delare an array of critical styles #}
@@ -27,7 +26,7 @@
         {% endfor %}
     {% endif %}
 
-    <!-- Netlify Identity Widget -->
+    {# Netlify Identity Widget #}
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
@@ -44,7 +43,7 @@
             </div>
         </footer>
     </div>
-    <!-- Netlify Identity Widget redirect -->
+    {# Netlify Identity Widget redirect #}
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

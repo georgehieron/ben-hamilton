@@ -9,10 +9,10 @@
             <span>off</span>
         </button>
     </div>
-    <h2>Contact me:</h2>
-    <p>Do you want to collaborate on something, ask a question, or just say hello? Find me here:</p>
-    <a href="#">Email</a>
-    <a href="#">Linkedin</a>
+    <h2>{{ sidebar.heading }}</h2>
+    <p>{{ sidebar.copy }}</p>
+    <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
+    <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>
     <div class="high-contrast-toggle">
         <span id="high-contrast-desc">High contrast mode is ON</span>
         <button role="switch" aria-checked="true" aria-labelledby="high-contrast-desc">

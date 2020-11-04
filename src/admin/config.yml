@@ -41,3 +41,37 @@ collections:
               - {label: "Section Title", name: "title", widget: "string", default: "Work", required: false}
               - {label: "Heading", name: "heading", widget: "string", default: "Thinkings"}
               - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "src/_data/site.json"
+        fields:
+          - {label: "Site Name", name: "name", widget: "string"}
+          - {label: "Site URL", name: "url", widget: "string"}
+          - {label: "Author Name", name: "authorName", widget: "string"}
+          - {label: "Author Email Address", name: "authorEmail", widget: "string", required: false}
+          - {label: "Favicon path (e.g: /images/favicon.png)", name: "faviconPath", widget: "string", default: "/images/meta/bh-hanger.svg"}
+      - label: "Sidebar"
+        name: "sidebar"
+        delete: false
+        file: "src/_data/sidebar.json"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
+          - {label: "Email Address", name: "email", widget: "string", required: false}
+          - {label: "Email Text", name: "emailText", widget: "string", required: false}
+          - {label: "Social URL", name: "socialUrl1", widget: "string", required: false}
+          - {label: "Social Text", name: "socialText1", widget: "string", required: false}
+      - label: "Footer"
+        name: "footer"
+        delete: false
+        file: "src/_data/footer.json"
+        fields:
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
+          - {label: "Button URL", name: "button", widget: "string", required: false}
+          - {label: "Button Text", name: "buttonText", widget: "string", required: false}
