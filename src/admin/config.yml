@@ -24,20 +24,20 @@ collections:
             name: "intro"
             widget: "object"
             fields:
-              - {label: "Section Title", name: "title", widget: "string", default: "Intro"}
-              - {label: "Heading", name: "main", widget: "string", default: "Hi, I'm Ben Hamilton"}
-              - {label: "Summary", name: "summary", widget: "markdown", minimal: true}
+              - {label: "Section Title", name: "introTitle", widget: "string", default: "Intro"}
+              - {label: "Heading", name: "introHeading", widget: "string", default: "Hi, I'm Ben Hamilton"}
+              - {label: "Copy", name: "introCopy", widget: "markdown", minimal: true}
           - label: "Work"
           - name: "work"
           - widget: "object"
           - fields:
-              - {label: "Section Title", name: "title", widget: "string", default: "Work"}
-              - {label: "Heading", name: "main", widget: "string", default: "Workies!"}
-              - {label: "Item Link Text", name: "itemLink", widget: "string", default: "View case study"}
+              - {label: "Section Title", name: "workTitle", widget: "string", default: "Work"}
+              - {label: "Heading", name: "workHeading", widget: "string", default: "Workies!"}
+              - {label: "Item Link Text", name: "workItemLinkText", widget: "string", default: "View case study"}
           - label: "Writing"
           - name: "writing"
           - widget: "object"
           - fields:
-              - {label: "Section Title", name: "title", widget: "string", default: "Work"}
-              - {label: "Heading", name: "main", widget: "string", default: "Thinkings"}
-              - {label: "Summary", name: "summary", widget: "markdown", minimal: true}
+              - {label: "Section Title", name: "writingTitle", widget: "string", default: "Work"}
+              - {label: "Heading", name: "writingHeading", widget: "string", default: "Thinkings"}
+              - {label: "Copy", name: "writingCopy", widget: "markdown", minimal: true}

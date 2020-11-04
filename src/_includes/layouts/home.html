@@ -4,13 +4,13 @@
 <div class="wrapper">
     <article>
         <section id="intro">
-            <a href="#intro">{{ intro.title }}</a>
-            <h1>{{ intro.main }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
-            <p>{{ intro.summary }}</p>
+            <a href="#intro">{{ intro.introTitle }}</a>
+            <h1>{{ intro.introHeading }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
+            <p>{{ intro.introCopy }}</p>
         </section>
         <section id="work">
-            <a href="#work">{{ work.title }}</a>
-            <h2>{{ work.main }}&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
+            <a href="#work">{{ work.workTitle }}</a>
+            <h2>{{ work.workHeading }}&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
             <div class="work-items">
                 {% for item in collections.featuredWork %}
                 <figure id="work-item--{{ loop.index }}" class="work-items__item">
@@ -22,7 +22,7 @@
                             {{ item.data.title }}
                         </span>
                         <a href="{{ item.url }}" class="work-items__item__link">
-                            {{ work.itemLink }}
+                            {{ work.workItemLinkText }}
                         </a>
                     </figcaption>
                 </figure>
@@ -30,9 +30,9 @@
             </div>
         </section>
         <section id="writing">
-            <a href="#writing">{{ writing.title }}</a>
-            <h2>{{ writing.main }}&nbsp;<span class="emoji" role="img" aria-label="brain">🧠</span></h2>
-            <p>{{ writing.summary }}</p>
+            <a href="#writing">{{ writing.writingTitle }}</a>
+            <h2>{{ writing.writingHeading }}&nbsp;<span class="emoji" role="img" aria-label="brain">🧠</span></h2>
+            <p>{{ writing.writingCopy }}</p>
             <ul>
                 <li>
                     <time datetime="2020-08-20">20.08.2020</time>
