@@ -26,10 +26,12 @@ module.exports = (config) => {
     // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
     config.setUseGitIgnore(false);
 
-    // Copy Static Files to /_Site
+    // Copy Static Files to /dist
     config.addPassthroughCopy({
         "./src/admin/config.yml": "./admin/config.yml",
     });
+    config.addPassthroughCopy('src/images');
+    config.addPassthroughCopy('src/admin/config.yml');
 
     return {
         markdownTemplateEngine: "njk",

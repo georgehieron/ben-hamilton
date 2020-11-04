@@ -26,11 +26,6 @@
         <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
         {% endfor %}
     {% endif %}
-
-    {% if layout == "home" %}
-        <!-- Netlify Identity Widget -->
-        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
 </head>
 
 <body>
