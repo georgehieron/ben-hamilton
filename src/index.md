@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Ben Hamilton
-metaTitle: ""
+metaTitle: Ben Hamilton
 metaDesc: Portfolio site for Ben Hamilton
 socialImage: ""
 intro:
