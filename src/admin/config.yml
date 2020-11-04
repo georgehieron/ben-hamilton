@@ -75,3 +75,4 @@ collections:
           - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
           - {label: "Button URL", name: "button", widget: "string", required: false}
           - {label: "Button Text", name: "buttonText", widget: "string", required: false}
+          - {label: "Design Credit", name: "designCredit", widget: "string"}

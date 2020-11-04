@@ -5,8 +5,8 @@
         <a href="{{ footer.buttonUrl }}">{{ footer.buttonText }}</a>
 
         {% set currentYear = global.currentYear() %}
-        <p>&#169; {{ title }} {{ currentYear }}</p>
-        <p>Design: Me, obvs.</p>
+        <p>&#169; {{ site.authorName }} {{ currentYear }}</p>
+        <p>Design: {{ footer.designCredit }}</p>
         <p>Code: <a href="https://github.com/georgehieron/" rel="nofollow">George Hieron</a></p>
         <p>Type: Opposit, by <a href="https://www.goodtypefoundry.com/opposit" rel="nofollow">Good Type Foundry</a>
             <br>
