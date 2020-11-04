@@ -16,13 +16,28 @@ collections:
         slug: "{{slug}}"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.html"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Tab Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - label: Intro
+          - label: "Intro"
             name: "intro"
-            widget: object
+            widget: "object"
             fields:
-              - {label: Title, name: "title", widget: string, default: "Intro"}
-              - {label: Main, name: "main", widget: string, default: "Hi, I'm Ben Hamilton"}
+              - {label: "Section Title", name: "title", widget: "string", default: "Intro"}
+              - {label: "Heading", name: "main", widget: "string", default: "Hi, I'm Ben Hamilton"}
+              - {label: "Summary", name: "summary", widget: "markdown", minimal: true}
+          - label: "Work"
+          - name: "work"
+          - widget: "object"
+          - fields:
+              - {label: "Section Title", name: "title", widget: "string", default: "Work"}
+              - {label: "Heading", name: "main", widget: "string", default: "Workies!"}
+              - {label: "Item Link Text", name: "itemLink", widget: "string", default: "View case study"}
+          - label: "Writing"
+          - name: "writing"
+          - widget: "object"
+          - fields:
+              - {label: "Section Title", name: "title", widget: "string", default: "Work"}
+              - {label: "Heading", name: "main", widget: "string", default: "Thinkings"}
+              - {label: "Summary", name: "summary", widget: "markdown", minimal: true}

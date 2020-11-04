@@ -26,6 +26,9 @@
         <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
         {% endfor %}
     {% endif %}
+
+    <!-- Netlify Identity Widget -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -41,6 +44,18 @@
             </div>
         </footer>
     </div>
+    <!-- Netlify Identity Widget redirect -->
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+        });
+    }
+    </script>
 </body>
 
 </html>
