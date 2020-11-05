@@ -5,12 +5,12 @@
     <article>
         <section id="intro">
             <a href="#intro">{{ intro.title }}</a>
-            <h1>{{ intro.heading }}&nbsp;<span class="emoji" role="img" aria-label="nerdy face">🤓</span></h1>
+            <h1>{{ intro.heading }}</h1>
             <p>{{ intro.copy }}</p>
         </section>
         <section id="work">
             <a href="#work">{{ work.title }}</a>
-            <h2>{{ work.heading }}&nbsp;<span class="emoji" role="img" aria-label="dog">🐕</span></h2>
+            <h2>{{ work.heading }}</h2>
             <div class="work-items">
                 {% for item in collections.featuredWork %}
                 <figure id="work-item--{{ loop.index }}" class="work-items__item">
@@ -31,7 +31,7 @@
         </section>
         <section id="writing">
             <a href="#writing">{{ writing.title }}</a>
-            <h2>{{ writing.heading }}&nbsp;<span class="emoji" role="img" aria-label="brain">🧠</span></h2>
+            <h2>{{ writing.heading }}</h2>
             <p>{{ writing.copy }}</p>
             <ul>
                 <li>
