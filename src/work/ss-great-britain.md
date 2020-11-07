@@ -16,4 +16,11 @@ components:
       timeline
     url: "#ssgb"
     linkText: Visit site
+  - type: testimonial
+    quote: It has been an absolute pleasure to work with Atomic Smash on our new
+      website project. They have been extremely attentive to our requirements
+      whilst helping us to explore new possibilities and trends. We look forward
+      to continuing that relationship in  the future.
+    author: Dominic Rowe, PR & Marketing Manager
+    authorCo: SS Great Britain Trust
 ---
