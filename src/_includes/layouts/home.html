@@ -33,24 +33,17 @@
             <a href="#writing">{{ writing.title }}</a>
             <h2>{{ writing.heading }}</h2>
             <p>{{ writing.copy }}</p>
-            <ul>
-                <li>
-                    <time datetime="2020-08-20">20.08.2020</time>
-                    <a href="#">New website launch</a>
-                </li>
-                <li>
-                    <time datetime="2020-08-20">20.08.2020</time>
-                    <a href="#">Nurturing great relationships between design and development teams</a>
-                </li>
-                <li>
-                    <time datetime="2020-08-20">20.08.2020</time>
-                    <a href="#">Developing a design library for ForrestBrown</a>
-                </li>
-                <li>
-                    <time datetime="2020-08-20">20.08.2020</time>
-                    <a href="#">Switching to Figma: what I've found out in the first 6 weeks</a>
-                </li>
-            </ul>
+
+            {% if writing.articles %}
+                <ul>
+                    {% for article in writing.articles %}
+                        <li>
+                            <time datetime="2020-08-20">{{ article.date }}</time>
+                            <a href="{{ article.url }}">{{ article.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </section>
     </article>
 

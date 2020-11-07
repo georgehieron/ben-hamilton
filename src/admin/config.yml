@@ -46,9 +46,9 @@ collections:
                 collapsed: false
                 widget: "list"
                 fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: Date, name: date, widget: date, default: "", format: "DD.MM.YY"}
-                  - {label: URL, name: url, widget: string}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Date", name: "date", widget: "date", default: "", format: "DD.MM.YY"}
+                  - {label: "URL", name: "url", widget: "string"}
   - label: "Globals"
     name: "globals"
     files:
