@@ -1,26 +1,26 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<section class="work-item">
-    <header>
+<article class="work-item">
+    <div>
         <div>
-            <div>
-                <h1>
-                    {{ title }}
-                </h1>
-                <p>{{ excerpt }}</p>
-                <p>{{ summary }}</p>
-            </div>
+            <h1>
+                {{ title }}
+            </h1>
+            <p>{{ excerpt }}</p>
+            <p>{{ summary }}</p>
         </div>
-        {% for component in components %}
-            {% if component.type === 'info' %}
+    </div>
+    {% if components %}
+        {% for item in components %}
+            {% if item.type === 'info' %}
                 {% include "partials/components/info.html" %}
-            {% elif component.type === 'testimonial' %}
-                {{ component.type }}
+            {% elif item.type === 'testimonial' %}
+                {% include "partials/components/testimonial.html" %}
             {% else %}
-                {{ component.type }}
+                {{ item.type }}
             {% endif %}
         {% endfor %}
-    </header>
-</section>
+    {% endif %}
+</article>
 {% endblock %}

@@ -1,1 +1,23 @@
-This is the info component.
+<section class="info">
+    <table>
+        <tr>
+            <th scope="row">Client:</th>
+            <td>{{ item.client }}</td>
+
+        </tr>
+        <tr>
+            <th scope="row">Agency:</th>
+            <td>{{ item.agency }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Expertise:</th>
+            <td>{{ item.expertise }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Project Outcomes:</th>
+            <td>{{ item.outcomes }}</td>
+        </tr>
+    </table>
+
+    <a href="{{ item.url }}" target="_blank">{{ item.linkText }}</a>
+</section>
