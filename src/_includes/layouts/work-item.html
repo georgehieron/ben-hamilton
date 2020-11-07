@@ -12,6 +12,15 @@
                 <p>{{ summary }}</p>
             </div>
         </div>
+        {% for component in components %}
+            {% if component.type === 'info' %}
+                {% include "partials/components/info.html" %}
+            {% elif component.type === 'testimonial' %}
+                {{ component.type }}
+            {% else %}
+                {{ component.type }}
+            {% endif %}
+        {% endfor %}
     </header>
 </section>
 {% endblock %}
