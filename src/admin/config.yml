@@ -41,6 +41,14 @@ collections:
               - {label: "Section Title", name: "title", widget: "string", default: "Work", required: false}
               - {label: "Heading", name: "heading", widget: "string", default: "Thinkings"}
               - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
+              - label: "Articles"
+                name: "articles"
+                collapsed: false
+                widget: "list"
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Date, name: date, widget: date, default: "", format: "DD.MM.YY"}
+                  - {label: URL, name: url, widget: string}
   - label: "Globals"
     name: "globals"
     files:
