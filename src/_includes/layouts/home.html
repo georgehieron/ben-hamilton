@@ -3,11 +3,13 @@
 {% block content %}
 <div class="wrapper">
     <article>
+
         <section id="intro">
             <a href="#intro">{{ intro.title }}</a>
             <h1>{{ intro.heading }}</h1>
             <p>{{ intro.copy }}</p>
         </section>
+
         <section id="work">
             <a href="#work">{{ work.title }}</a>
             <h2>{{ work.heading }}</h2>
@@ -29,6 +31,7 @@
                 {% endfor %}
             </div>
         </section>
+
         <section id="writing">
             <a href="#writing">{{ writing.title }}</a>
             <h2>{{ writing.heading }}</h2>
@@ -45,6 +48,7 @@
                 </ul>
             {% endif %}
         </section>
+
     </article>
 
     {% include "partials/sidebar.html" %}

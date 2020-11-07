@@ -44,11 +44,28 @@ collections:
               - label: "Articles"
                 name: "articles"
                 collapsed: false
+                add_to_top: true
+                label_singular: "Add article"
                 widget: "list"
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Date", name: "date", widget: "date", default: "", format: "DD.MM.YY"}
                   - {label: "URL", name: "url", widget: "string"}
+  - label: "Work"
+    name: "work"
+    folder: "src/work"
+    slug: "{{slug}}"
+    preview_path: "work/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/work-item.html"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Globals"
     name: "globals"
     files:
