@@ -45,7 +45,7 @@ collections:
                 name: "articles"
                 collapsed: false
                 add_to_top: true
-                label_singular: "Add article"
+                label_singular: "article"
                 widget: "list"
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
@@ -63,9 +63,49 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Summary", name: "summary", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Excerpt", name: "excerpt", widget: "markdown", minimal: true}
+      - {label: "Summary", name: "summary", widget: "markdown", minimal: true}
+      - label: "Components"
+        name: "components"
+        label_singular: "component"
+        widget: "list"
+        types:
+          - label: "Info"
+            name: "info"
+            widget: "object"
+            fields:
+              - {label: "Client", name: "client", widget: "string"}
+              - {label: "Agency", name: "agency", widget: "string"}
+              - {label: "Expertise", name: "expertise", widget: "string"}
+              - {label: "Project Outcomes", name: "outcomes", widget: "markdown", minimal: true, required: false}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Link Text", name: "linkText", widget: "string"}
+          - label: "Single Image"
+            name: "singleImage"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "image", widget: "image", required: true}
+              - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
+          - label: "Double Image"
+            name: "doubleImage"
+            widget: "object"
+            fields:
+              - {label: "First Image", name: "image1", widget: "image", required: true}
+              - {label: "Second Image", name: "image2", widget: "image", required: true}
+          - label: "Testimonial"
+            name: "testimonial"
+            widget: "object"
+            summary: "{{fields.author}}"
+            fields:
+              - {label: "Quote", name: "quote", widget: "markdown", minimal: true}
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Author's Company", name: "authorCo", widget: "string"}
+          - label: "Video"
+            name: "Video"
+            widget: "object"
+            fields:
+              - {label: "Video", name: "video", widget: "file", required: true}
+              - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
   - label: "Globals"
     name: "globals"
     files:
