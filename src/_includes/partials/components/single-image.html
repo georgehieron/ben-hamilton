@@ -1,0 +1,6 @@
+{% if item.fullheight === true %}
+    {% set heightClass = 'full-height' %}
+{% endif %}
+<section class="single-image{% if heightClass %} {{ heightClass }}{% endif %}">
+    <img src="{{ item.image }}" alt="{{ item.imageAlt }}">
+</section>

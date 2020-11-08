@@ -84,14 +84,17 @@ collections:
             name: "singleImage"
             widget: "object"
             fields:
-              - {label: "Image", name: "image", widget: "image", required: true}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Alt Text", name: "imageAlt", widget: "string"}
               - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
           - label: "Double Image"
             name: "doubleImage"
             widget: "object"
             fields:
-              - {label: "First Image", name: "image1", widget: "image", required: true}
-              - {label: "Second Image", name: "image2", widget: "image", required: true}
+              - {label: "First Image", name: "image1", widget: "image"}
+              - {label: "First Image Alt Text", name: "image1Alt", widget: "string"}
+              - {label: "Second Image", name: "image2", widget: "image"}
+              - {label: "Second Image Alt Text", name: "image2Alt", widget: "string"}
           - label: "Testimonial"
             name: "testimonial"
             widget: "object"
@@ -104,7 +107,7 @@ collections:
             name: "Video"
             widget: "object"
             fields:
-              - {label: "Video", name: "video", widget: "file", required: true}
+              - {label: "Video", name: "video", widget: "file"}
               - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
   - label: "Globals"
     name: "globals"

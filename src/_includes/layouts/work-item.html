@@ -17,6 +17,8 @@
                 {% include "partials/components/info.html" %}
             {% elif item.type === 'testimonial' %}
                 {% include "partials/components/testimonial.html" %}
+            {% elif item.type === 'singleImage' %}
+                {% include "partials/components/single-image.html" %}
             {% else %}
                 {{ item.type }}
             {% endif %}
