@@ -106,6 +106,12 @@ collections:
               - {label: "Quote", name: "quote", widget: "markdown", minimal: true}
               - {label: "Author", name: "author", widget: "string"}
               - {label: "Author's Company", name: "authorCo", widget: "string"}
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - {label: "Video", name: "video", widget: "file"}
+              - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
   - label: "Globals"
     name: "globals"
     files:
