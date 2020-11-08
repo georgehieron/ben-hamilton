@@ -6,6 +6,7 @@ summary: "‘... Smells’ is the first in the series and offers writing, places
   visit and top tips for anyone equipped with a nose. "
 displayOrder: 2
 featured: true
+metaTitle: Bristol, City of ... Smells
 components:
   - type: video
     fullheight: true
