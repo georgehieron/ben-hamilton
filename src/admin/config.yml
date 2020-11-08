@@ -107,7 +107,7 @@ collections:
               - {label: "Author", name: "author", widget: "string"}
               - {label: "Author's Company", name: "authorCo", widget: "string"}
           - label: "Video"
-            name: "Video"
+            name: "video"
             widget: "object"
             fields:
               - {label: "Video", name: "video", widget: "file"}

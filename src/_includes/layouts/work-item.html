@@ -21,8 +21,8 @@
                 {% include "partials/components/single-image.html" %}
             {% elif item.type === 'doubleImage' %}
                 {% include "partials/components/double-image.html" %}
-            {% else %}
-                {{ item.type }}
+            {% elif item.type === 'video' %}
+                {% include "partials/components/video.html" %}
             {% endif %}
         {% endfor %}
     {% endif %}
