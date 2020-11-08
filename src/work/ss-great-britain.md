@@ -27,6 +27,9 @@ components:
     fullheight: false
     image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
     imageAlt: Four people riding horses through the snow in Iceland.
+  - type: Video
+    fullheight: false
+    video: /images/small.mp4
   - type: doubleImage
     image1: /images/unsplash-a7bkbcm8lsk.jpg
     image1Alt: Man wearing bright green jumper
