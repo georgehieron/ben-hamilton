@@ -1,6 +1,6 @@
 ---
 title: Bristol, City of ... Smells
-featured: false
+featured: true
 displayOrder: 2
 excerpt: Bristol / City of ... is a series of alternative guides to inspire the
   reader to explore Bristol via the senses.
