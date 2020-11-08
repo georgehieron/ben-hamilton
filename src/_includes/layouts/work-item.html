@@ -14,15 +14,34 @@
     {% if components %}
         {% for item in components %}
             {% if item.type === 'info' %}
+                <div>
+                {{ item.type }}
+                </div>
                 {% include "partials/components/info.html" %}
             {% elif item.type === 'testimonial' %}
+                <div>
+                {{ item.type }}
+                </div>
                 {% include "partials/components/testimonial.html" %}
             {% elif item.type === 'singleImage' %}
+                <div>
+                {{ item.type }}
+                </div>
                 {% include "partials/components/single-image.html" %}
             {% elif item.type === 'doubleImage' %}
+                <div>
+                {{ item.type }}
+                </div>
                 {% include "partials/components/double-image.html" %}
             {% elif item.type === 'video' %}
+                <div>
+                {{ item.type }}
+                </div>
                 {% include "partials/components/video.html" %}
+            {% else %}
+                <div>
+                {{ item.type }}
+                </div>
             {% endif %}
         {% endfor %}
     {% endif %}
