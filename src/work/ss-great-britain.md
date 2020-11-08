@@ -23,4 +23,8 @@ components:
       to continuing that relationship in  the future.
     author: Dominic Rowe, PR & Marketing Manager
     authorCo: SS Great Britain Trust
+  - type: singleImage
+    fullheight: true
+    image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
+    imageAlt: Four people riding horses through the snow in Iceland.
 ---
