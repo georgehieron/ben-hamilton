@@ -9,5 +9,5 @@ featured: true
 components:
   - type: video
     fullheight: false
-    video: /images/unsplash-a7bkbcm8lsk.jpg
+    video: /images/small.mp4
 ---
