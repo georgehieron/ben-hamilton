@@ -6,11 +6,11 @@ media_folder: "src/images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - label: "Pages"
+    name: "pages"
     files:
-      - name: "home"
-        label: "Home"
+      - label: "Home"
+        name: "home"
         delete: false
         file: "src/index.md"
         slug: "{{slug}}"
