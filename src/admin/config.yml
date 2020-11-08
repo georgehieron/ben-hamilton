@@ -83,6 +83,7 @@ collections:
           - label: "Single Image"
             name: "singleImage"
             widget: "object"
+            summary: "{{fields.imageAlt}}"
             fields:
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Alt Text", name: "imageAlt", widget: "string"}
@@ -90,9 +91,11 @@ collections:
           - label: "Double Image"
             name: "doubleImage"
             widget: "object"
+            summary: "{{fields.caption}}"
             fields:
               - {label: "First Image", name: "image1", widget: "image"}
               - {label: "First Image Alt Text", name: "image1Alt", widget: "string"}
+              - {label: "Caption", name: "caption", widget: "string", required: false}
               - {label: "Second Image", name: "image2", widget: "image"}
               - {label: "Second Image Alt Text", name: "image2Alt", widget: "string"}
           - label: "Testimonial"

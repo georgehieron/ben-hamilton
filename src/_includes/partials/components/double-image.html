@@ -1,0 +1,7 @@
+<section class="double-image">
+    <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
+    {% if item.caption %}
+        <p>{{ item.caption }}</p>
+    {% endif %}
+    <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
+</section>
