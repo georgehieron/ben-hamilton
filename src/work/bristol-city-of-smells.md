@@ -8,6 +8,6 @@ displayOrder: 2
 featured: true
 components:
   - type: video
-    fullheight: false
+    fullheight: true
     video: /images/small.mp4
 ---
