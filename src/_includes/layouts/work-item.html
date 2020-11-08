@@ -22,14 +22,7 @@
             {% elif item.type === 'doubleImage' %}
                 {% include "partials/components/double-image.html" %}
             {% elif item.type === 'video' %}
-                <div>
-                {{ item.type }} type = video
-                </div>
                 {% include "partials/components/video.html" %}
-            {% else %}
-                <div>
-                {{ item.type }} type = else
-                </div>
             {% endif %}
         {% endfor %}
     {% endif %}
