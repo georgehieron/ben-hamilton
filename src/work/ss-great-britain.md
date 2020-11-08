@@ -27,4 +27,12 @@ components:
     fullheight: false
     image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
     imageAlt: Four people riding horses through the snow in Iceland.
+  - type: doubleImage
+    image1: /images/unsplash-a7bkbcm8lsk.jpg
+    image1Alt: Man wearing bright green jumper
+    caption: Taking a modular approach, we gave the client a wide-variety of
+      reusable components, enabling them to build their own engaging page
+      designs
+    image2: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
+    image2Alt: Four people riding horses through the snow in Iceland.
 ---
