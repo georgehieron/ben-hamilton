@@ -16,9 +16,6 @@ components:
       timeline
     url: "#ssgb"
     linkText: Visit site
-  - type: Video
-    fullheight: true
-    video: /images/small.mp4
   - type: testimonial
     quote: It has been an absolute pleasure to work with Atomic Smash on our new
       website project. They have been extremely attentive to our requirements
