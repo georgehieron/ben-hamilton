@@ -127,7 +127,6 @@ collections:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "Site URL", name: "url", widget: "string"}
           - {label: "Author Name", name: "authorName", widget: "string"}
-          - {label: "Author Email Address", name: "authorEmail", widget: "string", required: false}
           - {label: "Favicon path (e.g: /images/favicon.png)", name: "faviconPath", widget: "string", default: "/images/meta/bh-hanger.svg"}
       - label: "Sidebar"
         name: "sidebar"
