@@ -1,1 +1,97 @@
-@import 'reset';
+@import "reset";
+
+:root {
+    --color-mode: "light";
+    --color-base: #f3f3f3;
+    --color-text: #2a2a2a;
+    --color-primary: #4664f3;
+    --color-secondary: #72d087;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-mode: "dark";
+    }
+
+    :root:not([data-user-color-scheme]) {
+        --color-base: #efcbda;
+        --color-text: #252a75;
+        --color-primary: #ce5948;
+        --color-secondary: #7472d0;
+    }
+}
+
+[data-user-color-scheme="dark"] {
+    --color-base: #efcbda;
+    --color-text: #252a75;
+    --color-primary: #ce5948;
+    --color-secondary: #7472d0;
+}
+
+/* Presentational demo styles */
+
+body {
+    background: var(--color-base);
+    color: var(--color-text);
+    transition: background 500ms ease-in-out, color 200ms ease;
+    font-family: sans-serif;
+}
+
+button {
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	background: hotpink;
+	border: 0;
+	border-radius: 100%;
+	
+	&:hover {
+		cursor: pointer;
+	}
+
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.visually-hidden {
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(1px);
+    white-space: nowrap;
+    position: absolute;
+}
+
+.no-js .user-toggle {
+    display: none;
+}
+
+.user-toggle {
+    margin: 2rem auto 0 auto;
+    padding-top: 2.5rem;
+    max-width: 20rem;
+    border-top: 1px solid var(--color-primary);
+    text-align: center;
+}
+
+.toggle-button {
+    display: inline-flex;
+    background: var(--color-primary);
+    color: var(--color-base);
+    border: none;
+    font: inherit;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+.toggle-button:focus {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 0.5rem;
+}

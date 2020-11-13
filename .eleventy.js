@@ -27,11 +27,10 @@ module.exports = (config) => {
     config.setUseGitIgnore(false);
 
     // Copy Static Files to /dist
-    config.addPassthroughCopy({
-        "./src/admin/config.yml": "./admin/config.yml",
-    });
+    config.addPassthroughCopy('src/js');
     config.addPassthroughCopy('src/images');
     config.addPassthroughCopy('src/admin/config.yml');
+
 
     return {
         markdownTemplateEngine: "njk",
