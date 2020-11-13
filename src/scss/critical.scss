@@ -32,6 +32,26 @@
     --color-secondary: #7472d0;
 }
 
+@media screen and (-ms-high-contrast: active) {
+    :root {
+        --color-base: #f3f3f3;
+        --color-text: #2a2a2a;
+        --color-primary: #d0d0d0;
+        --color-secondary: #d0d0d0;
+    }
+}
+
+[data-user-color-scheme="highcontrast"] {
+    --color-base: #f3f3f3;
+    --color-text: #2a2a2a;
+    --color-primary: #2a2a2a;
+    --color-secondary: #d0d0d0;
+
+    a {
+        color: var(--color-primary);
+    }
+}
+
 body {
     background: var(--color-base);
     color: var(--color-text);
@@ -46,4 +66,3 @@ body {
 
 // Import components
 @import "components/toggle-button";
-

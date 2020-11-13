@@ -4,7 +4,7 @@
             <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
         </figure>
         <div class="palette-toggle">
-            <span role="status" class="visually-hidden js-mode-status"></span>
+            <span role="status" id="js-theme-status" class="visually-hidden"></span>
             {% include "partials/bh-hanger-animated-button.html" %}
         </div>
     </div>
@@ -13,10 +13,8 @@
     <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
     <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>
     <div class="high-contrast-toggle">
-        <span id="high-contrast-desc">High contrast mode is ON</span>
-        <button role="switch" aria-checked="true" aria-labelledby="high-contrast-desc">
-            <span>on</span>
-            <span>off</span>
+        <span id="high-contrast-desc">High contrast mode is <span id="js-high-contrast-state">off</span></span>
+        <button id="js-high-contrast-toggle" role="switch" aria-checked="true" aria-labelledby="high-contrast-desc">
         </button>
     </div>
 </aside>
