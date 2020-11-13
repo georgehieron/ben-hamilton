@@ -1,6 +1,9 @@
 @import "reset";
-@import "toggle-button";
 
+// Import mixins
+@import 'mixins/color-transition';
+
+// Global styles
 :root {
     --color-mode: "light";
     --color-base: #f3f3f3;
@@ -36,34 +39,11 @@ body {
     font-family: sans-serif;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-    color: var(--color-primary);
-}
+@import "typography";
 
-a {
-    color: var(--color-secondary);
-}
+// Import utilities
+@import 'utilities/visually-hidden';
 
-.visually-hidden {
-    display: block;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(1px);
-    white-space: nowrap;
-    position: absolute;
-}
+// Import components
+@import "components/toggle-button";
 
