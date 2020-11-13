@@ -1,0 +1,38 @@
+.no-js .palette-toggle {
+    display: none;
+}
+
+.hanger-button {
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	background: var(--color-text);
+	border: 0;
+	border-radius: 100%;
+	
+	&:hover {
+		cursor: pointer;
+	}
+
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.toggle-button {
+    display: inline-flex;
+    background: var(--color-text);
+    color: var(--color-base);
+    border: none;
+    font: inherit;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+.toggle-button:focus {
+    outline: 1px solid var(--color-text);
+    outline-offset: 0.5rem;
+}

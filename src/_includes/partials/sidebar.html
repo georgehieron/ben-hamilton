@@ -3,11 +3,10 @@
         <figure>
             <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
         </figure>
-        <span id="palette-switcher">Change colour palette</span>
-        <button role="switch" aria-checked="false" aria-labelledby="palette-switcher">
-            <span>on</span>
-            <span>off</span>
-        </button>
+        <div class="palette-toggle">
+            <span role="status" class="visually-hidden js-mode-status"></span>
+            {% include "partials/bh-hanger-animated-button.html" %}
+        </div>
     </div>
     <h2>{{ sidebar.heading }}</h2>
     <p>{{ sidebar.copy }}</p>

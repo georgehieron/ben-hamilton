@@ -88,7 +88,7 @@ document.addEventListener(
             modeToggleText.innerText = `Enable ${
                 currentSetting === "dark" ? "light" : "dark"
             } mode`;
-            modeStatusElement.innerText = `Color mode is now "${currentSetting}"`;
+            modeStatusElement.innerText = `Colour mode is now "${currentSetting}"`;
         };
 
         /**
@@ -111,6 +111,9 @@ document.addEventListener(
 
         clickHanger.style.display = 'none';
 
+        /**
+         * Switch the icon states
+         */
         function switchIcon() {
             if (clickHanger.style.display === 'none') {
                 clickHanger.style.display = 'block';
@@ -121,6 +124,9 @@ document.addEventListener(
             };
         }
 
+        /**
+         * Switch the icon's colour stroke to match current palette
+         */
         function switchColor() {
             for (let path of hangerPaths) {
                 path.style.stroke = 'var(--color-base)';
