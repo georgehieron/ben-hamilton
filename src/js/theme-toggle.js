@@ -17,6 +17,15 @@ document.addEventListener(
         const hoverHanger = document.getElementById('efux1o397r3m1');
         const hangerPaths = modeToggleButton.getElementsByTagName('path');
 
+        // High Contrast Toggle
+        const contrastToggleButton = document.getElementById("js-high-contrast-toggle");
+        const contrastToggleText = document.getElementById("js-high-contrast-state");
+
+        // If high contrast is the locally stored option, keep the toggle button state set to 'on'
+        if (localStorage.getItem(STORAGE_KEY) === 'highcontrast') {
+            contrastToggleText.innerText = "on";
+        }
+
         /**
          * Pass in a custom prop key and this function will return its
          * computed value.
@@ -69,6 +78,12 @@ document.addEventListener(
                             ? "light"
                             : "dark";
                     break;
+                case "highcontrast":
+                    currentSetting =
+                        getCSSCustomProp(COLOR_MODE_KEY) === "dark"
+                            ? "light"
+                            : "dark";
+                    break;
                 case "light":
                     currentSetting = "dark";
                     break;
@@ -106,6 +121,28 @@ document.addEventListener(
             setTimeout(switchIcon, 750);
             switchIcon();
             switchColor();
+
+            // High contrast mode will be disabled so update the state text
+            contrastToggleText.innerText = "off";
+        });
+
+        /**
+         * Clicking the button runs the apply setting method which grabs its parameter
+         * from the toggle setting method.
+         */
+        contrastToggleButton.addEventListener("click", (evt) => {
+            evt.preventDefault();
+
+            // Apply the styles if high contrast was not enabled,
+            // otherwise go back to last used theme
+            if (localStorage.getItem(STORAGE_KEY) != 'highcontrast') {
+                localStorage.setItem(STORAGE_KEY, 'highcontrast');
+                applySetting('highcontrast');
+                contrastToggleText.innerText = "on";
+            } else {
+                applySetting(toggleSetting());
+                contrastToggleText.innerText = "off";
+            }
         });
 
         applySetting();
