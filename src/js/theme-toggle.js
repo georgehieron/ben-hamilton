@@ -17,10 +17,6 @@ document.addEventListener(
         const hoverHanger = document.getElementById('efux1o397r3m1');
         const hangerPaths = modeToggleButton.getElementsByTagName('path');
 
-        // High Contrast Toggle
-        const contrastToggleButton = document.getElementById("js-high-contrast-toggle");
-        const contrastToggleState = document.getElementById("js-high-contrast-state");
-
         /**
          * Pass in a custom prop key and this function will return its
          * computed value.
@@ -110,26 +106,6 @@ document.addEventListener(
             setTimeout(switchIcon, 750);
             switchIcon();
             switchColor();
-
-            // If high contrast mode was on, it gets turned off when selecting this button
-            // Update the text state accordingly
-            if (contrastToggleState.innerText === 'on') {
-                contrastToggleState.innerText = 'off';
-            }
-        });
-
-        contrastToggleButton.addEventListener("click", (evt) => {
-            evt.preventDefault();
-
-            if (contrastToggleState.innerText === 'off') {
-                // Apply the high contrast styles
-                applySetting('highcontrast');
-                contrastToggleState.innerText = 'on';
-            } else {
-                // When high contrast is turned off, return to user's default or last used light/dark setting
-                applySetting(localStorage.getItem(STORAGE_KEY));
-                contrastToggleState.innerText = 'off';
-            }
         });
 
         applySetting();
