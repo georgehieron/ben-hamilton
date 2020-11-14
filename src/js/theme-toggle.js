@@ -6,8 +6,9 @@ document.addEventListener(
 
         const STORAGE_KEY = "user-color-scheme";
         const COLOR_MODE_KEY = "--color-mode";
+        const HIGHCONTRAST = "highcontrast";
 
-        // Colour Palette Toggle
+        // Colour Theme Toggle
         const modeToggleButton = document.getElementById("js-theme-toggle");
         const modeToggleText = document.getElementById("js-theme-toggle-text");
         const modeStatusElement = document.getElementById("js-theme-status");
@@ -22,7 +23,7 @@ document.addEventListener(
         const contrastToggleText = document.getElementById("js-high-contrast-state");
 
         // If high contrast is the locally stored option, keep the toggle button state set to 'on'
-        if (localStorage.getItem(STORAGE_KEY) === 'highcontrast') {
+        if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST) {
             contrastToggleText.innerText = "on";
         }
 
@@ -78,7 +79,7 @@ document.addEventListener(
                             ? "light"
                             : "dark";
                     break;
-                case "highcontrast":
+                case HIGHCONTRAST:
                     currentSetting =
                         getCSSCustomProp(COLOR_MODE_KEY) === "dark"
                             ? "light"
@@ -127,18 +128,19 @@ document.addEventListener(
         });
 
         /**
-         * Clicking the button runs the apply setting method which grabs its parameter
-         * from the toggle setting method.
+         * Clicking the contrast toggle button runs the apply setting method explicitly stating highcontrast
          */
         contrastToggleButton.addEventListener("click", (evt) => {
             evt.preventDefault();
 
             // Apply the styles if high contrast was not enabled,
             // otherwise go back to last used theme
-            if (localStorage.getItem(STORAGE_KEY) != 'highcontrast') {
-                localStorage.setItem(STORAGE_KEY, 'highcontrast');
-                applySetting('highcontrast');
+            if (localStorage.getItem(STORAGE_KEY) != HIGHCONTRAST) {
+                localStorage.setItem(STORAGE_KEY, HIGHCONTRAST);
+                applySetting(HIGHCONTRAST);
                 contrastToggleText.innerText = "on";
+                modeStatusElement.innerText = `Colour mode is now "high contrast"`;
+                modeToggleText.innerText = `Disable high contrast`;
             } else {
                 applySetting(toggleSetting());
                 contrastToggleText.innerText = "off";
