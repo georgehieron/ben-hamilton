@@ -28,6 +28,15 @@
 
     <script type="module" src="/js/theme-toggle.js" async defer></script>
     <script type="module" src="/js/contrast-toggle.js" async defer></script>
+    <script>
+    for(var i in localStorage)
+{
+    console.log(localStorage[i]);
+}
+        // if there's a theme preference in localstorage, use it on the <html>
+        localStorage.getItem('user-color-scheme') && 
+        document.documentElement.setAttribute('data-user-color-scheme', localStorage.getItem('user-color-scheme'));
+    </script>
     {# Netlify Identity Widget #}
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

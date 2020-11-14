@@ -3,18 +3,11 @@
         <figure>
             <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
         </figure>
-        <div class="palette-toggle">
-            <span role="status" id="js-theme-status" class="visually-hidden"></span>
-            {% include "partials/bh-hanger-animated-button.html" %}
-        </div>
+        {% include "partials/theme-toggle.html" %}
     </div>
     <h2>{{ sidebar.heading }}</h2>
     <p>{{ sidebar.copy }}</p>
     <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
     <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>
-    <div class="high-contrast-toggle">
-        <span id="high-contrast-desc">High contrast mode is <span id="js-high-contrast-state">off</span></span>
-        <button id="js-high-contrast-toggle" role="switch" aria-checked="true" aria-labelledby="high-contrast-desc">
-        </button>
-    </div>
+    {% include "partials/high-contrast-toggle.html" %}
 </aside>
