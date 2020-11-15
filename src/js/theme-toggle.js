@@ -6,7 +6,7 @@ document.addEventListener(
 
         const STORAGE_KEY = "user-color-scheme";
         const COLOR_MODE_KEY = "--color-mode";
-        const HIGHCONTRAST = "highcontrast";
+        const HIGHCONTRAST_KEY = "high-contrast";
 
         // Colour Theme Toggle
         const modeToggleButton = document.getElementById("js-theme-toggle");
@@ -20,12 +20,8 @@ document.addEventListener(
 
         // High Contrast Toggle
         const contrastToggleButton = document.getElementById("js-high-contrast-toggle");
-        const contrastToggleText = document.getElementById("js-high-contrast-state");
-
-        // If high contrast is the locally stored option, keep the toggle button state set to 'on'
-        if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST) {
-            contrastToggleText.innerText = "on";
-        }
+        const contrastToggleState = document.getElementById("js-high-contrast-state");
+        const contrastToggleText = document.getElementById("js-high-contrast-btn-text");
 
         /**
          * Pass in a custom prop key and this function will return its
@@ -79,7 +75,7 @@ document.addEventListener(
                             ? "light"
                             : "dark";
                     break;
-                case HIGHCONTRAST:
+                case HIGHCONTRAST_KEY:
                     currentSetting =
                         getCSSCustomProp(COLOR_MODE_KEY) === "dark"
                             ? "light"
@@ -109,6 +105,16 @@ document.addEventListener(
         };
 
         /**
+         * A shared method for setting the button text label and visually hidden status element
+         */
+        const setContrastButtonLabelAndStatus = (currentSetting) => {
+            contrastToggleText.innerText = `Turn high-contrast mode ${
+                currentSetting === "off" ? "on" : "off"
+            }`;
+            contrastToggleState.innerText = `${currentSetting}`;
+        };
+
+        /**
          * Clicking the button runs the apply setting method which grabs its parameter
          * from the toggle setting method.
          */
@@ -124,7 +130,7 @@ document.addEventListener(
             switchColor();
 
             // High contrast mode will be disabled so update the state text
-            contrastToggleText.innerText = "off";
+            contrastToggleState.innerText = "off";
         });
 
         /**
@@ -135,15 +141,16 @@ document.addEventListener(
 
             // Apply the styles if high contrast was not enabled,
             // otherwise go back to last used theme
-            if (localStorage.getItem(STORAGE_KEY) != HIGHCONTRAST) {
-                localStorage.setItem(STORAGE_KEY, HIGHCONTRAST);
-                applySetting(HIGHCONTRAST);
-                contrastToggleText.innerText = "on";
-                modeStatusElement.innerText = `Colour mode is now "high contrast"`;
-                modeToggleText.innerText = `Disable high contrast`;
+            if (localStorage.getItem(STORAGE_KEY) != HIGHCONTRAST_KEY) {
+                localStorage.setItem(STORAGE_KEY, HIGHCONTRAST_KEY);
+                applySetting(HIGHCONTRAST_KEY);
+                setContrastButtonLabelAndStatus("on");
+                modeToggleButton.setAttribute('aria-hidden', 'true');
+                modeStatusElement.innerText = `Colour mode is now ${HIGHCONTRAST_KEY}"`;
+                modeToggleText.innerText = `Enable light mode`;
             } else {
                 applySetting(toggleSetting());
-                contrastToggleText.innerText = "off";
+                setContrastButtonLabelAndStatus("off");
             }
         });
 
@@ -171,6 +178,12 @@ document.addEventListener(
             for (let path of hangerPaths) {
                 path.style.stroke = 'var(--color-base)';
             }
+        }
+
+        // If high contrast is the locally stored option, keep the toggle button state set to 'on'
+        if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
+            setContrastButtonLabelAndStatus("on");
+            modeToggleText.innerText = `Enable light mode`;
         }
     },
     false
