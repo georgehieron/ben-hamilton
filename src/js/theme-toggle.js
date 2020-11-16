@@ -14,14 +14,20 @@ document.addEventListener(
         const modeStatusElement = document.getElementById("js-theme-status");
 
         // Hanger icon components
-        const clickHanger = document.getElementById('es15e4xiwzd1');
-        const hoverHanger = document.getElementById('efux1o397r3m1');
-        const hangerPaths = modeToggleButton.getElementsByTagName('path');
+        const clickHanger = document.getElementById("es15e4xiwzd1");
+        const hoverHanger = document.getElementById("efux1o397r3m1");
+        const hangerPaths = modeToggleButton.getElementsByTagName("path");
 
         // High Contrast Toggle
-        const contrastToggleButton = document.getElementById("js-high-contrast-toggle");
-        const contrastToggleState = document.getElementById("js-high-contrast-state");
-        const contrastToggleText = document.getElementById("js-high-contrast-btn-text");
+        const contrastToggleButton = document.getElementById(
+            "js-high-contrast-toggle"
+        );
+        const contrastToggleState = document.getElementById(
+            "js-high-contrast-state"
+        );
+        const contrastToggleText = document.getElementById(
+            "js-high-contrast-btn-text"
+        );
 
         /**
          * Pass in a custom prop key and this function will return its
@@ -113,9 +119,9 @@ document.addEventListener(
             }`;
             contrastToggleState.innerText = `${currentSetting}`;
             if (currentSetting === "on") {
-                contrastToggleButton.setAttribute('aria-checked', 'true');
+                contrastToggleButton.setAttribute("aria-checked", "true");
             } else {
-                contrastToggleButton.setAttribute('aria-checked', 'false');
+                contrastToggleButton.setAttribute("aria-checked", "false");
             }
         };
 
@@ -143,7 +149,7 @@ document.addEventListener(
             // High contrast mode will be disabled so update the state text
             contrastToggleState.innerText = "off";
             setContrastButtonLabelAndStatus("off");
-            contrastToggleButton.setAttribute('aria-checked', 'false');
+            contrastToggleButton.setAttribute("aria-checked", "false");
         });
 
         /**
@@ -158,7 +164,7 @@ document.addEventListener(
                 localStorage.setItem(STORAGE_KEY, HIGHCONTRAST_KEY);
                 applySetting(HIGHCONTRAST_KEY);
                 setContrastButtonLabelAndStatus("on");
-                modeToggleButton.setAttribute('aria-hidden', 'true');
+                modeToggleButton.setAttribute("aria-hidden", "true");
                 modeStatusElement.innerText = `Colour mode is now ${HIGHCONTRAST_KEY}"`;
                 modeToggleText.innerText = `Restore default colour theme`;
             } else {
@@ -166,24 +172,24 @@ document.addEventListener(
                 // By running toggle twice to get the original preference
                 applySetting(toggleSetting(toggleSetting()));
                 setContrastButtonLabelAndStatus("off");
-                contrastToggleButton.setAttribute('aria-checked', 'false');
+                contrastToggleButton.setAttribute("aria-checked", "false");
             }
         });
 
         // Hide the animated click hanger by default
-        clickHanger.style.display = 'none';
+        clickHanger.style.display = "none";
 
         /**
          * Switch the icon states
          */
         function switchIcon() {
-            if (clickHanger.style.display === 'none') {
-                clickHanger.style.display = 'block';
-                hoverHanger.style.display = 'none';
+            if (clickHanger.style.display === "none") {
+                clickHanger.style.display = "block";
+                hoverHanger.style.display = "none";
             } else {
-                hoverHanger.style.display = 'block';
-                clickHanger.style.display = 'none';
-            };
+                hoverHanger.style.display = "block";
+                clickHanger.style.display = "none";
+            }
         }
 
         /**
@@ -191,7 +197,7 @@ document.addEventListener(
          */
         function switchColor() {
             for (let path of hangerPaths) {
-                path.style.stroke = 'var(--color-base)';
+                path.style.stroke = "var(--color-base)";
             }
         }
 
@@ -201,7 +207,7 @@ document.addEventListener(
         // If high contrast is the locally stored option, keep the toggle button state set to 'on'
         if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
             setContrastButtonLabelAndStatus("on");
-            contrastToggleButton.setAttribute('aria-checked', 'true');
+            contrastToggleButton.setAttribute("aria-checked", "true");
             modeToggleText.innerText = `Restore default colour theme`;
         }
     },
