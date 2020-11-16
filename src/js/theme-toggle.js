@@ -95,7 +95,7 @@ document.addEventListener(
         };
 
         /**
-         * A shared method for setting the button text label and visually hidden status element
+         * A shared method for setting the theme toggle's button text label and visually hidden status element
          */
         const setButtonLabelAndStatus = (currentSetting) => {
             modeToggleText.innerText = `Enable ${
@@ -105,7 +105,7 @@ document.addEventListener(
         };
 
         /**
-         * A shared method for setting the button text label and visually hidden status element
+         * A shared method for setting the contrast toggle's button text label and visually hidden status element
          */
         const setContrastButtonLabelAndStatus = (currentSetting) => {
             contrastToggleText.innerText = `Turn high-contrast mode ${
@@ -127,7 +127,13 @@ document.addEventListener(
             evt.preventDefault();
 
             // Apply the styles
-            applySetting(toggleSetting());
+            if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
+                // If the high contrast mode was on, revert to the user's default theme
+                // By running toggle twice to get the original preference
+                applySetting(toggleSetting(toggleSetting()));
+            } else {
+                applySetting(toggleSetting());
+            }
 
             // Adjust the button
             setTimeout(switchIcon, 750);
@@ -155,14 +161,15 @@ document.addEventListener(
                 modeStatusElement.innerText = `Colour mode is now ${HIGHCONTRAST_KEY}"`;
                 modeToggleText.innerText = `Enable light mode`;
             } else {
-                applySetting(toggleSetting());
+                // If the high contrast mode was on, revert to the user's default theme
+                // By running toggle twice to get the original preference
+                applySetting(toggleSetting(toggleSetting()));
                 setContrastButtonLabelAndStatus("off");
                 contrastToggleButton.setAttribute('aria-checked', 'false');
             }
         });
 
-        applySetting();
-
+        // Hide the animated click hanger by default
         clickHanger.style.display = 'none';
 
         /**
@@ -187,11 +194,14 @@ document.addEventListener(
             }
         }
 
+        // On load, apply the user's preferred setting
+        applySetting();
+
         // If high contrast is the locally stored option, keep the toggle button state set to 'on'
         if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
             setContrastButtonLabelAndStatus("on");
             contrastToggleButton.setAttribute('aria-checked', 'true');
-            modeToggleText.innerText = `Enable light mode`;
+            modeToggleText.innerText = `Restore default colour theme`;
         }
     },
     false
