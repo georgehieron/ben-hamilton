@@ -187,7 +187,7 @@ document.addEventListener(
         }
 
         /**
-         * Switch the icon's colour stroke to match current palette
+         * Switch the icon's colour stroke to match current theme
          */
         function switchColor() {
             for (let path of hangerPaths) {
