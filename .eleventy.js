@@ -31,7 +31,6 @@ module.exports = (config) => {
     config.addPassthroughCopy('src/images');
     config.addPassthroughCopy('src/admin/config.yml');
 
-
     return {
         markdownTemplateEngine: "njk",
         dataTemplateEngine: "njk",

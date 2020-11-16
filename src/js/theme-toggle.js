@@ -142,6 +142,7 @@ document.addEventListener(
 
             // High contrast mode will be disabled so update the state text
             contrastToggleState.innerText = "off";
+            setContrastButtonLabelAndStatus("off");
             contrastToggleButton.setAttribute('aria-checked', 'false');
         });
 
@@ -159,7 +160,7 @@ document.addEventListener(
                 setContrastButtonLabelAndStatus("on");
                 modeToggleButton.setAttribute('aria-hidden', 'true');
                 modeStatusElement.innerText = `Colour mode is now ${HIGHCONTRAST_KEY}"`;
-                modeToggleText.innerText = `Enable light mode`;
+                modeToggleText.innerText = `Restore default colour theme`;
             } else {
                 // If the high contrast mode was on, revert to the user's default theme
                 // By running toggle twice to get the original preference
