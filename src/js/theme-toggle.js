@@ -112,6 +112,11 @@ document.addEventListener(
                 currentSetting === "off" ? "on" : "off"
             }`;
             contrastToggleState.innerText = `${currentSetting}`;
+            if (currentSetting === "on") {
+                contrastToggleButton.setAttribute('aria-checked', 'true');
+            } else {
+                contrastToggleButton.setAttribute('aria-checked', 'false');
+            }
         };
 
         /**
@@ -131,6 +136,7 @@ document.addEventListener(
 
             // High contrast mode will be disabled so update the state text
             contrastToggleState.innerText = "off";
+            contrastToggleButton.setAttribute('aria-checked', 'false');
         });
 
         /**
@@ -151,6 +157,7 @@ document.addEventListener(
             } else {
                 applySetting(toggleSetting());
                 setContrastButtonLabelAndStatus("off");
+                contrastToggleButton.setAttribute('aria-checked', 'false');
             }
         });
 
@@ -183,6 +190,7 @@ document.addEventListener(
         // If high contrast is the locally stored option, keep the toggle button state set to 'on'
         if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
             setContrastButtonLabelAndStatus("on");
+            contrastToggleButton.setAttribute('aria-checked', 'true');
             modeToggleText.innerText = `Enable light mode`;
         }
     },

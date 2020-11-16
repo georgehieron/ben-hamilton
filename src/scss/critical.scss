@@ -59,6 +59,15 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    -webkit-appearance: none;
+    border: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @import "typography";
 
 // Import utilities
