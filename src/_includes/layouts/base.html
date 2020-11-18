@@ -1,13 +1,15 @@
 {% set assetHash = global.random() %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {% include "partials/meta-info.html" %}
+    {# Remove the no-js class if JS is available #}
+    <script>document.documentElement.classList.remove('no-js');</script>
     <style>{% include "css/critical.css" %}</style>
 
     {# Add facility for pages to delare an array of critical styles #}
@@ -26,9 +28,10 @@
         {% endfor %}
     {% endif %}
 
-    <script type="module" src="/js/theme-toggle.js" async defer></script>
+    {# Theme & High contrast toggle #}
+    <script type="module" src="/js/theme-toggle.js"></script>
+    {# If there's a theme preference in localstorage, use it on the <html> #}
     <script>
-        // if there's a theme preference in localstorage, use it on the <html>
         localStorage.getItem('user-color-scheme') && 
         document.documentElement.setAttribute('data-user-color-scheme', localStorage.getItem('user-color-scheme'));
     </script>

@@ -1,8 +1,6 @@
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-        // Remove the no JS class so that the button will show
-        document.documentElement.classList.remove("no-js");
 
         const STORAGE_KEY = "user-color-scheme";
         const COLOR_MODE_KEY = "--color-mode";
@@ -16,7 +14,6 @@ document.addEventListener(
         // Hanger icon components
         const clickHanger = document.getElementById("es15e4xiwzd1");
         const hoverHanger = document.getElementById("efux1o397r3m1");
-        const hangerPaths = modeToggleButton.getElementsByTagName("path");
 
         // High Contrast Toggle
         const contrastToggleButton = document.getElementById(
@@ -144,7 +141,6 @@ document.addEventListener(
             // Adjust the button
             setTimeout(switchIcon, 750);
             switchIcon();
-            switchColor();
 
             // High contrast mode will be disabled so update the state text
             contrastToggleState.innerText = "off";
@@ -189,15 +185,6 @@ document.addEventListener(
             } else {
                 hoverHanger.style.display = "block";
                 clickHanger.style.display = "none";
-            }
-        }
-
-        /**
-         * Switch the icon's colour stroke to match current theme
-         */
-        function switchColor() {
-            for (let path of hangerPaths) {
-                path.style.stroke = "var(--color-base)";
             }
         }
 
