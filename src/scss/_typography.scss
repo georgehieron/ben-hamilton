@@ -11,10 +11,10 @@ h5,
 h6,
 .h6 {
     color: var(--color-primary);
-    @include color-transition();
+    // @include color-transition();
 }
 
 a {
     color: var(--color-secondary);
-    @include color-transition();
+    // @include color-transition();
 }

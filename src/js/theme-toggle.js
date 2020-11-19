@@ -12,8 +12,8 @@ document.addEventListener(
         const modeStatusElement = document.getElementById("js-theme-status");
 
         // Hanger icon components
-        const clickHanger = document.getElementById("es15e4xiwzd1");
-        const hoverHanger = document.getElementById("efux1o397r3m1");
+        const clickHanger = document.getElementById("ez1yikfg7xo1");
+        const hoverHanger = document.getElementById("egxqtyxn64h51");
 
         // High Contrast Toggle
         const contrastToggleButton = document.getElementById(
@@ -139,7 +139,7 @@ document.addEventListener(
             }
 
             // Adjust the button
-            setTimeout(switchIcon, 750);
+            setTimeout(switchIcon, 1500);
             switchIcon();
 
             // High contrast mode will be disabled so update the state text
