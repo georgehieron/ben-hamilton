@@ -5,7 +5,7 @@
 
 // Global styles
 :root {
-    --color-mode: "light";
+    --color-mode: "blue";
     --color-base: #f3f3f3;
     --color-text: #2a2a2a;
     --color-primary: #4664f3;
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-mode: "dark";
+        --color-mode: "pink";
     }
 
     :root:not([data-user-color-scheme]) {

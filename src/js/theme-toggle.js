@@ -12,8 +12,8 @@ document.addEventListener(
         const modeStatusElement = document.getElementById("js-theme-status");
 
         // Hanger icon components
-        const clickHanger = document.getElementById("ez1yikfg7xo1");
-        const hoverHanger = document.getElementById("egxqtyxn64h51");
+        const clickHanger = document.getElementById("ech4wsucqv4f1");
+        const hoverHanger = document.getElementById("eyiqjo2q98v1");
 
         // High Contrast Toggle
         const contrastToggleButton = document.getElementById(
@@ -46,7 +46,7 @@ document.addEventListener(
         };
 
         /**
-         * Takes either a passed settings ('light'|'dark') or grabs that from localStorage.
+         * Takes either a passed settings ('blue'|'pink') or grabs that from localStorage.
          * If it can’t find the setting in either, it tries to load the CSS color mode,
          * controlled by the media query
          */
@@ -74,21 +74,21 @@ document.addEventListener(
             switch (currentSetting) {
                 case null:
                     currentSetting =
-                        getCSSCustomProp(COLOR_MODE_KEY) === "dark"
-                            ? "light"
-                            : "dark";
+                        getCSSCustomProp(COLOR_MODE_KEY) === "pink"
+                            ? "blue"
+                            : "pink";
                     break;
                 case HIGHCONTRAST_KEY:
                     currentSetting =
-                        getCSSCustomProp(COLOR_MODE_KEY) === "dark"
-                            ? "light"
-                            : "dark";
+                        getCSSCustomProp(COLOR_MODE_KEY) === "pink"
+                            ? "blue"
+                            : "pink";
                     break;
-                case "light":
-                    currentSetting = "dark";
+                case "blue":
+                    currentSetting = "pink";
                     break;
-                case "dark":
-                    currentSetting = "light";
+                case "pink":
+                    currentSetting = "blue";
                     break;
             }
 
@@ -102,16 +102,16 @@ document.addEventListener(
          */
         const setButtonLabelAndStatus = (currentSetting) => {
             modeToggleText.innerText = `Enable ${
-                currentSetting === "dark" ? "light" : "dark"
-            } mode`;
-            modeStatusElement.innerText = `Colour mode is now "${currentSetting}"`;
+                currentSetting === "pink" ? "blue" : "pink"
+            } theme`;
+            modeStatusElement.innerText = `Colour theme is now "${currentSetting}"`;
         };
 
         /**
          * A shared method for setting the contrast toggle's button text label and visually hidden status element
          */
         const setContrastButtonLabelAndStatus = (currentSetting) => {
-            contrastToggleText.innerText = `Turn high-contrast mode ${
+            contrastToggleText.innerText = `Turn high-contrast theme ${
                 currentSetting === "off" ? "on" : "off"
             }`;
             contrastToggleState.innerText = `${currentSetting}`;
@@ -139,7 +139,7 @@ document.addEventListener(
             }
 
             // Adjust the button
-            setTimeout(switchIcon, 1500);
+            setTimeout(switchIcon, 2000);
             switchIcon();
 
             // High contrast mode will be disabled so update the state text
@@ -161,7 +161,7 @@ document.addEventListener(
                 applySetting(HIGHCONTRAST_KEY);
                 setContrastButtonLabelAndStatus("on");
                 modeToggleButton.setAttribute("aria-hidden", "true");
-                modeStatusElement.innerText = `Colour mode is now ${HIGHCONTRAST_KEY}"`;
+                modeStatusElement.innerText = `Colour theme is now ${HIGHCONTRAST_KEY}"`;
                 modeToggleText.innerText = `Restore default colour theme`;
             } else {
                 // If the high contrast mode was on, revert to the user's default theme
