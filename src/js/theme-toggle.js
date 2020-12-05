@@ -125,12 +125,12 @@ document.addEventListener(
             }
         };
 
-        modeToggleButton.addEventListener("mouseenter", function( event ) {
+        modeToggleButton.addEventListener("mouseenter", function() {
             hoverHanger.style.display = "block";
             clickHanger.style.display = "none";
         }, false);
 
-        modeToggleButton.addEventListener("mouseleave", function( event ) {
+        modeToggleButton.addEventListener("mouseleave", function() {
             clickHanger.style.display = "block";
             hoverHanger.style.display = "none";
         }, false);
