@@ -26,8 +26,8 @@ document.addEventListener(
             "js-high-contrast-btn-text"
         );
 
-        // // Hide the animated click hanger by default
-        clickHanger.style.display = "none";
+        // Hide the animated hover hanger by default
+        hoverHanger.style.display = "none";
 
         /**
          * Pass in a custom prop key and this function will return its
