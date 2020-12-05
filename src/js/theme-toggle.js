@@ -12,7 +12,7 @@ document.addEventListener(
         const modeStatusElement = document.getElementById("js-theme-status");
 
         // Hanger icon components
-        const clickHanger = document.getElementById("ech4wsucqv4f1");
+        const clickHanger = document.getElementById("edqipn12or4n1");
         const hoverHanger = document.getElementById("eyiqjo2q98v1");
 
         // High Contrast Toggle
@@ -25,6 +25,9 @@ document.addEventListener(
         const contrastToggleText = document.getElementById(
             "js-high-contrast-btn-text"
         );
+
+        // // Hide the animated click hanger by default
+        clickHanger.style.display = "none";
 
         /**
          * Pass in a custom prop key and this function will return its
@@ -122,12 +125,27 @@ document.addEventListener(
             }
         };
 
+        modeToggleButton.addEventListener("mouseenter", function( event ) {
+            hoverHanger.style.display = "block";
+            clickHanger.style.display = "none";
+        }, false);
+
+        modeToggleButton.addEventListener("mouseleave", function( event ) {
+            clickHanger.style.display = "block";
+            hoverHanger.style.display = "none";
+        }, false);
+
         /**
          * Clicking the button runs the apply setting method which grabs its parameter
          * from the toggle setting method.
          */
         modeToggleButton.addEventListener("click", (evt) => {
             evt.preventDefault();
+
+            hoverHanger.style.display = "none";
+            clickHanger.style.display = "block";
+            // Simulate click on the SVG manually like this since .click() doesn't work on SVGs
+            clickHanger.dispatchEvent(new Event('click'));
 
             // Apply the styles
             if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
@@ -137,10 +155,6 @@ document.addEventListener(
             } else {
                 applySetting(toggleSetting());
             }
-
-            // Adjust the button
-            setTimeout(switchIcon, 2000);
-            switchIcon();
 
             // High contrast mode will be disabled so update the state text
             contrastToggleState.innerText = "off";
@@ -171,22 +185,6 @@ document.addEventListener(
                 contrastToggleButton.setAttribute("aria-checked", "false");
             }
         });
-
-        // Hide the animated click hanger by default
-        clickHanger.style.display = "none";
-
-        /**
-         * Switch the icon states
-         */
-        function switchIcon() {
-            if (clickHanger.style.display === "none") {
-                clickHanger.style.display = "block";
-                hoverHanger.style.display = "none";
-            } else {
-                hoverHanger.style.display = "block";
-                clickHanger.style.display = "none";
-            }
-        }
 
         // On load, apply the user's preferred setting
         applySetting();
