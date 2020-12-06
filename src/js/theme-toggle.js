@@ -125,6 +125,12 @@ document.addEventListener(
             }
         };
 
+        function resetButton() {
+            modeToggleButton.disabled = false;
+            clickHanger.style.display = "none";
+            hoverHanger.style.display = "block";
+        }
+
         /**
          * Clicking the button runs the apply setting method which grabs its parameter
          * from the toggle setting method.
@@ -136,7 +142,9 @@ document.addEventListener(
             clickHanger.style.display = "block";
             // Simulate click on the SVG manually like this since .click() doesn't work on SVGs
             clickHanger.dispatchEvent(new Event('click'));
-            setTimeout(resetHangerState, 2000);
+            // Disable the button to prevent multiple clicks
+            modeToggleButton.disabled = true;
+            setTimeout(resetButton, 1500);
 
             // Apply the styles
             if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
@@ -176,11 +184,6 @@ document.addEventListener(
                 contrastToggleButton.setAttribute("aria-checked", "false");
             }
         });
-
-        function resetHangerState() {
-            hoverHanger.style.display = "block";
-            clickHanger.style.display = "none";
-        }
 
         // On load, apply the user's preferred setting
         applySetting();
