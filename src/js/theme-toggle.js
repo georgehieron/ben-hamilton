@@ -26,8 +26,8 @@ document.addEventListener(
             "js-high-contrast-btn-text"
         );
 
-        // Hide the animated hover hanger by default
-        hoverHanger.style.display = "none";
+        // Hide the animated click hanger by default
+        clickHanger.style.display = "none";
 
         /**
          * Pass in a custom prop key and this function will return its
@@ -125,16 +125,6 @@ document.addEventListener(
             }
         };
 
-        modeToggleButton.addEventListener("mouseenter", function() {
-            hoverHanger.style.display = "block";
-            clickHanger.style.display = "none";
-        }, false);
-
-        modeToggleButton.addEventListener("mouseleave", function() {
-            clickHanger.style.display = "block";
-            hoverHanger.style.display = "none";
-        }, false);
-
         /**
          * Clicking the button runs the apply setting method which grabs its parameter
          * from the toggle setting method.
@@ -146,6 +136,7 @@ document.addEventListener(
             clickHanger.style.display = "block";
             // Simulate click on the SVG manually like this since .click() doesn't work on SVGs
             clickHanger.dispatchEvent(new Event('click'));
+            setTimeout(resetHangerState, 2000);
 
             // Apply the styles
             if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
@@ -185,6 +176,11 @@ document.addEventListener(
                 contrastToggleButton.setAttribute("aria-checked", "false");
             }
         });
+
+        function resetHangerState() {
+            hoverHanger.style.display = "block";
+            clickHanger.style.display = "none";
+        }
 
         // On load, apply the user's preferred setting
         applySetting();
