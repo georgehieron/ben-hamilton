@@ -13,7 +13,7 @@ document.addEventListener(
 
         // Hanger icon components
         const clickHanger = document.getElementById("edqipn12or4n1");
-        const hoverHanger = document.getElementById("eyiqjo2q98v1");
+        const hoverHanger = document.getElementById("e0dwfcocxuzat1");
 
         // High Contrast Toggle
         const contrastToggleButton = document.getElementById(
