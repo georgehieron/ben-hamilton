@@ -28,8 +28,8 @@
         {% endfor %}
     {% endif %}
 
-    {# Theme & High contrast toggle #}
-    <script type="module" src="/js/theme-toggle.js" defer></script>
+    {# Main global scripts #}
+    <script type="module" src="/js/main.js" defer></script>
     {# If there's a theme preference in localstorage, use it on the <html> #}
     <script>
         localStorage.getItem('user-color-scheme') && 
