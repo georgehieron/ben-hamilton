@@ -144,7 +144,7 @@ document.addEventListener(
             clickHanger.dispatchEvent(new Event('click'));
             // Disable the button to prevent multiple clicks
             modeToggleButton.disabled = true;
-            setTimeout(resetButton, 1500);
+            setTimeout(resetButton, 1000);
 
             // Apply the styles
             if (localStorage.getItem(STORAGE_KEY) === HIGHCONTRAST_KEY) {
