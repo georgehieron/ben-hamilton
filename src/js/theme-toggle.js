@@ -12,7 +12,7 @@ document.addEventListener(
         const modeStatusElement = document.getElementById("js-theme-status");
 
         // Hanger icon components
-        const clickHanger = document.getElementById("edqipn12or4n1");
+        const clickHanger = document.getElementById("evmbp6n85q381");
         const hoverHanger = document.getElementById("e0dwfcocxuzat1");
 
         // High Contrast Toggle
