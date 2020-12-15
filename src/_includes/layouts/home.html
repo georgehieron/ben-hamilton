@@ -1,58 +1,64 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<div class="wrapper">
-    <article>
 
-        <section id="intro">
-            <a href="#intro" class="section-anchor">{{ intro.title }}</a>
-            <h1>{{ intro.heading }}</h1>
-            <p>{{ intro.copy }}</p>
-        </section>
+<main tabindex="-1" id="main-content" class="main-content">
 
-        <section id="work">
-            <a href="#work" class="section-anchor">{{ work.title }}</a>
-            <h2>{{ work.heading }}</h2>
-            <div class="work-items">
-                {% for item in collections.featuredWork %}
-                <figure id="work-item--{{ loop.index }}" class="work-items__item">
-                    <div>
-                        <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
-                    </div>
-                    <figcaption>
-                        <span>
-                            {{ item.data.title }}
-                        </span>
-                        <a href="{{ item.url }}" class="work-items__item__link">
-                            {{ work.itemLinkText }}
-                        </a>
-                    </figcaption>
-                </figure>
-                {% endfor %}
-            </div>
-        </section>
+    <div class="wrapper">
+        <article>
 
-        <section id="writing">
-            <a href="#writing" class="section-anchor">{{ writing.title }}</a>
-            <h2>{{ writing.heading }}</h2>
-            <p>{{ writing.copy }}</p>
+            <section id="intro">
+                <a href="#intro" class="section-anchor">{{ intro.title }}</a>
+                <h1>{{ intro.heading }}</h1>
+                <p>{{ intro.copy }}</p>
+            </section>
 
-            {% if writing.articles %}
-                <ul>
-                    {% for article in writing.articles %}
-                        <li>
-                            <time datetime="2020-08-20">{{ article.date }}</time>
-                            <a href="{{ article.url }}">{{ article.title }}</a>
-                        </li>
+            <section id="work">
+                <a href="#work" class="section-anchor">{{ work.title }}</a>
+                <h2>{{ work.heading }}</h2>
+                <div class="work-items">
+                    {% for item in collections.featuredWork %}
+                    <figure id="work-item--{{ loop.index }}" class="work-items__item">
+                        <div>
+                            <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
+                        </div>
+                        <figcaption>
+                            <span>
+                                {{ item.data.title }}
+                            </span>
+                            <a href="{{ item.url }}" class="work-items__item__link">
+                                {{ work.itemLinkText }}
+                            </a>
+                        </figcaption>
+                    </figure>
                     {% endfor %}
-                </ul>
-            {% endif %}
-        </section>
+                </div>
+            </section>
 
-    </article>
+            <section id="writing">
+                <a href="#writing" class="section-anchor">{{ writing.title }}</a>
+                <h2>{{ writing.heading }}</h2>
+                <p>{{ writing.copy }}</p>
 
-    {% include "partials/sidebar.html" %}
+                {% if writing.articles %}
+                    <ul>
+                        {% for article in writing.articles %}
+                            <li>
+                                <time datetime="2020-08-20">{{ article.date }}</time>
+                                <a href="{{ article.url }}">{{ article.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </section>
 
-    {% include "partials/footer.html" %}
-</div>
+        </article>
+    </div>
+
+</main>
+
+{% include "partials/sidebar.html" %}
+
+{% include "partials/footer.html" %}
+
 {% endblock %}

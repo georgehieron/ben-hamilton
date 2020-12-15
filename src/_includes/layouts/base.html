@@ -43,14 +43,7 @@
     <div class="site-wrap">
         {% include "partials/site-head.html" %}
 
-        <main tabindex="-1" id="main-content">
-            {% block content %}{% endblock %}
-        </main>
-
-        <footer role="contentinfo" class="site-foot">
-            <div class="wrapper">
-            </div>
-        </footer>
+        {% block content %}{% endblock %}
     </div>
     {# Netlify Identity Widget redirect #}
     <script>

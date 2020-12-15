@@ -1,30 +1,36 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<article class="work-item">
-    <div>
+
+<main tabindex="-1" id="main-content">
+
+    <article class="work-item">
         <div>
-            <h1>
-                {{ title }}
-            </h1>
-            <p>{{ excerpt }}</p>
-            <p>{{ summary }}</p>
+            <div>
+                <h1>
+                    {{ title }}
+                </h1>
+                <p>{{ excerpt }}</p>
+                <p>{{ summary }}</p>
+            </div>
         </div>
-    </div>
-    {% if components %}
-        {% for item in components %}
-            {% if item.type === 'info' %}
-                {% include "partials/components/info.html" %}
-            {% elif item.type === 'testimonial' %}
-                {% include "partials/components/testimonial.html" %}
-            {% elif item.type === 'singleImage' %}
-                {% include "partials/components/single-image.html" %}
-            {% elif item.type === 'doubleImage' %}
-                {% include "partials/components/double-image.html" %}
-            {% elif item.type === 'video' %}
-                {% include "partials/components/video.html" %}
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-</article>
+        {% if components %}
+            {% for item in components %}
+                {% if item.type === 'info' %}
+                    {% include "partials/components/info.html" %}
+                {% elif item.type === 'testimonial' %}
+                    {% include "partials/components/testimonial.html" %}
+                {% elif item.type === 'singleImage' %}
+                    {% include "partials/components/single-image.html" %}
+                {% elif item.type === 'doubleImage' %}
+                    {% include "partials/components/double-image.html" %}
+                {% elif item.type === 'video' %}
+                    {% include "partials/components/video.html" %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </article>
+
+</main>
+
 {% endblock %}
