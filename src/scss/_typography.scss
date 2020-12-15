@@ -18,3 +18,10 @@ a {
     color: var(--color-secondary);
     // @include color-transition();
 }
+
+[data-user-color-scheme="high-contrast"] {
+
+    a {
+        color: var(--color-primary);
+    }
+}

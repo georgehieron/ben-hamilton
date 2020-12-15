@@ -1,56 +1,13 @@
+// First up: config and functions
+@import 'config';
+
+// Next: pull in gorko for design tokens
+@import '../../node_modules/gorko/gorko.scss';
+
 @import "reset";
 
 // Import mixins
 @import 'mixins/color-transition';
-
-// Global styles
-:root {
-    --color-mode: "blue";
-    --color-base: #f3f3f3;
-    --color-text: #2a2a2a;
-    --color-primary: #4664f3;
-    --color-secondary: #72d087;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-mode: "pink";
-    }
-
-    :root:not([data-user-color-scheme]) {
-        --color-base: #efcbda;
-        --color-text: #252a75;
-        --color-primary: #ce5948;
-        --color-secondary: #7472d0;
-    }
-}
-
-[data-user-color-scheme="pink"] {
-    --color-base: #efcbda;
-    --color-text: #252a75;
-    --color-primary: #ce5948;
-    --color-secondary: #7472d0;
-}
-
-@media screen and (-ms-high-contrast: active) {
-    :root:not([data-user-color-scheme]) {
-        --color-base: #f3f3f3;
-        --color-text: #2a2a2a;
-        --color-primary: #d0d0d0;
-        --color-secondary: #d0d0d0;
-    }
-}
-
-[data-user-color-scheme="high-contrast"] {
-    --color-base: #f3f3f3;
-    --color-text: #2a2a2a;
-    --color-primary: #2a2a2a;
-    --color-secondary: #d0d0d0;
-
-    a {
-        color: var(--color-primary);
-    }
-}
 
 body {
     background: var(--color-base);
