@@ -1,3 +1,11 @@
 .sidebar {
+    position: relative;
     min-width: 22rem;
+}
+
+@include media-query('md') {
+    .sidebar--internal {
+        position: sticky;
+        top: get-size('700');
+    }
 }

@@ -1,13 +1,15 @@
-<aside class="sidebar bg-secondary pad-top-700 pad-left-700 pad-right-700">
-    <div>
-        <figure>
-            <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
-        </figure>
-        {% include "partials/theme-toggle.html" %}
+<aside class="sidebar bg-secondary pad-top-700 pad-right-700 pad-bottom-700 pad-left-700">
+    <div class="sidebar--internal">
+        <div>
+            <figure>
+                <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
+            </figure>
+            {% include "partials/theme-toggle.html" %}
+        </div>
+        <h2 class="color-text">{{ sidebar.heading }}</h2>
+        <p>{{ sidebar.copy }}</p>
+        <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
+        <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>
+        {% include "partials/high-contrast-toggle.html" %}
     </div>
-    <h2 class="color-text">{{ sidebar.heading }}</h2>
-    <p>{{ sidebar.copy }}</p>
-    <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
-    <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>
-    {% include "partials/high-contrast-toggle.html" %}
 </aside>
