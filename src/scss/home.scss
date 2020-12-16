@@ -1,0 +1,10 @@
+// First up: config and functions
+@import 'config';
+
+// Set gorko to output no CSS for this file
+$outputTokenCSS: false;
+
+// Next: pull in gorko for design tokens
+@import '../../node_modules/gorko/gorko.scss';
+
+@import 'components/layout-home';

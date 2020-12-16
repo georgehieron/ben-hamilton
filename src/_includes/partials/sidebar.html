@@ -1,11 +1,11 @@
-<aside class="sidebar">
+<aside class="sidebar bg-secondary">
     <div>
         <figure>
             <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
         </figure>
         {% include "partials/theme-toggle.html" %}
     </div>
-    <h2>{{ sidebar.heading }}</h2>
+    <h2 class="color-text">{{ sidebar.heading }}</h2>
     <p>{{ sidebar.copy }}</p>
     <a href="{{ sidebar.email }}">{{ sidebar.emailText }}</a>
     <a href="{{ sidebar.socialUrl1 }}">{{ sidebar.socialText1 }}</a>

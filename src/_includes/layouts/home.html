@@ -1,18 +1,15 @@
 {% extends "layouts/base.html" %}
 
+{% set pageCriticalStyles = ['css/home.css'] %}
+
 {% block content %}
+
+{% include "partials/header-home.html" %}
 
 <main tabindex="-1" id="main-content" class="main-content">
 
     <div class="wrapper">
         <article>
-
-            <section id="intro">
-                <a href="#intro" class="section-anchor">{{ intro.title }}</a>
-                <h1>{{ intro.heading }}</h1>
-                <p>{{ intro.copy }}</p>
-            </section>
-
             <section id="work">
                 <a href="#work" class="section-anchor">{{ work.title }}</a>
                 <h2>{{ work.heading }}</h2>

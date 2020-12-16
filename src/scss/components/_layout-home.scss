@@ -1,0 +1,34 @@
+.site-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, max-content);
+    grid-template-areas:    "head"
+                            "side"
+                            "main"
+                            "foot";
+}
+
+@include media-query('md') {
+    .site-wrap {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:    "head head side"
+                                "main main side"
+                                "foot foot foot";
+    }
+}
+
+.home-header {
+    grid-area: head;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.site-footer {
+    grid-area: foot;
+}
