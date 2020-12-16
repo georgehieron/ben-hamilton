@@ -1,7 +1,5 @@
 .home-footer {
     border: get-size('500') solid var(--color-base);
-    padding-top: calc(#{get-size('900')} + #{get-size('300')});
-    padding-bottom: calc(#{get-size('900')} + #{get-size('300')});
 }
 
 [data-user-color-scheme="blue"] {

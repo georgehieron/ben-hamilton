@@ -13,8 +13,12 @@
     <div class="wrapper">
         <article>
             <section id="work">
-                <a href="#work" class="section-anchor">{{ work.title }}</a>
-                <h2>{{ work.heading }}</h2>
+                <div class="home-section--narrow pad-top-975 pad-bottom-975">
+                    <a href="#work" class="section-anchor">{{ work.title }}</a>
+                    <div class="wrapper--home">
+                        <h2>{{ work.heading }}</h2>
+                    </div>
+                </div>
                 <div class="work-items">
                     {% for item in collections.featuredWork %}
                     <figure id="work-item--{{ loop.index }}" class="work-items__item">
@@ -34,21 +38,23 @@
                 </div>
             </section>
 
-            <section id="writing">
+            <section id="writing" class="home-section--narrow pad-top-975 pad-bottom-975">
                 <a href="#writing" class="section-anchor">{{ writing.title }}</a>
-                <h2>{{ writing.heading }}</h2>
-                <p>{{ writing.copy }}</p>
+                <div class="wrapper--home">
+                    <h2>{{ writing.heading }}</h2>
+                    <p>{{ writing.copy }}</p>
 
-                {% if writing.articles %}
-                    <ul>
-                        {% for article in writing.articles %}
-                            <li>
-                                <time datetime="2020-08-20">{{ article.date }}</time>
-                                <a href="{{ article.url }}">{{ article.title }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
+                    {% if writing.articles %}
+                        <ul>
+                            {% for article in writing.articles %}
+                                <li>
+                                    <time datetime="2020-08-20">{{ article.date }}</time>
+                                    <a href="{{ article.url }}">{{ article.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
             </section>
 
         </article>
