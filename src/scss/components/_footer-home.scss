@@ -1,0 +1,27 @@
+.home-footer {
+    border: get-size('500') solid var(--color-base);
+    padding-top: calc(#{get-size('900')} + #{get-size('300')});
+    padding-bottom: calc(#{get-size('900')} + #{get-size('300')});
+}
+
+[data-user-color-scheme="blue"] {
+    .home-footer {
+        background: var(--color-primary);
+
+        * {
+            color: var(--color-base);
+        }
+    }
+}
+
+[data-user-color-scheme="pink"],
+[data-user-color-scheme="high-contrast"] {
+    .home-footer {
+        background: var(--color-text);
+        color: var(--color-base);
+
+        * {
+            color: var(--color-base);
+        }
+    }
+}
