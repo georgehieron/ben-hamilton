@@ -10,7 +10,7 @@
 
 @include media-query('md') {
     .site-wrap {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr minmax(min-content, 1fr);
         grid-template-areas:    "head head side"
                                 "main main side"
                                 "foot foot side";
