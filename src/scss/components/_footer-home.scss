@@ -23,3 +23,25 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .home-footer {
+        background: var(--color-text);
+        color: var(--color-base);
+
+        * {
+            color: var(--color-base);
+        }
+    }
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .home-footer {
+        background: var(--color-text);
+        color: var(--color-base);
+
+        * {
+            color: var(--color-base);
+        }
+    }
+}
