@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Opposit;
+    src: url('../fonts/Opposit-Regular.woff2') format('woff2');
+}
+
 // First up: config and functions
 @import 'config';
 
@@ -10,11 +15,14 @@
 @import 'mixins/color-transition';
 
 body {
+    font-family: 'Manrope', sans-serif;
     background: var(--color-base);
     color: var(--color-text);
     // transition: background 500ms ease-in-out, color 200ms ease;
     font-family: sans-serif;
 }
+
+@import "typography";
 
 button {
     -webkit-appearance: none;
@@ -24,8 +32,6 @@ button {
         cursor: pointer;
     }
 }
-
-@import "typography";
 
 // Import utilities
 @import 'utilities/wrapper';

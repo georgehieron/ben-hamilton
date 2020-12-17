@@ -113,8 +113,9 @@ $gorko-config: (
         "property": "display",
     ),
     "font": (
-        "items": (
-            "base": "Helvetica, Arial, sans-serif",
+        'items': (
+            'base': '"Manrope", sans-serif',
+            'title': '"Opposit", sans-serif',
         ),
         "output": "standard",
         "property": "font-family",

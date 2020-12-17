@@ -10,17 +10,17 @@ h5,
 .h5,
 h6,
 .h6 {
+    font-family: 'Opposit',;
     color: var(--color-primary);
-    // @include color-transition();
+    @include color-transition();
 }
 
 a {
     color: var(--color-secondary);
-    // @include color-transition();
+    @include color-transition();
 }
 
 [data-user-color-scheme="high-contrast"] {
-
     a {
         color: var(--color-primary);
     }
