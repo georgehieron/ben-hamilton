@@ -14,7 +14,7 @@
 // Import mixins
 
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: $font-body;
     font-weight: 500;
     font-size: get-size('650');
     line-height: 1.333;

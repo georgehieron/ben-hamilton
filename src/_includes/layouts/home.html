@@ -14,7 +14,8 @@
         <article>
             <section id="work">
                 <div class="home-section--narrow pad-top-975 pad-bottom-975">
-                    <a href="#work" class="section-anchor">{{ work.title }}</a>
+                    {% set anchor = { url: 'work', title: 'Work' } %}
+                    {% include "partials/components/section-anchor.html" %}
                     <div class="wrapper--home">
                         <h2 class="color-primary">{{ work.heading }}</h2>
                     </div>
@@ -39,7 +40,8 @@
             </section>
 
             <section id="writing" class="home-section--narrow pad-top-975 pad-bottom-975">
-                <a href="#writing" class="section-anchor">{{ writing.title }}</a>
+                {% set anchor = { url: 'writing', title: 'Writing' } %}
+                {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
                     <h2 class="color-primary">{{ writing.heading }}</h2>
                     <p>{{ writing.copy }}</p>

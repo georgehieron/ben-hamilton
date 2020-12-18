@@ -1,8 +1,8 @@
 <aside class="sidebar bg-secondary text-400 pad-top-700 pad-right-700 pad-bottom-700 pad-left-700">
     <div class="sidebar--internal">
-        <div>
-            <figure>
-                <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}">
+        <div class="sidebar__theme-toggle gap-bottom-700">
+            <figure class="sidebar__image">
+                <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}" class="width-full">
             </figure>
             {% include "partials/theme-toggle.html" %}
         </div>

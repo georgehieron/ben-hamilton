@@ -50,13 +50,3 @@
         margin-left: auto;
     }
 }
-
-.section-anchor {
-    display: none;
-
-    @include media-query('md') {
-        display: block;
-        @include sideways;
-        margin-right: get-size('300');
-    }
-}

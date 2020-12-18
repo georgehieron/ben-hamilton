@@ -1,0 +1,10 @@
+.section-anchor {
+    display: none;
+
+    @include media-query('md') {
+        display: block;
+        @include sideways;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
