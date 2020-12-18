@@ -1,6 +1,7 @@
 .sidebar {
     position: relative;
     min-width: 22rem;
+    line-height: 1.375;
 }
 
 @include media-query('md') {

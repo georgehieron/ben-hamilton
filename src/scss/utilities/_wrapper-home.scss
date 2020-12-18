@@ -4,7 +4,12 @@
 
 @include media-query('md') {
     .wrapper--home {
-        max-width: 39rem;
+        max-width: 44.75rem;
+
+        > p {
+            text-align: left;
+            max-width: 39rem;
+        }
     }
 }
 
