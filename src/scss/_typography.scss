@@ -12,12 +12,10 @@ h6,
 .h6 {
     font-family: 'Opposit',;
     color: var(--color-primary);
-    @include color-transition();
 }
 
 a {
     color: var(--color-secondary);
-    @include color-transition();
 }
 
 [data-user-color-scheme="high-contrast"] {
