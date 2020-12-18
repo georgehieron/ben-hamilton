@@ -10,8 +10,27 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: 'Opposit',;
-    color: var(--color-primary);
+    font-family: 'Opposit', sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-size: get-size('1300');
+    line-height: 1.225;
+}
+
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-size: get-size('975');
+    line-height: 1;
 }
 
 a {
