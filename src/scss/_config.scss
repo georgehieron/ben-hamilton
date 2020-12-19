@@ -121,8 +121,8 @@ $gorko-config: (
     ),
     "font": (
         'items': (
-            'base': '"Manrope", sans-serif',
-            'title': '"Opposit", sans-serif',
+            'base': $font-body,
+            'title': $font-heading,
         ),
         "output": "standard",
         "property": "font-family",

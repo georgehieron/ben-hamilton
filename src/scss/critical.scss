@@ -11,13 +11,10 @@
 
 @import "reset";
 
+@import "variables";
+
 // Import mixins
 @import "mixins/fluid-type";
-
-$min_width: 20rem;
-$max_width: 90rem;
-$min_font: get-size('500');
-$max_font: get-size('650');
 
 body {
     @include apply-utility('font', 'base');
@@ -26,8 +23,6 @@ body {
     line-height: 1.333;
     background: var(--color-base);
     color: var(--color-text);
-    // word-wrap: break-word;
-    // overflow-wrap: break-word;
 }
 
 @import "typography";

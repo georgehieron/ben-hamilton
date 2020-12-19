@@ -1,0 +1,9 @@
+@import "mixins/fluid-type";
+
+$min_marq: get-size('500');
+$max_marq: get-size('650');
+
+.marquee-link {
+    @include fluid-type($min_width, $max_width, $min_marq, $max_marq);
+    text-transform: uppercase;
+}

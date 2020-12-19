@@ -2,6 +2,30 @@
     position: relative;
     width: 100%;
     line-height: 1.375;
+
+    &__theme-toggle {
+        position: relative;
+    
+        .theme-toggle {
+            position: absolute;
+            right: get-size('400');
+            bottom: get-size('400');
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 100%;
+    
+        img {
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height: 100%;
+        }
+    }
 }
 
 @include media-query('md') {
@@ -13,29 +37,5 @@
     .sidebar--internal {
         position: sticky;
         top: get-size('700');
-    }
-}
-
-.sidebar__theme-toggle {
-    position: relative;
-
-    .theme-toggle {
-        position: absolute;
-        right: get-size('400');
-        bottom: get-size('400');
-    }
-}
-
-.sidebar__image {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 100%;
-
-    img {
-        object-fit: cover;
-        object-position: center;
-        position: absolute;
-        height: 100%;
     }
 }

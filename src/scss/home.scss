@@ -7,6 +7,8 @@ $outputTokenCSS: false;
 // Next: pull in gorko for design tokens
 @import '../../node_modules/gorko/gorko.scss';
 
+@import "variables";
+
 @import 'utilities/wrapper-home';
 
 @import 'mixins/sideways';
@@ -15,3 +17,5 @@ $outputTokenCSS: false;
 @import 'components/sidebar';
 @import 'components/footer-home';
 @import 'components/section-anchor';
+@import "components/marquee-link";
+
