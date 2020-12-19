@@ -1,39 +1,43 @@
 @import "mixins/fluid-type";
 
-$min_marq: get-size("500");
-$max_marq: get-size("650");
-
 @keyframes scroll-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(calc(100% + .3rem));
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX-(100%);
     }
+}
+
+.marquee-wrap {
+    overflow: hidden;
+    border: .1rem solid;
 }
 
 .marquee-link {
     position: relative;
-    height: 2.5rem;
-    @include fluid-type($min_width, $max_width, $min_marq, $max_marq);
+    left: 10%;
+    height: 3.625rem;
+    width: 120%;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
     text-transform: uppercase;
     overflow: hidden;
     transition: 5s linear;
-    transform: translateX(-10%);
-    margin-left: 10%;
+    transform: translateX(-20%);
 
     &:hover {
-        transform: translateX(0%);
+        transform: translateX(-10%);
     }
 
     &__text {
         position: absolute;
+        left: -20%;
         height: 100%;
         margin: 0;
-        line-height: 30px;
+        line-height: 3.3rem;
         text-align: center;
         transition: all 0.3s ease;
-        animation: scroll-left 10s linear infinite;
+        animation: scroll-left 5s linear infinite;
 
         span {
             position: absolute;
