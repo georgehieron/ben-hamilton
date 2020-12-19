@@ -6,4 +6,15 @@ $max_marq: get-size('650');
 .marquee-link {
     @include fluid-type($min_width, $max_width, $min_marq, $max_marq);
     text-transform: uppercase;
+    overflow: hidden;
+    
+    &__text {
+        position: relative;
+        display: block;
+        
+        span {
+            white-space: nowrap;
+            position: absolute;
+        }
+    }
 }
