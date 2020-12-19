@@ -12,14 +12,22 @@
 @import "reset";
 
 // Import mixins
+@import "mixins/fluid-type";
+
+$min_width: 20rem;
+$max_width: 90rem;
+$min_font: get-size('500');
+$max_font: get-size('650');
 
 body {
-    font-family: $font-body;
-    font-weight: 500;
-    font-size: get-size('650');
+    @include apply-utility('font', 'base');
+    @include apply-utility('weight', 'bold');
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
     line-height: 1.333;
     background: var(--color-base);
     color: var(--color-text);
+    // word-wrap: break-word;
+    // overflow-wrap: break-word;
 }
 
 @import "typography";

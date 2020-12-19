@@ -185,9 +185,10 @@ $gorko-config: (
     ),
     "weight": (
         "items": (
-            "light": "300",
+            "light": "200",
             "regular": "400",
-            "bold": "700",
+            "medium": "500",
+            "bold": "800",
         ),
         "output": "standard",
         "property": "font-weight",

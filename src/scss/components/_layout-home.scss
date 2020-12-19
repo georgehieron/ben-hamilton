@@ -1,4 +1,7 @@
 .site-wrap {
+    position: relative;
+    overflow-x: hidden;
+
     > * {
         display: block;
     }

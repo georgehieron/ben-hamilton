@@ -2,7 +2,7 @@
     @extend %visually-hidden;
 
     &:focus {
-        font-size: .875rem;
+        font-size: get-size('300');
         font-weight: 700;
         top: 1rem;
         left: 1rem;
