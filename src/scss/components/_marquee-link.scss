@@ -39,11 +39,20 @@
         transition: all 0.3s ease;
         animation: scroll-left 5s linear infinite;
 
-        span {
+        > span:first-of-type {
+            padding-right: 2rem;
+        }
+
+        > span:nth-of-type(2) {
             position: absolute;
             top: 0;
             left: 0;
             white-space: nowrap;
+
+            span {
+                text-decoration: underline;
+                padding-right: 2rem;
+            }
         }
     }
 }
