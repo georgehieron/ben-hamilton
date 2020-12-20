@@ -2,10 +2,14 @@
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(calc(100% + .3rem));
+        left: 18%;
+        background-color: gold;
+        // transform: translateX(calc(0% + .3rem));
     }
     100% {
-        transform: translateX-(100%);
+        left: -100%;
+        background-color: transparent;
+        // transform: translateX-(100%);
     }
 }
 
@@ -22,7 +26,7 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
     text-transform: uppercase;
     overflow: hidden;
-    transition: 5s linear;
+    transition: 5s transform linear;
     transform: translateX(-20%);
 
     &:hover {
@@ -37,13 +41,19 @@
         line-height: 3.4rem;
         text-align: center;
         transition: all 0.3s ease;
-        animation: scroll-left 5s linear infinite;
+        white-space: nowrap;
+        // animation: scroll-left 5s linear infinite;
 
         span {
             position: absolute;
             top: 0;
             left: 0;
             white-space: nowrap;
+            
+            position: relative;
+            margin-right: 2rem;
+            text-decoration: underline;
+            animation: scroll-left 8s linear infinite;
         }
     }
 }
