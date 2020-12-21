@@ -1,5 +1,10 @@
 .home-footer {
     border: get-size('500') solid var(--color-base);
+    border-bottom-width: calc(#{get-size('500')} * 3.5);
+
+    @include media-query('md') {
+        border-bottom-width: get-size('500');
+    }
 }
 
 [data-user-color-scheme="blue"] {
