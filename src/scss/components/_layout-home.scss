@@ -1,6 +1,7 @@
 .site-wrap {
     position: relative;
-    max-width: max_width;
+    max-width: $max_width;
+    margin: 0 auto;
 
     > * {
         display: block;
