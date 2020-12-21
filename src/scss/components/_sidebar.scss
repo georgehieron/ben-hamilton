@@ -39,3 +39,26 @@
         top: get-size('700');
     }
 }
+
+
+@media screen and (-ms-high-contrast: active) {
+    :root:not([data-user-color-scheme]) {
+    }
+}
+
+[data-user-color-scheme="high-contrast"] {
+    .sidebar {
+        background-color: var(--color-text);
+
+        * {
+            color: var(--color-base);
+        }
+    }
+}
+
+.high-contrast-toggle {
+    width: calc(100% + (#{get-size('700')} * 2) );
+    margin-top: #{get-size('975')};
+    margin-left: -#{get-size('700')};
+    padding: #{get-size('300')} #{get-size('700')};
+}
