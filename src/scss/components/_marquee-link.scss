@@ -2,7 +2,7 @@
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(calc(100% + .3rem));
+        transform: translateX(calc(100% + .4ex));
     }
     100% {
         transform: translateX-(100%);
@@ -22,7 +22,7 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
     text-transform: uppercase;
     overflow: hidden;
-    transition: 5s linear;
+    transition: 5s linear transform;
     transform: translateX(-20%);
 
     &:hover {
