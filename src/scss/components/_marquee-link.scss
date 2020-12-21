@@ -2,10 +2,10 @@
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(calc(100% + .4ex));
+        transform: translateX(calc(100% + .8ex));
     }
     100% {
-        transform: translateX-(100%);
+        transform: translateX(-100%);
     }
 }
 
