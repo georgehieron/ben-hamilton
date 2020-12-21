@@ -9,7 +9,7 @@
     @include media-query('xl') {
         position: fixed;
         right: 0;
-        max-width: calc(#{$max_width} / 3);
+        max-width: $sidebar_width;
     }
 
     &__theme-toggle--wrap {

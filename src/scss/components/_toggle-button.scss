@@ -62,6 +62,10 @@ $toggle-button-dimension: 4rem;
     align-items: center;
     background-color: var(--color-text);
 
+    @include media-query('md') {
+        max-width: $sidebar_width;
+    }
+
     &__state {
         display: inline-block;
         width: 2.5rem;

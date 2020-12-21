@@ -5,3 +5,4 @@ $max_font: get-size('650');
 // WIDTHS
 $min_width: 20rem;
 $max_width: 90rem;
+$sidebar_width: calc(#{$max_width} / 3);
