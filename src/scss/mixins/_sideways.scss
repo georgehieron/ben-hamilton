@@ -1,4 +1,5 @@
 @mixin sideways {
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     margin-bottom: auto;
+    transform: rotate(180deg)
 }
