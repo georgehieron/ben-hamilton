@@ -3,6 +3,14 @@
     width: 100%;
     line-height: 1.375;
 
+    // Keep sidebar aligned right
+    @include media-query('xl') {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        max-width: calc(#{$max_width} / 3);
+    }
+
     &__theme-toggle {
         position: relative;
     

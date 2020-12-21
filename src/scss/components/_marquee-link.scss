@@ -12,6 +12,10 @@
 .marquee-wrap {
     overflow: hidden;
     border: .1rem solid;
+
+    &:focus-within {
+        outline: .2rem solid;
+    }
 }
 
 .marquee-link {
@@ -36,7 +40,6 @@
         margin: 0;
         line-height: 3.4rem;
         text-align: center;
-        transition: all 0.3s ease;
         animation: scroll-left 5s linear infinite;
 
         > span:first-of-type {
@@ -52,6 +55,25 @@
             span {
                 text-decoration: underline;
                 padding-right: 2rem;
+            }
+        }
+    }
+}
+
+[data-user-color-scheme="high-contrast"] {
+    .marquee-wrap {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+
+        .marquee-link {
+            &:hover {
+                transform: translateX(-20%); // No movement
             }
         }
     }
