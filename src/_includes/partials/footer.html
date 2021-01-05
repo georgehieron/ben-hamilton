@@ -1,16 +1,58 @@
 <footer role="contentinfo" class="home-footer pad-top-975 pad-bottom-975">
     <div class="wrapper">
-        <h2>{{ footer.heading }}</h2>
-        <p>{{ footer.copy }}</p>
-        <a href="{{ footer.buttonUrl }}">{{ footer.buttonText }}</a>
+        <div class="wrapper--home">
+            <h2 class="gap-bottom-975">{{ footer.heading }}</h2>
+            <p class="pad-bottom-300">{{ footer.copy }}</p>
+            <div class="marquee-wrap gap-top-700 gap-bottom-975">
+                <a href="{{ footer.buttonUrl }}" class="marquee-link box-block font-title color-text">
+                    <span class="marquee-link__text">
+                        <span>{{ footer.buttonText }}</span>
+                        <span aria-hidden="true">
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                            <span>{{ footer.buttonText }}</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
 
-        {% set currentYear = global.currentYear() %}
-        <p>&#169; {{ site.authorName }} {{ currentYear }}</p>
-        <p>Design: {{ footer.designCredit }}</p>
-        <p>Code: <a href="https://github.com/georgehieron/" rel="nofollow">George Hieron</a></p>
-        <p>Type: Opposit, by <a href="https://www.goodtypefoundry.com/opposit" rel="nofollow">Good Type Foundry</a>
-            <br>
-            Manrope, by <a href="https://fonts.google.com/specimen/Manrope" rel="nofollow">Mikhail Sharanda</a></p>
-        </p>
+            {% set currentYear = global.currentYear() %}
+            <p>&#169; {{ site.authorName }} {{ currentYear }}</p>
+            <table>
+                <tr>
+                    <th>Design:&nbsp;</th>
+                    <td>{{ footer.designCredit }}</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Code:&nbsp;</th>
+                    <td><a href="https://github.com/georgehieron/" rel="nofollow">George Hieron</a></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th rowspan="2" scope="row">Type:&nbsp;</th>
+                    <td>
+                        Opposit, by <a href="https://www.goodtypefoundry.com/opposit" rel="nofollow">Good Type Foundry</a>;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Manrope, by <a href="https://fonts.google.com/specimen/Manrope" rel="nofollow">Mikhail Sharanda</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </footer>

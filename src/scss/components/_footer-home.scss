@@ -5,6 +5,19 @@
     @include media-query('md') {
         border-bottom-width: get-size('500');
     }
+
+    .marquee-wrap {
+        max-width: 28rem;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        th,
+        td {
+            vertical-align: top;
+        }
+    }
 }
 
 [data-user-color-scheme="blue"] {
