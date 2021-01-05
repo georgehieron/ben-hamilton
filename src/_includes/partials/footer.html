@@ -27,16 +27,16 @@
             </div>
 
             {% set currentYear = global.currentYear() %}
-            <p>&#169; {{ site.authorName }} {{ currentYear }}</p>
+            <p class="copyright">&#169; {{ site.authorName }} {{ currentYear }}</p>
             <table>
                 <tr>
-                    <th>Design:&nbsp;</th>
+                    <th scope="row">Design:&nbsp;</th>
                     <td>{{ footer.designCredit }}</td>
                 </tr>
             </table>
             <table>
                 <tr>
-                    <th>Code:&nbsp;</th>
+                    <th scope="row">Code:&nbsp;</th>
                     <td><a href="https://github.com/georgehieron/" rel="nofollow">George Hieron</a></td>
                 </tr>
             </table>

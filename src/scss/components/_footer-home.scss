@@ -10,6 +10,15 @@
         max-width: 28rem;
     }
 
+    .copyright {
+        @include media-query('md') {
+            padding-top: 5.25vw;
+        }
+        @include media-query('xl') {
+            padding-top: get-size('1300');
+        }
+    }
+
     table {
         border-collapse: collapse;
 
