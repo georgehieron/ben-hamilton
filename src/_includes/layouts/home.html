@@ -13,16 +13,26 @@
     <div class="wrapper">
         <article>
             <section id="work">
-                <div class="home-section--narrow pad-top-975 pad-bottom-975">
+                <div class="home-section--narrow pad-top-975">
                     {% set anchor = { url: 'work', title: 'Work' } %}
                     {% include "partials/components/section-anchor.html" %}
                     <div class="wrapper--home">
                         <h2 class="color-primary">{{ work.heading }}</h2>
                     </div>
                 </div>
-                <div class="work-items">
+                <div class="work-items pad-bottom-900">
                     {% for item in collections.featuredWork %}
-                    <figure id="work-item--{{ loop.index }}" class="work-items__item">
+                    <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item bg-primary color-primary gap-bottom-500" aria-label="{{ item.data.title }}">
+                        <img src="../../images/PNG_transparency_demonstration_1.png" alt="{{ item.data.hero.imageAlt }}" />
+                        <span class="work-item__text font-title">{{ work.itemLinkText }}</span>
+                    </a>
+
+                    {# <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item bg-primary color-primary gap-bottom-500" aria-label="{{ item.data.title }}">
+                        <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
+                        <span class="work-item__text font-title">{{ work.itemLinkText }}</span>
+                    </a> #}
+
+                    {# <figure id="work-item--{{ loop.index }}" class="work-items__item">
                         <div>
                             <img src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}" />
                         </div>
@@ -34,7 +44,7 @@
                                 {{ work.itemLinkText }}
                             </a>
                         </figcaption>
-                    </figure>
+                    </figure> #}
                     {% endfor %}
                 </div>
             </section>
@@ -50,14 +60,14 @@
                         <ul class="writing__articles list--unstyled">
                             {% for article in writing.articles %}
                                 <li class="article gap-top-400 gap-bottom-400 pad-top-500 pad-bottom-400">
-                                    <a class="article__link--primary gap-bottom-300" href="{{ article.url }}">
+                                    <a class="article__link--primary color-text gap-bottom-300" href="{{ article.url }}">
                                         <time class="weight-medium">{{ article.date }}</time>
                                         <span class="link-text">
                                             {{ article.title }}<span class="visually-hidden">, read on LinkedIn</span>
                                         </span>
                                     </a>
                                     <div>
-                                        <a class="article__link--secondary weight-medium" href="{{ article.url }}">
+                                        <a class="article__link--secondary color-text weight-medium" href="{{ article.url }}">
                                             <time class="visually-hidden">{{ article.date }}</time>
                                             <span class="visually-hidden">{{ article.title }}, </span>Read on <span class="weight-bold">Medium</span>
                                         </a>

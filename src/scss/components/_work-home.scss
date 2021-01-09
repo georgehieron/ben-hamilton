@@ -1,0 +1,59 @@
+$min_font_work_link: 5rem;
+$max_font_work_link: 7.5rem;
+
+.work-items {
+    padding-top: #{get-size('300')};
+
+    @include media-query('lg') {
+        padding-top: #{get-size('700')};
+    }
+
+    .work-item {
+        position: relative;
+        display: block;
+        width: calc(100% + calc(#{get-size('700')} * 2));
+        margin-left: -#{get-size('700')};
+
+        img {
+            width: 100%;
+        }
+
+        .work-item__text {
+            display: block;
+            text-align: center;
+            color: var(--color-text);
+            background-color: var(--color-base);
+            padding-top: #{get-size('300')};
+            padding-bottom: #{get-size('500')};
+        }
+
+        @include media-query('lg') {
+            .work-item__text {
+                @include fluid-type($min_width, $max_width, $min_font_work_link, $max_font_work_link);
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,.58);
+                color: var(--color-base);
+                text-align: center;
+                padding: #{get-size('975')};
+            }
+        }
+
+        &:hover,
+        &:focus {
+            img {
+                mix-blend-mode: color-burn;
+            }
+
+            .work-item__text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
