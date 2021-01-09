@@ -25,6 +25,8 @@ $max_font_work_link: 7.5rem;
             background-color: var(--color-base);
             padding-top: #{get-size('300')};
             padding-bottom: #{get-size('500')};
+            text-decoration: underline;
+            line-height: 1;
         }
 
         @include media-query('lg') {
@@ -37,7 +39,6 @@ $max_font_work_link: 7.5rem;
                 height: 100%;
                 width: 100%;
                 background-color: rgba(0,0,0,.58);
-                color: var(--color-base);
                 text-align: center;
                 padding: #{get-size('975')};
             }
@@ -53,6 +54,49 @@ $max_font_work_link: 7.5rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+        }
+    }
+}
+
+[data-user-color-scheme="blue"],
+[data-user-color-scheme="high-contrast"] {
+    .work-items {
+        .work-item {
+            background-color: var(--color-primary);
+
+            .work-item__text {
+                @include media-query('lg') {
+                    color: var(--color-base);
+                }
+            }
+        }
+    }
+}
+
+[data-user-color-scheme="pink"] {
+    .work-items {
+        .work-item {
+            background-color: var(--color-text);
+
+            .work-item__text {
+                @include media-query('lg') {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .work-items {
+        .work-item {
+            background-color: var(--color-text);
+
+            .work-item__text {
+                @include media-query('lg') {
+                    color: var(--color-primary);
+                }
             }
         }
     }
