@@ -2,6 +2,8 @@
     display: none;
 
     @include media-query('md') {
+        position: sticky;
+        top: 1rem;
         display: block;
         color: var(--color-secondary);
         @include sideways;
