@@ -50,9 +50,18 @@
                         <ul class="writing__articles list--unstyled">
                             {% for article in writing.articles %}
                                 <li class="article gap-top-400 gap-bottom-400 pad-top-500 pad-bottom-400">
-                                    <time datetime="2020-08-20" class="weight-medium">{{ article.date }}</time>
-                                    <a class="article__link--main gap-bottom-500" href="{{ article.url }}">{{ article.title }}<span class="visually-hidden">, read on LinkedIn</span></a>
-                                    <a class="article__link--secondary weight-medium" href="{{ article.url }}"><span class="visually-hidden">{{ article.title }}, </span>Read on <span class="weight-bold">Medium</span></a>
+                                    <a class="article__link--primary gap-bottom-300" href="{{ article.url }}">
+                                        <time class="weight-medium">{{ article.date }}</time>
+                                        <span class="link-text">
+                                            {{ article.title }}<span class="visually-hidden">, read on LinkedIn</span>
+                                        </span>
+                                    </a>
+                                    <div>
+                                        <a class="article__link--secondary weight-medium" href="{{ article.url }}">
+                                            <time class="visually-hidden">{{ article.date }}</time>
+                                            <span class="visually-hidden">{{ article.title }}, </span>Read on <span class="weight-bold">Medium</span>
+                                        </a>
+                                    </div>
                                 </li>
                             {% endfor %}
                         </ul>

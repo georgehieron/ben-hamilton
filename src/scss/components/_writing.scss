@@ -3,10 +3,6 @@
         display: block;
         border-top: .1rem solid var(--color-primary);
 
-        > * {
-            display: block;
-        }
-
         a {
             color: var(--color-text);
         }
@@ -14,10 +10,39 @@
         time {
             margin-bottom: .25rem;
         }
+        
+        time,
+        .article__link--primary {
+            text-decoration: none;
+            display: block;
+        }
 
         time,
         .article__link--secondary {
             @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
+        }
+
+        .article__link--primary,
+        .article__link--secondary {
+            transition: .3s ease-in-out font-weight;
+
+            &:hover {
+                font-weight: 200;
+                
+                span {
+                    font-weight: 200;
+                }
+            }
+
+            span {
+                transition: .3s ease-in-out font-weight;
+            }
+
+            .link-text {
+                text-decoration: underline;
+                text-decoration-thickness: .1rem;
+                text-underline-offset: .2rem;
+            }
         }
     }
 }
