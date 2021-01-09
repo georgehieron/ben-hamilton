@@ -1,5 +1,6 @@
 ---
 title: Bristol, City of ... Smells
+socialImage: /images/PNG_transparency_demonstration_1.png
 featured: true
 displayOrder: 2
 excerpt: Bristol / City of ... is a series of alternative guides to inspire the
