@@ -3,6 +3,7 @@
 
     @include media-query('md') {
         display: block;
+        color: var(--color-secondary);
         @include sideways;
         text-transform: uppercase;
         text-decoration: none;

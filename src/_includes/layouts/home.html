@@ -39,7 +39,7 @@
                 </div>
             </section>
 
-            <section id="writing" class="home-section--narrow pad-top-975 pad-bottom-975">
+            <section id="writing" class="writing home-section--narrow pad-top-975 pad-bottom-975">
                 {% set anchor = { url: 'writing', title: 'Writing' } %}
                 {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
@@ -47,11 +47,12 @@
                     <p>{{ writing.copy }}</p>
 
                     {% if writing.articles %}
-                        <ul>
+                        <ul class="writing__articles list--unstyled">
                             {% for article in writing.articles %}
-                                <li>
-                                    <time datetime="2020-08-20">{{ article.date }}</time>
-                                    <a href="{{ article.url }}">{{ article.title }}</a>
+                                <li class="article gap-top-400 gap-bottom-400 pad-top-500 pad-bottom-400">
+                                    <time datetime="2020-08-20" class="weight-medium">{{ article.date }}</time>
+                                    <a class="article__link--main gap-bottom-500" href="{{ article.url }}">{{ article.title }}<span class="visually-hidden">, read on LinkedIn</span></a>
+                                    <a class="article__link--secondary weight-medium" href="{{ article.url }}"><span class="visually-hidden">{{ article.title }}, </span>Read on <span class="weight-bold">Medium</span></a>
                                 </li>
                             {% endfor %}
                         </ul>

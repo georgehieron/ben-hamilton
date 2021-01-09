@@ -16,6 +16,7 @@ h5,
 h6,
 .h6 {
     @include apply-utility('font', 'title');
+    margin-bottom: get-size('500');
 }
 
 h1,
@@ -39,7 +40,10 @@ h6,
 }
 
 a {
-    color: var(--color-secondary);
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-thickness: .1rem;
+    text-underline-offset: .2rem;
 }
 
 [data-user-color-scheme="high-contrast"] {

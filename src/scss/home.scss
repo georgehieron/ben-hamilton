@@ -11,10 +11,12 @@ $outputTokenCSS: false;
 
 @import 'utilities/wrapper-home';
 
+@import "mixins/fluid-type";
 @import 'mixins/sideways';
 
 @import 'components/layout-home';
 @import 'components/sidebar';
 @import 'components/footer-home';
 @import 'components/section-anchor';
+@import "components/writing";
 @import "components/marquee-link";
