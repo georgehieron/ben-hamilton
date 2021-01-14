@@ -1,5 +1,5 @@
 @mixin sidebar-img-visible {
     visibility: visible;
     opacity: 1;
-    padding-bottom: 100%;
+    transition: 1s ease-in-out opacity;
 }

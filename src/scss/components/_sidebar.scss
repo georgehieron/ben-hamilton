@@ -52,6 +52,7 @@
         max-height: 45vh;
         overflow: hidden;
         z-index: 1;
+        background-color: $blue-base;
     
         .theme-toggle {
             position: absolute;
@@ -61,16 +62,18 @@
     }
 
     &__image {
-        @include vis-h;
         position: relative;
         height: 0;
         overflow: hidden;
-    
+        padding-bottom: 100%;
+        
         img {
+            @include vis-h;
             object-fit: cover;
             object-position: center;
             position: absolute;
             height: 100%;
+            transition: 1s ease-in-out opacity, 0s linear visibility 1s;
         }
     }
 }
@@ -84,7 +87,7 @@
 
 @media (prefers-color-scheme: no-preference) {
     :root:not([data-user-color-scheme]) {
-        .sidebar__image--1 {
+        .sidebar__image__1 {
             @include sidebar-img-visible;
         }
     }
@@ -92,28 +95,28 @@
 
 @media (prefers-color-scheme: light) {
     :root:not([data-user-color-scheme]) {
-        .sidebar__image--1 {
+        .sidebar__image__1 {
             @include sidebar-img-visible;
         }
     }
 }
 
 [data-user-color-scheme="blue"] {
-    .sidebar__image--1 {
+    .sidebar__image__1 {
         @include sidebar-img-visible;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-user-color-scheme]) {
-        .sidebar__image--2 {
+        .sidebar__image__2 {
             @include sidebar-img-visible;
         }
     }
 }
 
 [data-user-color-scheme="pink"] {
-    .sidebar__image--2 {
+    .sidebar__image__2 {
         @include sidebar-img-visible;
     }
 }
@@ -126,7 +129,7 @@
             color: var(--color-base);
         }
 
-        &__image--3 {
+        &__image__3 {
             @include sidebar-img-visible;
         }
     }
