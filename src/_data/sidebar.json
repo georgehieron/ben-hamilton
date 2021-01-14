@@ -5,10 +5,10 @@
   "copy": "Do you want to collaborate on something, ask a question, or just say hello? Find me here:",
   "socialText1": "LinkedIn",
   "images": {
-    "theme1Image": "/images/asos-green-jumper.png",
+    "theme1Image": "/images/asos-green-jumper-min.jpg",
     "theme1ImageAlt": "ASOS green jumper",
-    "theme2Image": "/images/asos-pink-jumper.png",
-    "themeHCImage": "/images/asos-black-jumper.png",
+    "theme2Image": "/images/asos-pink-jumper-min.jpg",
+    "themeHCImage": "/images/asos-black-jumper-min.jpg",
     "theme2ImageAlt": "ASOS pink jumper",
     "themeHCImageAlt": "ASOS black jumper"
   },
