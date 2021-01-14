@@ -42,15 +42,6 @@ $mid-grey: #d0d0d0;
     --color-secondary: #{$pink-secondary};
 }
 
-@media screen and (-ms-high-contrast: active) {
-    :root:not([data-user-color-scheme]) {
-        --color-base: #{$blue-base};
-        --color-text: #{$blue-text};
-        --color-primary: #{$blue-text};
-        --color-secondary: #{$mid-grey};
-    }
-}
-
 [data-user-color-scheme="high-contrast"] {
     --color-base: #{$blue-base};
     --color-text: #{$blue-text};

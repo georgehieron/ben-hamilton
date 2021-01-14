@@ -2,8 +2,14 @@
     <div class="sidebar--internal pad-top-700">
         <div class="sidebar__theme-toggle--wrap gap-bottom-700">
             <div class="sidebar__theme-toggle">
-                <figure class="sidebar__image">
-                    <img src="{{ sidebar.image }}" alt="{{ sidebar.imageAlt }}" class="width-full">
+                <figure class="sidebar__image sidebar__image--1">
+                    <img src="{{ sidebar.images.theme1Image }}" alt="{{ sidebar.images.theme1ImageAlt }}" class="width-full">
+                </figure>
+                <figure class="sidebar__image sidebar__image--2">
+                    <img src="{{ sidebar.images.theme2Image }}" alt="{{ sidebar.images.theme2ImageAlt }}" class="width-full">
+                </figure>
+                <figure class="sidebar__image sidebar__image--3">
+                    <img src="{{ sidebar.images.themeHCImage }}" alt="{{ sidebar.images.themeHCImageAlt }}" class="width-full">
                 </figure>
                 {% include "partials/theme-toggle.html" %}
             </div>

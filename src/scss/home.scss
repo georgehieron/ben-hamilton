@@ -13,6 +13,8 @@ $outputTokenCSS: false;
 
 @import "mixins/fluid-type";
 @import 'mixins/sideways';
+@import 'mixins/visibility-hidden';
+@import 'mixins/sidebar-img-visible';
 
 @import 'components/layout-home';
 @import 'components/sidebar';

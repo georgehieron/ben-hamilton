@@ -139,25 +139,6 @@ $toggle-button-dimension: 4rem;
     }
 }
 
-@media screen and (-ms-high-contrast: active) {
-    :root:not([data-user-color-scheme]) {
-        .high-contrast-toggle {
-            background-color: var(--color-base);
-        }
-    
-        .high-contrast-toggle #high-contrast-desc,
-        .high-contrast-toggle #high-contrast-desc *,
-        .high-contrast-toggle-btn {
-            color: var(--color-text);
-            border-color: var(--color-text);
-        }
-    
-        .high-contrast-toggle-btn__icon {
-            background-color: var(--color-text);
-        }
-    }
-}
-
 [data-user-color-scheme="high-contrast"] {
     .high-contrast-toggle {
         background-color: var(--color-base);

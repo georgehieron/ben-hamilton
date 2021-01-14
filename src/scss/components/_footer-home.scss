@@ -61,14 +61,3 @@
         }
     }
 }
-
-@media screen and (-ms-high-contrast: active) {
-    .home-footer {
-        background: var(--color-text);
-        color: var(--color-base);
-
-        * {
-            color: var(--color-base);
-        }
-    }
-}
