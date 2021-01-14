@@ -1,10 +1,18 @@
 {
-  "image": "/images/unsplash-a7bkbcm8lsk.jpg",
-  "imageAlt": "The sidebar image alt text",
   "heading": "Contact me:",
-  "copy": "Do you want to collaborate on something, ask a question, or just say hello? Find me here:",
-  "email": "#",
   "emailText": "Email",
+  "imageAlt": "The sidebar image alt text",
   "socialUrl1": "#",
-  "socialText1": "LinkedIn"
+  "copy": "Do you want to collaborate on something, ask a question, or just say hello? Find me here:",
+  "socialText1": "LinkedIn",
+  "images": {
+    "theme1Image": "/images/asos-green-jumper.png",
+    "theme1ImageAlt": "ASOS green jumper",
+    "theme2Image": "/images/asos-pink-jumper.png",
+    "themeHCImage": "/images/asos-black-jumper.png",
+    "theme2ImageAlt": "ASOS pink jumper",
+    "themeHCImageAlt": "ASOS black jumper"
+  },
+  "image": "/images/unsplash-a7bkbcm8lsk.jpg",
+  "email": "#"
 }
