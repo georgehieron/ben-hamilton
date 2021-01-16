@@ -1,19 +1,14 @@
 {% extends "layouts/base.html" %}
 
+{% set pageCriticalStyles = ['css/work.css'] %}
+
 {% block content %}
+
+{% include "partials/header-work.html" %}
 
 <main tabindex="-1" id="main-content">
 
     <article class="work-item">
-        <div>
-            <div>
-                <h1>
-                    {{ title }}
-                </h1>
-                <p>{{ excerpt }}</p>
-                <p>{{ summary }}</p>
-            </div>
-        </div>
         {% if components %}
             {% for item in components %}
                 {% if item.type === 'info' %}
