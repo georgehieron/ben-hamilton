@@ -1,7 +1,60 @@
-.site-wrap {
-    height: 100vh;
-    width: 100vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;
+@include media-query('md') {
+    .site-wrap {
+        height: 100vh;
+        width: 100vw;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: minmax(min-content, 25vw) 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .work-header {
+        min-width: 22rem;
+    }
+    
+    .work-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    
+        > section {
+            flex: 1 0 auto;
+            height: 100%;
+            width: auto;
+            padding-left: get-size('500');
+            padding-right: get-size('500');
+    
+            p,
+            a,
+            span,
+            table,
+            header,
+            footer,
+            blockquote {
+                max-width: 50ex;
+            }
+    
+            p,
+            a,
+            span,
+            table,
+            header,
+            footer,
+            blockquote,
+            img,
+            figure,
+            figcaption {
+                @media only screen and (max-height: 40rem) {
+                    font-size: 4vh;
+                }
+            }
+    
+            img,
+            video {
+                max-width: 90vh;
+            }
+        }
+    }
 }
