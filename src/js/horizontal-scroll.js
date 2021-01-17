@@ -11,6 +11,7 @@ document.addEventListener(
                     } else {
                         this.scrollLeft += (event.deltaY / 5);
                     }
+                    event.preventDefault();
                 });
             }
         };
