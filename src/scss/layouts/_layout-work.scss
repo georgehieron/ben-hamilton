@@ -9,6 +9,10 @@
         .nav__list {
             margin: get-size('300') 0 get-size('400');
         }
+
+        .separator {
+            margin: get-size('300');
+        }
     }
 
     .theme-toggle {
@@ -20,6 +24,10 @@
         max-width: 100vw;
         left: 0;
     }
+}
+
+.work-item {
+    outline: 0 !important;
 }
 
 @include media-query('md') {
