@@ -1,10 +1,15 @@
-<header role="banner" class="work-header bg-primary">
+<header role="banner" class="work-header box-flex bg-base pad-top-400 pad-left-400 pad-right-400">
     {% include "partials/skip-link.html" %}
+    <nav class="nav site-breadcrumb font-title color-secondary" aria-label="Breadcrumb">
+        <ul class="nav__list box-flex list--unstyled">
+            <li>
+                <a href="/" class="color-secondary">Home</a>&nbsp;<span>›</span>
+            </li>
+            <li>
+                <span>{{ title }}</span>
+            </li>
+        </ul>
+    </nav>
     {% include "partials/theme-toggle.html" %}
-    {# {% include "partials/high-contrast-toggle.html" %} #}
-    <div class="wrapper">
-        <h1 class="gap-bottom-900">{{ title }}</h1>
-        {# <p>{{ excerpt }}</p>
-        <p>{{ summary }}</p> #}
-    </div>
+    {% include "partials/high-contrast-toggle.html" %}
 </header>

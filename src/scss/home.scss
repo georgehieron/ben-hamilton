@@ -16,7 +16,8 @@ $outputTokenCSS: false;
 @import 'mixins/visibility-hidden';
 @import 'mixins/sidebar-img-visible';
 
-@import 'components/layout-home';
+@import 'layouts/layout-home';
+
 @import 'components/sidebar';
 @import 'components/footer-home';
 @import 'components/section-anchor';

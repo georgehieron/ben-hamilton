@@ -1,0 +1,116 @@
+.work-header {
+    flex-direction: row;
+
+    .site-breadcrumb {
+        padding-left: get-size('400');
+        padding-right: get-size('400');
+        text-transform: uppercase;
+
+        .nav__list {
+            margin: get-size('300') 0 get-size('400');
+        }
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+    }
+
+    .high-contrast-toggle {
+        width: 100%;
+        max-width: 100vw;
+        left: 0;
+    }
+}
+
+@include media-query('md') {
+    .site-wrap {
+        height: 100vh;
+        width: 100vw;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    
+    .work-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        flex-direction: column;
+        min-width: 6rem;
+        padding-bottom: get-size('975');
+        
+        .site-breadcrumb {
+            @include sideways;
+            margin: 0 auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            @media only screen and (max-height: 40rem) {
+                font-size: 4vh;
+            }
+
+            .nav__list {
+                margin: 0;
+            }
+        }
+
+        .theme-toggle {
+            margin-top: auto;
+        }
+    }
+    
+    .work-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+
+        &__intro {
+            margin-left: get-size('1300');
+        }
+    
+        > section {
+            flex: 1 0 auto;
+            height: 100%;
+            width: auto;
+            padding-left: get-size('500');
+            padding-right: get-size('500');
+    
+            p,
+            a,
+            span,
+            table,
+            header,
+            footer,
+            blockquote {
+                max-width: 50ex;
+            }
+    
+            p,
+            a,
+            span,
+            table,
+            header,
+            footer,
+            blockquote,
+            img,
+            figure,
+            figcaption {
+                @media only screen and (max-height: 40rem) {
+                    font-size: 4vh;
+                }
+            }
+    
+            img,
+            video {
+                max-width: 90vh;
+            }
+        }
+    }
+}
+
+[data-user-color-scheme="high-contrast"] {
+    .site-breadcrumb {
+        color: var(--color-text);
+    }
+}

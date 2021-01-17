@@ -80,9 +80,11 @@
 
 .high-contrast-toggle {
     width: calc(100% + (#{get-size('700')} * 2) );
-    margin-top: #{get-size('975')};
     margin-left: -#{get-size('700')};
-    padding: #{get-size('300')} #{get-size('700')};
+
+    @include media-query('md') {
+        margin-top: #{get-size('975')};
+    }
 }
 
 @media (prefers-color-scheme: no-preference) {

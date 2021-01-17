@@ -7,9 +7,9 @@ document.addEventListener(
             if (window.innerWidth > 768) {
                 document.getElementById("site-wrap").addEventListener("wheel", function (event) {
                     if (event.deltaY > 0) {
-                        this.scrollLeft += event.deltaY;
+                        this.scrollLeft += (event.deltaY / 5);
                     } else {
-                        this.scrollLeft += event.deltaY;
+                        this.scrollLeft += (event.deltaY / 5);
                     }
                 });
             }

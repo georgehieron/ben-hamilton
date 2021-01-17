@@ -10,6 +10,13 @@
 <main tabindex="-1" id="main-content">
 
     <article class="work-item">
+        <section class="work-item__intro">
+            <div class="wrapper">
+                <h1 class="gap-bottom-900">{{ title }}</h1>
+                <p>{{ excerpt }}</p>
+                <p>{{ summary }}</p>
+            </div>
+        </section>
         {% if components %}
             {% for item in components %}
                 {% if item.type === 'info' %}

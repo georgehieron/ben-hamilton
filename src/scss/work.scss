@@ -9,4 +9,6 @@ $outputTokenCSS: false;
 
 @import "variables";
 
-@import 'components/layout-work';
+@import 'mixins/sideways';
+
+@import 'layouts/layout-work';
