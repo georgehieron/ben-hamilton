@@ -53,10 +53,6 @@
             padding-left: 0;
             padding-right: 0;
 
-            @media only screen and (max-height: 40rem) {
-                font-size: 4vh;
-            }
-
             .nav__list {
                 margin: 0;
             }
@@ -75,6 +71,10 @@
 
         &__intro {
             margin-left: get-size('1300');
+
+            &__inner {
+                max-width: 33.25rem;
+            }
         }
     
         > section {
@@ -94,6 +94,20 @@
                 max-width: 50ex;
             }
     
+            img,
+            video {
+                max-width: 90vh;
+            }
+        }
+    }
+
+    @media only screen and (max-height: 45rem) {
+        .work-header {
+            .site-breadcrumb {
+                font-size: 4vh;
+            }
+        }
+        .work-item {
             p,
             a,
             span,
@@ -104,18 +118,17 @@
             img,
             figure,
             figcaption {
-                @media only screen and (max-height: 40rem) {
-                    font-size: 4vh;
-                }
+                font-size: 4vh;
             }
-    
-            img,
-            video {
-                max-width: 90vh;
+
+            h1 {
+                font-size: 8vh;
+                margin-bottom: 4vh;
             }
         }
     }
 }
+
 
 [data-user-color-scheme="high-contrast"] {
     .site-breadcrumb {
