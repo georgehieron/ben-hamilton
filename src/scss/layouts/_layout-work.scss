@@ -131,7 +131,13 @@
 
 
 [data-user-color-scheme="high-contrast"] {
+    .work-header {
+        background-color: var(--color-text);
+    }
+    
     .site-breadcrumb {
-        color: var(--color-text);
+        * {
+            color: var(--color-base);
+        }
     }
 }
