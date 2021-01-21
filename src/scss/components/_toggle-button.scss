@@ -41,6 +41,10 @@ $toggle-button-dimension: 4rem;
     color: var(--color-base);
     border: none;
     padding: 0.5rem 1rem;
+
+    &:focus {
+        outline-color: var(--color-primary);
+    }
 }
 
 [data-user-color-scheme="high-contrast"] {
