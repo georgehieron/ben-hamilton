@@ -16,7 +16,10 @@
     }
 
     .theme-toggle {
-        margin-left: auto;
+        position: fixed;
+        top: get-size('400');
+        right: get-size('400');
+        transform: scale(.78);
     }
 
     .high-contrast-toggle {
@@ -59,7 +62,11 @@
         }
 
         .theme-toggle {
+            position: relative;
+            top: 0;
+            right: 0;
             margin-top: auto;
+            transform: scale(1);
         }
     }
     
@@ -73,7 +80,10 @@
             margin-left: get-size('1300');
 
             &__inner {
-                max-width: 33.25rem;
+
+                &.wrapper {
+                    max-width: calc(33.25rem + #{get-size('700')} + #{get-size('700')} );
+                }
             }
         }
     
@@ -83,14 +93,12 @@
             width: auto;
             padding-left: get-size('500');
             padding-right: get-size('500');
+
+            p + p {
+                margin-top: 1.5ch;
+            }
     
-            p,
-            a,
-            span,
-            table,
-            header,
-            footer,
-            blockquote {
+            * {
                 max-width: 50ex;
             }
     
@@ -106,18 +114,14 @@
             .site-breadcrumb {
                 font-size: 4vh;
             }
+
+            .theme-toggle {
+                transform: scale(.78);
+            }
         }
+
         .work-item {
-            p,
-            a,
-            span,
-            table,
-            header,
-            footer,
-            blockquote,
-            img,
-            figure,
-            figcaption {
+            * {
                 font-size: 4vh;
             }
 
