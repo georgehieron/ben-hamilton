@@ -29,12 +29,23 @@
     }
 }
 
-.wrapper {
-    margin: 0;
-    padding: 0;
+.work-item {
+
+    > section {
+        p + p {
+            margin-top: 1.5ch;
+        }
+    
+        &.testimonial {
+            background-color: var(--color-secondary);
+            width: 105vw;
+            padding-left: calc(5vw + #{get-size('400')});
+            padding-right: calc(5vw + #{get-size('400')});
+        }
+    }
 }
 
-@include media-query('lg') {    
+@media only screen and (min-width: 64em) {   
     .work-header {
         position: fixed;
         top: 0;
@@ -68,7 +79,7 @@
         margin-left: get-size('1300');
         margin-right: get-size('1300');
 
-        section {
+        > section {
             max-height: calc(100vh - #{get-size('900')}) !important;
             overflow: hidden;
             width: 57.125rem;
@@ -77,22 +88,11 @@
             outline: 2px solid red;
             white-space: normal !important;
             will-change: transform;
-    
-            p + p {
-                margin-top: 1.5ch;
-            }
 
             &.work-item__intro {
                 margin-left: get-size('1300');
                 min-width: 45vw;
                 max-width: calc(33.25rem + #{get-size('700')} + #{get-size('700')} );
-            }
-
-            &.testimonial {
-                background-color: var(--color-secondary);
-                width: 105vw;
-                padding-left: calc(5vw + #{get-size('400')});
-                padding-right: calc(5vw + #{get-size('400')});
             }
 
             &:first-of-type,
@@ -102,7 +102,7 @@
         }
     }
 
-    @media only screen and (max-height: 48rem) {
+    @media only screen and (max-height: 48em) {
         .work-header {
             .site-breadcrumb {
                 font-size: 4vh;

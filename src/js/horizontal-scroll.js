@@ -9,7 +9,7 @@ document.addEventListener(
                 smooth: false,
                 direction: 'vertical',
                 gestureDirection:"vertical",
-                breakpoint: 992
+                breakpoint: 1024
             },
             smartphone: {
                 smooth: false,
