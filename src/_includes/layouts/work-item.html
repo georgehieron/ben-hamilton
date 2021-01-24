@@ -1,46 +1,22 @@
 {% extends "layouts/base.html" %}
 
 {% set pageCriticalStyles = ['css/work.css'] %}
-{% set pageCriticalScripts = ['js/locomotive-scroll.min.js', 'js/horizontal-scroll.js'] %}
+{% set pageCriticalScripts = ['js/horizontal-scroll.js'] %}
 
 {% block content %}
 
 {% include "partials/header-work.html" %}
 
-<main tabindex="-1" id="main-content" data-scroll-container>
-
-{# <div data-scroll-container>
-  <div class="section" data-scroll-section>
-    <div>
-      <h1 data-scroll>Hey</h1>
-      <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="12" style="margin-left: 20vw;">👋</p>
-    </div>
-  </div>
-  <div class="section" data-scroll-section>
-    <div>
-      <h2 data-scroll data-scroll-speed="1">Looks like rain</h2>
-      <p data-scroll data-scroll-speed="4">🌧</p>
-    </div>
-  </div>
-  <div class="section" data-scroll-section>
-    <div>
-      <h2 data-scroll data-scroll-speed="1">Have an apple</h2>
-      <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-6">🍎</p>
-    </div>
-  </div>
-</div> #}
-
+<main tabindex="-1" id="main-content">
 
     <article class="work-item">
-        {# <div data-scroll-section> #}
-            <section class="work-item__intro" data-scroll-section>
-                <div class="wrapper work-item__intro__inner">
-                    <h1 class="gap-bottom-900">{{ title }}</h1>
-                    <p>{{ excerpt }}</p>
-                    <p>{{ summary }}</p>
-                </div>
-            </section>
-        {# </div> #}
+        <section class="work-item__intro">
+            <div class="wrapper work-item__intro__inner">
+                <h1 class="gap-bottom-900">{{ title }}</h1>
+                <p>{{ excerpt }}</p>
+                <p>{{ summary }}</p>
+            </div>
+        </section>
         {% if components %}
             {% for item in components %}
                 {% if item.type === 'info' %}

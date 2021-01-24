@@ -45,7 +45,12 @@
     }
 }
 
-@media only screen and (min-width: 64em) {   
+@media only screen and (min-width: 64em) { 
+    .site-wrap:not(.locomotive) {
+        overflow: scroll;
+        height: 100vh;
+    }
+
     .work-header {
         position: fixed;
         top: 0;
@@ -76,8 +81,14 @@
     }
     
     .work-item {
+        height: 100vh;
         margin-left: get-size('1300');
         margin-right: get-size('1300');
+
+        &:not(.locomotive) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
 
         > section {
             max-height: calc(100vh - #{get-size('900')}) !important;
