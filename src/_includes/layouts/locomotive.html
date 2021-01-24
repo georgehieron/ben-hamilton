@@ -1,6 +1,12 @@
-{% extends "layouts/base.html" %} {% set pageCriticalStyles = ['css/work.css']
-%} {% set pageCriticalScripts = ['js/horizontal-scroll-locomotive.js'] %} {%
-block content %} {% include "partials/header-work.html" %}
+{% extends "layouts/base.html" %}
+
+{% set pageCriticalStyles = ['css/work.css'] %}
+
+{% set pageCriticalScripts = ['js/horizontal-scroll-locomotive.js'] %}
+
+{%block content %} 
+
+{% include "partials/header-work.html" %}
 
 <main tabindex="-1" id="main-content" class="locomotive" data-scroll-container>
     <article class="work-item locomotive">
