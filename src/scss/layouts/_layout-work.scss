@@ -38,9 +38,9 @@
     
         &.testimonial {
             background-color: var(--color-secondary);
-            width: 105vw;
-            padding-left: calc(5vw + #{get-size('400')});
-            padding-right: calc(5vw + #{get-size('400')});
+            width: 100vw;
+            padding-left: get-size('400');
+            padding-right: get-size('400');
         }
     }
 }
