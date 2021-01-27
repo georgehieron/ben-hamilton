@@ -14,7 +14,7 @@ document.addEventListener(
                         trigger: container,
                         invalidateOnRefresh: true,
                         pin: true,
-                        scrub: 1,
+                        scrub: 2,
                         end: () => "+=" + container.offsetWidth
                     }
                 })
