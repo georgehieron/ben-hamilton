@@ -1,5 +1,11 @@
 .main-greensock {
     overflow: hidden;
+
+    .container {
+        @media only screen and (min-width: 64em) {
+            position: fixed;
+        }
+    }
 }
 
 .work-header {
