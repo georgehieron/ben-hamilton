@@ -30,7 +30,7 @@ document.addEventListener(
 
         gsap.registerPlugin(ScrollTrigger,Draggable);
 
-        var scroller = document.querySelector(".container");
+        var scroller = document.getElementById("main-content");
 
         var scrollWidth;
         
