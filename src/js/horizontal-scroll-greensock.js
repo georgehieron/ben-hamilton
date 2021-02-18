@@ -68,7 +68,7 @@ document.addEventListener(
             
             // gsap.set(document.body, {height: scrollWidth + innerHeight});
             var anim = gsap.to(scroller, {
-                x: () => -((scroller.scrollWidth - (document.documentElement.clientWidth / 2)) / 16) + "rem",
+                x: () => -((scroller.scrollWidth - (innerWidth)) / 16) + "rem",
                 ease: "none", 
             });
             

@@ -114,12 +114,24 @@
         .sidebar__image__2 {
             @include sidebar-img-visible;
         }
+
+        .sidebar__text {
+            *:not([class*="color"]) {
+                color: var(--color-base);
+            }
+        }
     }
 }
 
 [data-user-color-scheme="pink"] {
     .sidebar__image__2 {
         @include sidebar-img-visible;
+    }
+
+    .sidebar__text {
+        *:not([class*="color"]) {
+            color: var(--color-base);
+        }
     }
 }
 
