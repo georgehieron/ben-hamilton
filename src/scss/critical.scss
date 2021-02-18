@@ -37,6 +37,10 @@ body {
     line-height: 1.333;
     background: var(--color-base);
     color: var(--color-text);
+
+    @media only screen and (min-width: 64em) {
+        overscroll-behavior-y: none;
+    }
 }
 
 @import "typography";
