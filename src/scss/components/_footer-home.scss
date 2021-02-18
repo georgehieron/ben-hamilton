@@ -22,6 +22,10 @@
     table {
         border-collapse: collapse;
 
+        th {
+            text-align: right;
+        }
+
         th,
         td {
             vertical-align: top;
