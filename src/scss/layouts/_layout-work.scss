@@ -2,10 +2,7 @@
     overflow: hidden;
 
     @media only screen and (min-width: 64em) {
-        overflow: visible;
         position: fixed;
-        display: flex;
-        flex-wrap: nowrap;
         height: calc(100vh - 3rem);
     }
 }
