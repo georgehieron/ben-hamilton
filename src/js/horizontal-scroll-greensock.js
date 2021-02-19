@@ -30,7 +30,7 @@ document.addEventListener(
 
         gsap.registerPlugin(ScrollTrigger,Draggable);
 
-        var scroller = document.getElementById("main-content");
+        var scroller = document.querySelector(".container");
 
         var scrollWidth;
         
@@ -53,8 +53,8 @@ document.addEventListener(
         }
         
         function updateProxy() {
-        // move the handler to the corresponding ratio according to the page's scroll position.
-        gsap.set(proxy, {x: -trigger.scroll()});
+            // move the handler to the corresponding ratio according to the page's scroll position.
+            gsap.set(proxy, {x: -trigger.scroll()});
         }
 
         createScroller();
@@ -65,6 +65,18 @@ document.addEventListener(
             
             // desktop
             "(min-width: 64em)": function() {
+
+            // Add keyboard navigation
+            document.addEventListener('keyup', function(event) {
+                if (event.code == 'Tab') {
+                    let activeRect = document.activeElement.offsetParent;
+                    trigger.scroll((activeRect.offsetLeft - 150));
+                }
+                if(event.shiftKey && event.code == 'Tab') {
+                    let activeRect = document.activeElement.offsetParent;
+                    trigger.scroll((activeRect.offsetLeft - 150));
+                }
+            });
             
             // gsap.set(document.body, {height: scrollWidth + innerHeight});
             var anim = gsap.to(scroller, {
