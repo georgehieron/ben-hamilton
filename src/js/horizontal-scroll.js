@@ -12,6 +12,7 @@ document.addEventListener(
         var draggable = Draggable.create(proxy, {
         trigger: scroller,
         type: "x",
+        dragResistance: -1,
         onDrag: function() {
             trigger.scroll(-this.x);
         }
