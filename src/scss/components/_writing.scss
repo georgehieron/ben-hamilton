@@ -13,13 +13,11 @@
             display: block;
         }
 
-        time,
-        .article__link--secondary {
+        time {
             @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
         }
 
-        .article__link--primary,
-        .article__link--secondary {
+        .article__link--primary {
             transition: .3s ease-in-out font-weight;
 
             &:hover {
