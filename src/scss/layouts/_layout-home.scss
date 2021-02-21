@@ -51,3 +51,10 @@
     flex-wrap: nowrap;
     align-items: flex-start;
 }
+
+// Keep sidebar aligned right
+@include media-query('xl') {
+    .site-wrap {
+        margin-left: 0;
+    }
+}
