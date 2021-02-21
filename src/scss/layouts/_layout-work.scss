@@ -1,4 +1,4 @@
-.main-greensock {
+.main-content {
     overflow: hidden;
 
     @media only screen and (min-width: 64em) {
@@ -56,15 +56,14 @@
 }
 
 @media only screen and (max-width: 64em) {
-    .main-greensock .work-item {
+    .main-content .work-item {
         display: block;
         width: 100%;
     }
 }
 
-
 @media only screen and (min-width: 64em) { 
-    .site-wrap:not(.greensock) {
+    .site-wrap {
         overflow: scroll;
         height: 100vh;
     }

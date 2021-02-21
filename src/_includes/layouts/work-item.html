@@ -8,7 +8,6 @@
 {% include "partials/header-work.html" %}
 
 <main tabindex="-1" id="main-content" class="main-content">
-
     <article class="work-item">
         <section class="work-item__intro">
             <div class="wrapper work-item__intro__inner">
@@ -21,16 +20,8 @@
             {% for item in components %}
                 {% if item.type === 'info' %}
                     {% include "partials/components/info.html" %}
-                    {% include "partials/components/info.html" %}
-                    {% include "partials/components/info.html" %}
-                    {% include "partials/components/info.html" %}
-                    {% include "partials/components/info.html" %}
                 {% elif item.type === 'testimonial' %}
                     {% include "partials/components/testimonial.html" %}
-                    {% include "partials/components/testimonial.html" %}
-                    {% include "partials/components/testimonial.html" %}
-                    {% include "partials/components/testimonial.html" %}
-                    {% include "partials/components/info.html" %}
                 {% elif item.type === 'singleImage' %}
                     {% include "partials/components/single-image.html" %}
                 {% elif item.type === 'doubleImage' %}

@@ -1,43 +1,79 @@
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-        var resizeTimer; // Set resizeTimer to empty so it resets on page load
 
-        function resizeFunction() {
-            if (window.innerWidth > 768) {
-                const target = document.getElementById("site-wrap");
+        gsap.registerPlugin(ScrollTrigger,Draggable);
 
-                target.addEventListener('wheel', e => {
-                    const toLeft  = e.deltaY < 0 && target.scrollLeft > 0
-                    const toRight = e.deltaY > 0 && target.scrollLeft < target.scrollWidth - target.clientWidth
-                    const toTop  = e.deltaX < 0 && target.scrollLeft > 0
-                    const toBottom = e.deltaX > 0 && target.scrollLeft < target.scrollWidth - target.clientWidth
+        var scroller = document.getElementById("main-content");
 
-                    // Scroll horizontall on vertical scroll
-                    if (toLeft || toRight) {
-                        e.preventDefault()
-                        e.stopPropagation()
-                        target.scrollLeft += e.deltaY / 4;
-                    }
+        var scrollWidth;
+        
+        var proxy = document.createElement("div");
+        var draggable = Draggable.create(proxy, {
+        trigger: scroller,
+        type: "x",
+        onDrag: function() {
+            trigger.scroll(-this.x);
+        }
+        })[0];
 
-                    // Prevent actual horizontal scrolling with a trackpad
-                    if (toTop || toBottom) {
-                        e.preventDefault()
-                        e.stopPropagation()
-                        target.scrollTop += e.deltaX;
-                    }
-                })
-            }
+        function createScroller() {
+        scrollWidth = scroller.offsetWidth - innerWidth;
+        draggable.applyBounds({minX: -scrollWidth, maxX: 0});
+        ScrollTrigger.addEventListener("refreshInit", () => {
+            scrollWidth = scroller.offsetWidth - innerWidth;
+            gsap.set(document.body, {height: scrollWidth + innerHeight});
+        });
+        }
+        
+        function updateProxy() {
+            // move the handler to the corresponding ratio according to the page's scroll position.
+            gsap.set(proxy, {x: -trigger.scroll()});
         }
 
-        // On resize, run the function and reset the timeout
-        // 250 is the delay in milliseconds.
-        window.addEventListener("resize", function () {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(resizeFunction, 250);
-        });
+        createScroller();
 
-        resizeFunction();
+        var trigger;
+
+        ScrollTrigger.matchMedia({
+            
+            // desktop
+            "(min-width: 64em)": function() {
+
+            // Add keyboard navigation
+            document.addEventListener('keyup', function(event) {
+                if (event.code == 'Tab') {
+                    let activeRect = document.activeElement.offsetParent;
+                    trigger.scroll((activeRect.offsetLeft - 150));
+                }
+                if(event.shiftKey && event.code == 'Tab') {
+                    let activeRect = document.activeElement.offsetParent;
+                    trigger.scroll((activeRect.offsetLeft - 150));
+                }
+            });
+            
+            // gsap.set(document.body, {height: scrollWidth + innerHeight});
+            var anim = gsap.to(scroller, {
+                x: () => -((scroller.scrollWidth - (innerWidth)) / 16) + "rem",
+                ease: "none", 
+            });
+            
+            trigger = ScrollTrigger.create({
+                animation: anim,
+                id: 'tlScroller',
+                scrub: 2,
+                start: "left left",
+                end: "bottom bottom",
+                // start: 0,
+                // end: scrollWidth,
+                // horizontal: true,
+                // markers: true,
+                invalidateOnRefresh: true,
+                onUpdate: updateProxy
+            });
+
+            }
+        })
     },
     false
 );
