@@ -48,11 +48,20 @@
 
     &__theme-toggle {
         position: relative;
-        min-height: 15rem;
-        max-height: 45vh;
+        height: 100%;
         overflow: hidden;
         z-index: 1;
         background-color: $blue-base;
+
+        @include media-query('sm') {
+            min-height: 40vw;
+            max-height: 70vw;
+        }
+
+        @include media-query('md') {
+            min-height: 18rem;
+            max-height: 45vh;
+        }
 
         .theme-toggle {
             position: absolute;
