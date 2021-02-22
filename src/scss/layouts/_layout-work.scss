@@ -1,10 +1,5 @@
 .main-content {
     overflow: hidden;
-
-    @media only screen and (min-width: 64em) {
-        position: fixed;
-        height: calc(100vh - 3rem);
-    }
 }
 
 .work-header {
@@ -14,6 +9,11 @@
         padding-left: get-size('400');
         padding-right: get-size('400');
         text-transform: uppercase;
+        max-width: calc(100% - #{get-size('975')}); // Keep clear of theme switcher
+
+        @include media-query('md') {
+            max-width: none;
+        }
 
         .nav__list {
             margin: get-size('300') 0 get-size('400');
@@ -68,6 +68,12 @@
         height: 100vh;
     }
 
+    .main-content {
+        position: fixed;
+        height: calc(100vh - 3rem);
+        will-change: transform;
+    }
+
     .work-header {
         position: fixed;
         top: 0;
@@ -105,23 +111,17 @@
         margin-right: get-size('1300');
 
         > section {
-            max-height: calc(100vh - #{get-size('900')}) !important;
+            max-height: calc(100vh - #{get-size('900')});
             overflow: hidden;
-            // min-width: 64vw;
             margin: 0 3vw;
-            outline: 2px solid red;
-            white-space: normal !important;
-            will-change: transform;
+            outline: .2rem dashed;
+            // min-width: 64vw;
+            // white-space: normal !important;
 
             &.work-item__intro {
                 margin-left: get-size('1300');
                 min-width: 45vw;
                 max-width: calc(33.25rem + #{get-size('700')} + #{get-size('700')} );
-            }
-
-            &:first-of-type,
-            &:last-of-type {
-                background-color: rgba(250,150,0,.5);
             }
 
             img,
