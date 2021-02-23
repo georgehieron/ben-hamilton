@@ -42,7 +42,6 @@ document.addEventListener(
                 document.addEventListener("keyup", function (event) {
                     if (event.code == "Tab") {
                         let activeEl = document.activeElement;
-                        console.log(activeEl.offsetLeft);
                         trigger.scroll(activeEl.offsetLeft - 250);
                     }
                     if (event.shiftKey && event.code == "Tab") {

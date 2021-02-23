@@ -115,13 +115,20 @@
             overflow: hidden;
             margin: 0 3vw;
             outline: .2rem dashed;
-            // min-width: 64vw;
-            // white-space: normal !important;
+            width: max-content;
+            min-width: max-content;
 
             &.work-item__intro {
                 margin-left: get-size('1300');
-                min-width: 45vw;
-                max-width: calc(33.25rem + #{get-size('700')} + #{get-size('700')} );
+                outline-color: rgba(0,0,0,.1);
+
+                h1 {
+                    max-width: 35rem;
+                }
+
+                p {
+                    max-width: 34ex;
+                }
             }
 
             img,
