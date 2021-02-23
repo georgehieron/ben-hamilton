@@ -41,12 +41,13 @@ document.addEventListener(
                 // Add keyboard navigation
                 document.addEventListener("keyup", function (event) {
                     if (event.code == "Tab") {
-                        let activeRect = document.activeElement.offsetParent;
-                        trigger.scroll(activeRect.offsetLeft - 150);
+                        let activeEl = document.activeElement;
+                        console.log(activeEl.offsetLeft);
+                        trigger.scroll(activeEl.offsetLeft - 150);
                     }
                     if (event.shiftKey && event.code == "Tab") {
-                        let activeRect = document.activeElement.offsetParent;
-                        trigger.scroll(activeRect.offsetLeft - 150);
+                        let activeEl = document.activeElement;
+                        trigger.scroll(activeEl.offsetLeft - 150);
                     }
                 });
 
