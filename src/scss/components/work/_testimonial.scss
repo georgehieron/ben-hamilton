@@ -1,0 +1,39 @@
+.work-item {
+    .testimonial {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        // outline-color: rgba(0,0,0,.1);
+
+        @media only screen and (min-width: 64em) {
+            blockquote {
+                padding: 2vw;
+                width: 90vw;
+
+                p {
+                    font-size: 4vw;
+                }
+
+                footer {
+                    position: relative;
+                    padding-left: 1.5ex;
+
+                    &:before {
+                        content: "–";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            @media only screen and (max-height: 48em) {
+                blockquote {
+                    p {
+                        font-size: 6.5vh;
+                    }
+                }
+            }
+        }
+    }
+}

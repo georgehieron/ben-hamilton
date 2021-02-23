@@ -45,13 +45,6 @@
         p + p {
             margin-top: 1.5ch;
         }
-    
-        &.testimonial {
-            background-color: var(--color-secondary);
-            width: 100vw;
-            padding-left: get-size('400');
-            padding-right: get-size('400');
-        }
     }
 }
 
@@ -117,19 +110,6 @@
             outline: .2rem dashed;
             width: max-content;
             min-width: max-content;
-
-            &.work-item__intro {
-                margin-left: get-size('1300');
-                outline-color: rgba(0,0,0,.1);
-
-                h1 {
-                    max-width: 35rem;
-                }
-
-                p {
-                    max-width: 34ex;
-                }
-            }
 
             img,
             video {
