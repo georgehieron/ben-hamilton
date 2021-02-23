@@ -43,11 +43,11 @@ document.addEventListener(
                     if (event.code == "Tab") {
                         let activeEl = document.activeElement;
                         console.log(activeEl.offsetLeft);
-                        trigger.scroll(activeEl.offsetLeft - 150);
+                        trigger.scroll(activeEl.offsetLeft - 250);
                     }
                     if (event.shiftKey && event.code == "Tab") {
                         let activeEl = document.activeElement;
-                        trigger.scroll(activeEl.offsetLeft - 150);
+                        trigger.scroll(activeEl.offsetLeft - 250);
                     }
                 });
 
