@@ -1,7 +1,11 @@
-<section class="panel double-image wrapper" data-scroll-section>
-    <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
+<section class="double-image wrapper" data-scroll-section>
+    <figure class="box-block bg-primary">
+        <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
+    </figure>
     {% if item.caption %}
         <p>{{ item.caption }}</p>
     {% endif %}
-    <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
+    <figure class="box-block bg-primary">
+        <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
+    </figure>
 </section>

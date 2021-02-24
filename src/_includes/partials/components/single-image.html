@@ -1,6 +1,8 @@
 {% if item.fullheight === true %}
     {% set heightClass = 'full-height' %}
 {% endif %}
-<section class="single-image{% if heightClass %} {{ heightClass }}{% endif %} wrapper" data-scroll-section>
-    <img src="{{ item.image }}" alt="{{ item.imageAlt }}">
+<section class="single-image full-height {% if heightClass %} {{ heightClass }}{% endif %} wrapper" data-scroll-section>
+    <figure class="box-block bg-primary">
+        <img src="{{ item.image }}" alt="{{ item.imageAlt }}">
+    </figure>
 </section>
