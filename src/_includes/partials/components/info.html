@@ -1,23 +1,46 @@
 <section class="info wrapper" data-scroll-section>
-    <table>
-        <tr>
-            <th scope="row">Client:</th>
-            <td>{{ item.client }}</td>
+    <div class="info__table-wrap">
+        <table>
+            <tr>
+                <th scope="row" class="weight-medium">Client:</th>
+                <td>{{ item.client }}</td>
 
-        </tr>
-        <tr>
-            <th scope="row">Agency:</th>
-            <td>{{ item.agency }}</td>
-        </tr>
-        <tr>
-            <th scope="row">Expertise:</th>
-            <td>{{ item.expertise }}</td>
-        </tr>
-        <tr>
-            <th scope="row">Project Outcomes:</th>
-            <td>{{ item.outcomes }}</td>
-        </tr>
-    </table>
+            </tr>
+            <tr>
+                <th scope="row" class="weight-medium">Agency:</th>
+                <td>{{ item.agency }}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="weight-medium">Expertise:</th>
+                <td>{{ item.expertise }}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="weight-medium">Project Outcomes:</th>
+                <td>{{ item.outcomes }}</td>
+            </tr>
+        </table>
 
-    <a href="{{ item.url }}" target="_blank">{{ item.linkText }}</a>
+        <div class="marquee-wrap color-primary gap-top-700">
+            <a href="{{ item.url }}" class="marquee-link box-block font-title">
+                <span class="marquee-link__text">
+                    <span>{{ item.linkText }}</span>
+                    <span aria-hidden="true">
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                        <span>{{ item.linkText }}</span>
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
 </section>

@@ -1,6 +1,5 @@
 .work-item {
     .testimonial {
-        background-color: var(--color-secondary);
         display: flex;
         align-items: center;
         outline-color: rgba(0,0,0,.1);
@@ -38,6 +37,15 @@
                     }
                 }
             }
+        }
+    }
+}
+
+[data-user-color-scheme="high-contrast"] {
+    .work-item {
+        .testimonial {
+            background-color: var(--color-text);
+            color: var(--color-base);
         }
     }
 }
