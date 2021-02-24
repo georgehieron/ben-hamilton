@@ -9,6 +9,7 @@ $outputTokenCSS: false;
 
 @import "variables";
 
+@import "mixins/fluid-type";
 @import 'mixins/sideways';
 
 @import 'layouts/layout-work';

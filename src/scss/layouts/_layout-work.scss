@@ -42,6 +42,12 @@
 .work-item {
 
     > section {
+        outline: .2rem dashed;
+
+        + section {
+            margin-top: #{get-size('700')};
+        }
+
         p + p {
             margin-top: 1.5ch;
         }
@@ -52,6 +58,7 @@
     .main-content .work-item {
         display: block;
         width: 100%;
+        margin-bottom: #{get-size('1300')};
     }
 }
 
@@ -107,9 +114,12 @@
             max-height: calc(100vh - #{get-size('900')});
             overflow: hidden;
             margin: 0 3vw;
-            outline: .2rem dashed;
             width: max-content;
             min-width: max-content;
+
+            + section {
+                margin-top: 0;
+            }
 
             img,
             video {

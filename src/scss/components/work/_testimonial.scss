@@ -3,27 +3,31 @@
         background-color: var(--color-secondary);
         display: flex;
         align-items: center;
-        // outline-color: rgba(0,0,0,.1);
+        outline-color: rgba(0,0,0,.1);
+
+        p {
+            @include fluid-type($min_width, $max_width, get-size('650'), get-size('900'));
+        }
+
+        footer {
+            position: relative;
+            padding-left: 1.5ex;
+
+            &:before {
+                content: "–";
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
 
         @media only screen and (min-width: 64em) {
             blockquote {
-                padding: 2vw;
-                width: 90vw;
+                padding: 2vw 6vw;
+                width: calc(100vw - 6rem);
 
                 p {
                     font-size: 4vw;
-                }
-
-                footer {
-                    position: relative;
-                    padding-left: 1.5ex;
-
-                    &:before {
-                        content: "–";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
                 }
             }
 
