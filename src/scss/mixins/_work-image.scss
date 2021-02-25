@@ -3,23 +3,27 @@
     max-height: 100%;
     margin-top: #{get-size('900')};
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: -#{get-size('400')};
-        left: -#{get-size('400')};
-        display: block;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        border: .1rem solid var(--color-secondary);
-        background: repeating-linear-gradient(
-            45deg,
-            var(--color-secondary),
-            var(--color-secondary) .1rem,
-            transparent .1rem,
-            transparent #{get-size('500')}
-        );
+    picture {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -#{get-size('400')};
+            left: -#{get-size('400')};
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border: .1rem solid var(--color-secondary);
+            background: repeating-linear-gradient(
+                45deg,
+                var(--color-secondary),
+                var(--color-secondary) .1rem,
+                transparent .1rem,
+                transparent #{get-size('500')}
+            );
+        }
     }
 
     img {
@@ -29,7 +33,7 @@
     @media only screen and (min-width: 64em) {
         margin-top: #{get-size('700')};
         width: max-content;
-        max-width: 50vw;
+        max-width: 65vh;
 
         img {
             max-height: calc(100vh - 5rem);

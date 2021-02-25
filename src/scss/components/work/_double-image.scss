@@ -13,9 +13,8 @@
             @include work-image;
         }
 
-        p {
-            @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
-            max-width: 37.5rem;
+        figcaption {
+            @include img-caption;
         }
 
         @media only screen and (min-width: 64em) {

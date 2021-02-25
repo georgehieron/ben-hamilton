@@ -4,6 +4,10 @@
             figure {
                 @include work-image;
             }
+
+            figcaption {
+                @include img-caption;
+            }
         }
 
         &.full-height {
@@ -12,6 +16,10 @@
 
             + section {
                 margin-left: 0;
+            }
+
+            figcaption {
+                @include vis-h;
             }
 
             @media only screen and (min-width: 64em) {            

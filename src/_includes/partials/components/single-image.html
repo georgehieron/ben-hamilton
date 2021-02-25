@@ -3,6 +3,13 @@
 {% endif %}
 <section class="single-image{% if heightClass %} {{ heightClass }}{% else %} wrapper{% endif %}">
     <figure class="box-block bg-primary">
-        <img src="{{ item.image }}" alt="{{ item.imageAlt }}">
+        <picture>
+            <img src="{{ item.image }}" alt="{{ item.imageAlt }}">
+        </picture>
+        {% if item.caption %}
+            <figcaption class="box-block bg-base pad-top-300">
+                <p>{{ item.caption }}</p>
+            </figcaption>
+        {% endif %}
     </figure>
 </section>
