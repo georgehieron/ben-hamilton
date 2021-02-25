@@ -68,6 +68,12 @@
                 justify-content: center;
                 min-height: 37.5rem;
             }
+
+            @media only screen and (max-height: 48em) {
+                .info__table-wrap {
+                    min-height: calc(100vh - 3rem);
+                }
+            }
         }
     }
 }

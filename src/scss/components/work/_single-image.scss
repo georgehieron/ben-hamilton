@@ -1,10 +1,14 @@
 .work-item {
     .single-image {
+        figure {
+            max-height: 100%;
+        }
+
         &.full-height {
             figure {
                 position: relative;
-                width: calc(100vw - 6rem);
-                max-width: calc(100vw - 6rem);
+                width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
+                max-width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
                 height: 100%;
 
                 img {
