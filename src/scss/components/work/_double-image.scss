@@ -1,5 +1,7 @@
 .work-item {
     .double-image {
+        outline-color: rgba(0,0,0,.1);
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

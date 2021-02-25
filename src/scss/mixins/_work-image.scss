@@ -3,7 +3,8 @@
     max-height: 100%;
     margin-top: #{get-size('400')};
 
-    picture {
+    picture,
+    video {
         position: relative;
 
         &:before {
@@ -26,16 +27,18 @@
         }
     }
 
-    img {
+    img,
+    video {
         width: 100%;
     }
 
     @media only screen and (min-width: 64em) {
         margin-top: #{get-size('700')};
         width: max-content;
-        max-width: 65vh;
+        max-width: 75vh;
 
-        img {
+        img,
+        video {
             max-height: calc(100vh - 5rem);
         }
     }

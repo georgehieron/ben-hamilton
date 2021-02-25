@@ -1,12 +1,16 @@
 .work-item {
-    .single-image {
+    .single-image,
+    .video {
+        outline-color: rgba(0,0,0,.1);
+
         &:not(.full-height) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: flex-start;
 
-            figure {
+            figure,
+            video {
                 @include work-image;
             }
 
@@ -16,19 +20,28 @@
         }
 
         &.full-height {
-            margin-left: -3vw;
+            margin-left: 0;
             margin-right: 0;
 
             + section {
                 margin-left: 0;
             }
 
+            video {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
             figcaption {
                 @include vis-h;
             }
 
-            @media only screen and (min-width: 64em) {            
-                figure {
+            @media only screen and (min-width: 64em) {       
+                margin-left: -3vw;
+
+                figure,
+                video {
                     position: relative;
                     width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
                     max-width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
@@ -41,6 +54,10 @@
                         object-fit: cover;
                         object-position: center;
                     }
+                }
+
+                video {
+                    object-fit: cover;
                 }
             }
         }

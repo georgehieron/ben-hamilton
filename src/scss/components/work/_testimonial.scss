@@ -26,14 +26,14 @@
                 width: calc(100vw - 6rem);
 
                 p {
-                    font-size: 4vw;
+                    @include fluid-type($min_width, $max_width, 6.5vh, 6.5vw);
                 }
             }
 
             @media only screen and (max-height: 48em) {
                 blockquote {
                     p {
-                        font-size: 6.5vh;
+                        font-size: 5vh;
                     }
                 }
             }
