@@ -17,6 +17,7 @@ h6,
 .h6 {
     @include apply-utility('font', 'title');
     margin-bottom: get-size('500');
+    font-weight: 400;
 }
 
 h1,
