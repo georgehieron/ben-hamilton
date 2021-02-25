@@ -1,10 +1,44 @@
 .work-item {
     .single-image {
         figure {
+            position: relative;
             max-height: 100%;
+            margin-top: #{get-size('700')};
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -#{get-size('400')};
+                left: -#{get-size('400')};
+                display: block;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                border: .1rem solid var(--color-secondary);
+                background: repeating-linear-gradient(
+                    45deg,
+                    var(--color-secondary),
+                    var(--color-secondary) .1rem,
+                    transparent .1rem,
+                    transparent #{get-size('500')}
+                );
+            }
+
+            img {
+                position: relative;
+                z-index: 1;
+                max-height: calc(100vh - 5rem);
+            }
         }
 
         &.full-height {
+            margin-left: -3vw;
+            margin-right: 0;
+
+            + section {
+                margin-left: 0;
+            }
+
             figure {
                 position: relative;
                 width: calc(147vh - 3rem); // Gives roughly 3:2 ratio

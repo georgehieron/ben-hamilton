@@ -1,7 +1,7 @@
 {% if item.fullheight === true %}
     {% set heightClass = 'full-height' %}
 {% endif %}
-<section class="video{% if heightClass %} {{ heightClass }}{% endif %} wrapper" data-scroll-section>
+<section class="video{% if heightClass %} {{ heightClass }}{% endif %} wrapper">
     <video autoplay loop muted width="250">
 
         <source src="{{ item.video }}"
