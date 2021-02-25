@@ -1,7 +1,9 @@
 .work-item {
     .single-image {
-        figure {
-            @include work-image;
+        &:not(.full-height) {
+            figure {
+                @include work-image;
+            }
         }
 
         &.full-height {
@@ -12,18 +14,20 @@
                 margin-left: 0;
             }
 
-            figure {
-                position: relative;
-                width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
-                max-width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
-                height: 100%;
-
-                img {
-                    position: absolute;
-                    width: 100%;
+            @media only screen and (min-width: 64em) {            
+                figure {
+                    position: relative;
+                    width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
+                    max-width: calc(147vh - 3rem); // Gives roughly 3:2 ratio
                     height: 100%;
-                    object-fit: cover;
-                    object-position: center;
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
                 }
             }
         }
