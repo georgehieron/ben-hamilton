@@ -21,6 +21,10 @@
         @media only screen and (min-width: 64em) {
             flex-wrap: nowrap;
 
+            .image-text-wrap {
+                width: max-content;
+            }
+
             > :last-child {
                 margin-left: #{get-size('975')};
             }
