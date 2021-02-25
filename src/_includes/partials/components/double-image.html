@@ -1,10 +1,13 @@
 <section class="double-image wrapper">
-    <figure class="box-block bg-primary">
-        <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
-    </figure>
-    {% if item.caption %}
-        <p>{{ item.caption }}</p>
-    {% endif %}
+    <div class="image-text-wrap">
+        <figure class="box-block bg-primary">
+            <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
+            {% if item.caption %}
+                <figcaption class="box-block bg-base visually-hidden" aria-labelledby="image1-caption__{{ loop.index }}"></figcaption>
+            {% endif %}
+        </figure>
+        <p id="image1-caption__{{ loop.index }}" class="color-primary gap-top-400" aria-hidden="true">{{ item.caption }}</p>
+    </div>
     <figure class="box-block bg-primary">
         <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
     </figure>

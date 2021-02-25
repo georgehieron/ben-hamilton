@@ -1,11 +1,29 @@
 .work-item {
     .double-image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .image-text-wrap {
+            width: 100%;
+        }
+
         figure {
             @include work-image;
         }
 
         p {
-            max-width: 34ex;
+            @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
+            max-width: 37.5rem;
+        }
+
+        @media only screen and (min-width: 64em) {
+            flex-wrap: nowrap;
+
+            > :last-child {
+                margin-left: #{get-size('975')};
+            }
         }
     }
 }

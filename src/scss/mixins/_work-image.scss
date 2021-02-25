@@ -22,8 +22,13 @@
         );
     }
 
+    img {
+        width: 100%;
+    }
+
     @media only screen and (min-width: 64em) {
         margin-top: #{get-size('700')};
+        max-width: max-content;
 
         img {
             max-height: calc(100vh - 5rem);
