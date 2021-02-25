@@ -1,5 +1,9 @@
 .work-item {
     .double-image {
+        figure {
+            @include work-image;
+        }
+
         p {
             max-width: 34ex;
         }
