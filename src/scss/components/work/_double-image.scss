@@ -26,7 +26,15 @@
             }
 
             > :last-child {
+                align-self: flex-end;
                 margin-left: #{get-size('975')};
+                margin-bottom: 4vh;
+            }
+
+            @media only screen and (max-height: 48em) {
+                > :last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
