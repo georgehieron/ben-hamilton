@@ -2,7 +2,7 @@
     {% set heightClass = 'full-height' %}
 {% endif %}
 <section class="video{% if heightClass %} {{ heightClass }}{% else %} wrapper{% endif %}">
-    <figure>
+    <figure class="video__figure">
         <video autoplay loop muted width="250">
 
             <source src="{{ item.video }}"

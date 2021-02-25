@@ -4,7 +4,7 @@
     margin-top: #{get-size('400')};
 
     picture,
-    video {
+    &.video__figure {
         position: relative;
 
         &:before {
@@ -33,13 +33,15 @@
     }
 
     @media only screen and (min-width: 64em) {
-        margin-top: #{get-size('700')};
-        width: max-content;
+        width: 75vh;
         max-width: 75vh;
 
-        img,
-        video {
-            max-height: calc(100vh - 5rem);
+        &:not(video) {
+            margin-top: #{get-size('700')};
+        }
+
+        & video {
+            margin-top: 0;
         }
     }
 }
