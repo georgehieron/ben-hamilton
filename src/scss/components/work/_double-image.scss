@@ -5,12 +5,17 @@
         flex-wrap: wrap;
         align-items: flex-start;
 
-        .image-text-wrap {
-            width: 100%;
-        }
-
         figure {
             @include work-image;
+
+            &:first-of-type {
+                margin-right: 10vw;
+            }
+
+            + figure {
+                margin-top: #{get-size('900')};
+                margin-left: 10vw;
+            }
         }
 
         figcaption {
@@ -20,20 +25,20 @@
         @media only screen and (min-width: 64em) {
             flex-wrap: nowrap;
 
-            .image-text-wrap {
-                width: max-content;
+            figure {
+                &:first-of-type {
+                    margin-right: 0;
+                }
+
+                + figure {
+                    margin-left: 0;
+                }
             }
 
             > :last-child {
                 align-self: flex-end;
                 margin-left: #{get-size('975')};
-                margin-bottom: 4vh;
-            }
-
-            @media only screen and (max-height: 48em) {
-                > :last-child {
-                    margin-bottom: 0;
-                }
+                margin-bottom: calc(#{get-size('400')} + 4vh);
             }
         }
     }

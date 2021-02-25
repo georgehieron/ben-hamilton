@@ -1,7 +1,7 @@
 @mixin work-image {
     position: relative;
     max-height: 100%;
-    margin-top: #{get-size('900')};
+    margin-top: #{get-size('400')};
 
     picture {
         position: relative;

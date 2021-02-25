@@ -1,6 +1,11 @@
 .work-item {
     .single-image {
         &:not(.full-height) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
             figure {
                 @include work-image;
             }
