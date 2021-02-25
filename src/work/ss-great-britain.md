@@ -31,6 +31,10 @@ components:
     fullheight: false
     image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
     imageAlt: Four people riding horses through the snow in Iceland.
+  - type: singleImage
+    fullheight: true
+    image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
+    imageAlt: Four people riding horses through the snow in Iceland.
   - type: doubleImage
     image1: /images/PNG_transparency_demonstration_1.png
     image1Alt: Colourful dice
