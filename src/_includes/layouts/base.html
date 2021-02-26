@@ -40,26 +40,32 @@
         localStorage.getItem('user-color-scheme') && 
         document.documentElement.setAttribute('data-user-color-scheme', localStorage.getItem('user-color-scheme'));
     </script>
-    {# Netlify Identity Widget #}
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    {% if 'layouts/home.html' === layout %}
+        {# Netlify Identity Widget #}
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+
 </head>
 
 <body>
     <div id="site-wrap" class="site-wrap">
         {% block content %}{% endblock %}
     </div>
-    {# Netlify Identity Widget redirect #}
-    <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-        if (!user) {
-            window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+    {% if 'layouts/home.html' === layout %}
+        {# Netlify Identity Widget redirect #}
+        <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
             });
         }
-        });
-    }
-    </script>
+        </script>
+    {% endif %}
 
     {% if 'layouts/work-item.html' === layout %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>

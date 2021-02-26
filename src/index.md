@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/home.html
 title: Ben Hamilton
 metaTitle: Ben Hamilton
 metaDesc: Portfolio site for Ben Hamilton.
