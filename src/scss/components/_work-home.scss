@@ -55,6 +55,15 @@ $max_font_work_link: 7.5rem;
                 justify-content: center;
             }
         }
+
+        &:focus {
+            outline: 0;
+
+            .work-item__text {
+                outline: .2rem dashed var(--color-base);
+                outline-offset: -0.6rem;
+            }
+        }
     }
 }
 

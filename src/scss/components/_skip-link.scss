@@ -1,5 +1,5 @@
 .skip-link {
-    @extend %visually-hidden;
+    @include vis-h;
 
     &:focus {
         font-size: get-size('300');

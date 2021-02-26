@@ -22,6 +22,7 @@
 
 // Import mixins
 @import "mixins/fluid-type";
+@import "mixins/vis-h";
 
 :focus {
     outline: .2rem dashed;
