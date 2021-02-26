@@ -29,7 +29,7 @@ components:
     authorCo: SS Great Britain Trust
   - type: singleImage
     fullheight: false
-    image: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
+    image: /images/translucent-compass_ll.webp
     imageAlt: Four people riding horses through the snow in Iceland.
     caption: Optional image caption
   - type: singleImage
