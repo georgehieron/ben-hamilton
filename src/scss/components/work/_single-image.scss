@@ -7,6 +7,10 @@
             height: 100%;
         }
 
+        video {
+            @include apply-utility('box', 'block');
+        }
+
         &:not(.full-height) {
             flex-direction: row;
             flex-wrap: wrap;
@@ -17,8 +21,13 @@
                 @include work-image;
             }
 
+            figure {
+                background-color: var(--color-primary);
+            }
+
             figcaption {
                 @include img-caption;
+                color: var(--color-primary);
             }
         }
 
@@ -34,6 +43,10 @@
                 width: 100%;
                 margin-left: 0;
                 margin-right: 0;
+            }
+
+            img {
+                width: 100%;
             }
 
             figcaption {
@@ -66,3 +79,67 @@
         }
     }
 }
+
+// [data-user-color-scheme="blue"] {
+//     .work-item {
+//         .single-image,
+//         .video {
+//             &:not(.full-height) {
+//                 figure {
+//                     background-color: var(--color-primary);
+//                 }
+//                 figcaption {
+//                     color: var(--color-primary);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// [data-user-color-scheme="pink"] {
+//     .work-item {
+//         .single-image,
+//         .video {
+//             &:not(.full-height) {
+//                 figure {
+//                     background-color: var(--color-text);
+//                 }
+//                 figcaption {
+//                     color: var(--color-text);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// [data-user-color-scheme="high-contrast"] {
+//     .work-item {
+//         .single-image,
+//         .video {
+//             &:not(.full-height) {
+//                 figure {
+//                     background-color: var(--color-secondary);
+//                 }
+//                 figcaption {
+//                     color: var(--color-text);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (prefers-color-scheme: dark) {
+//     .work-item {
+//         .single-image,
+//         .video {
+//             &:not(.full-height) {
+//                 figure {
+//                     background-color: var(--color-text);
+//                 }
+//                 figcaption {
+//                     color: var(--color-text);
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -8,6 +8,7 @@
 
         figure {
             @include work-image;
+            background-color: var(--color-primary);
 
             &:first-of-type {
                 margin-right: 10vw;
@@ -18,9 +19,10 @@
                 margin-left: 10vw;
             }
         }
-
+        
         figcaption {
             @include img-caption;
+            color: var(--color-primary);
         }
 
         @media only screen and (min-width: 64em) {

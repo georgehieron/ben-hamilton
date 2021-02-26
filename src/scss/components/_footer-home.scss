@@ -1,9 +1,15 @@
 .home-footer {
+    color: var(--color-base);
+    background-color: var(--color-primary);
     border: get-size('500') solid var(--color-base);
     border-bottom-width: calc(#{get-size('500')} * 3.5);
 
     @include media-query('md') {
         border-bottom-width: get-size('500');
+    }
+
+    * {
+        color: var(--color-base);
     }
 
     .marquee-wrap {
@@ -14,6 +20,7 @@
         @include media-query('md') {
             padding-top: 5.25vw;
         }
+
         @include media-query('xl') {
             padding-top: get-size('1300');
         }
@@ -36,10 +43,6 @@
 [data-user-color-scheme="blue"] {
     .home-footer {
         background: var(--color-primary);
-
-        * {
-            color: var(--color-base);
-        }
     }
 }
 
@@ -47,21 +50,11 @@
 [data-user-color-scheme="high-contrast"] {
     .home-footer {
         background: var(--color-text);
-        color: var(--color-base);
-
-        * {
-            color: var(--color-base);
-        }
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .home-footer {
         background: var(--color-text);
-        color: var(--color-base);
-
-        * {
-            color: var(--color-base);
-        }
     }
 }

@@ -1,18 +1,23 @@
 <section class="double-image box-flex wrapper">
-    <figure class="box-block bg-primary">
+    <figure class="box-block">
         <picture>
             <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
         </picture>
-        {% if item.caption %}
+        {% if item.image1Caption %}
             <figcaption class="box-block bg-base pad-top-300">
-                <p>{{ item.caption }}</p>
+                <p>{{ item.image1Caption }}</p>
             </figcaption>
         {% endif %}
     </figure>
 
-    <figure class="box-block bg-primary">
+    <figure class="box-block">
         <picture>
             <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
         </picture>
+        {% if item.image2Caption %}
+            <figcaption class="box-block bg-base pad-top-300">
+                <p>{{ item.image2Caption }}</p>
+            </figcaption>
+        {% endif %}
     </figure>
 </section>
