@@ -117,12 +117,12 @@ document.addEventListener(
             contrastToggleText.innerText = `Turn high-contrast theme ${
                 currentSetting === "off" ? "on" : "off"
             }`;
-            contrastToggleState.innerText = `${currentSetting}`;
             if (currentSetting === "on") {
                 contrastToggleButton.setAttribute("aria-checked", "true");
             } else {
                 contrastToggleButton.setAttribute("aria-checked", "false");
             }
+            contrastToggleState.innerText = `${currentSetting}`;
         };
 
         function resetButton() {

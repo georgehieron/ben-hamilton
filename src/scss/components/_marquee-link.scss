@@ -41,6 +41,7 @@
         line-height: 3.4rem;
         text-align: center;
         animation: scroll-left 5s linear infinite;
+        will-change: transform;
 
         > span:first-of-type {
             padding-right: 2rem;

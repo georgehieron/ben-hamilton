@@ -45,6 +45,9 @@
 }
 
 .work-item {
+    display: block;
+    width: 100%;
+    margin-bottom: #{get-size('1300')};
 
     > section {
         outline: .2rem dashed;
@@ -60,14 +63,6 @@
         figure {
             width: 100%;
         }
-    }
-}
-
-@media only screen and (max-width: 64em) {
-    .main-content .work-item {
-        display: block;
-        width: 100%;
-        margin-bottom: #{get-size('1300')};
     }
 }
 

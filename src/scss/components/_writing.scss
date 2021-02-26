@@ -1,23 +1,18 @@
 .writing__articles {
     .article {
-        display: block;
         border-top: .1rem solid var(--color-primary);
 
         time {
+            @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
             margin-bottom: .25rem;
         }
         
         time,
-        .article__link--primary {
+        .article__link {
             text-decoration: none;
-            display: block;
         }
 
-        time {
-            @include fluid-type($min_width, $max_width, $min_font_small, $max_font_small);
-        }
-
-        .article__link--primary {
+        .article__link {
             transition: .3s ease-in-out font-weight;
 
             &:hover {
@@ -30,6 +25,7 @@
 
             span {
                 transition: .3s ease-in-out font-weight;
+                will-change: font-weight;
             }
 
             .link-text {

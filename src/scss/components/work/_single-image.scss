@@ -4,7 +4,6 @@
         outline-color: rgba(0,0,0,.1);
 
         &:not(.full-height) {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: flex-start;

@@ -10,7 +10,6 @@ $max_font_work_link: 7.5rem;
 
     .work-item {
         position: relative;
-        display: block;
         width: calc(100% + calc(#{get-size('700')} * 2));
         margin-left: -#{get-size('700')};
 

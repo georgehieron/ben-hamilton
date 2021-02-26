@@ -22,7 +22,7 @@
                 </div>
                 <div class="work-items pad-bottom-900">
                     {% for item in collections.featuredWork %}
-                        <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item gap-bottom-500" aria-label="{{ item.data.title }}">
+                        <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item box-block gap-bottom-500" aria-label="{{ item.data.title }}">
                             <img src="{{ item.data.socialImage }}" alt="{{ item.data.hero.imageAlt }}" />
                             <span class="work-item__text font-title">{{ work.itemLinkText }}</span>
                         </a>
@@ -40,9 +40,9 @@
                     {% if writing.articles %}
                         <ul class="writing__articles list--unstyled">
                             {% for article in writing.articles %}
-                                <li class="article gap-top-400 gap-bottom-400 pad-top-500 pad-bottom-400">
-                                    <a class="article__link--primary color-text gap-bottom-300" href="{{ article.url }}">
-                                        <time class="weight-medium">{{ article.date }}</time>
+                                <li class="article box-block gap-top-400 gap-bottom-400 pad-top-500 pad-bottom-400">
+                                    <a class="article__link box-block color-text gap-bottom-300" href="{{ article.url }}">
+                                        <time class="box-block weight-medium">{{ article.date }}</time>
                                         <span class="link-text">
                                             {{ article.title }}<span class="visually-hidden">, read on LinkedIn</span>
                                         </span>

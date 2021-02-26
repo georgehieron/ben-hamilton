@@ -43,7 +43,7 @@ $toggle-button-dimension: 4rem;
     padding: 0.5rem 1rem;
 
     &:focus {
-        outline-color: var(--color-primary);
+        outline-color: var(--color-text);
     }
 }
 
@@ -57,7 +57,6 @@ $toggle-button-dimension: 4rem;
 .high-contrast-toggle {
     position: fixed;
     bottom: 0;
-    display: flex;
     align-items: center;
     background-color: var(--color-text);
 
@@ -135,7 +134,6 @@ $toggle-button-dimension: 4rem;
     &__icon {
         position: absolute;
         top: 50%;
-        display: block;
         height: 1.05rem;
         width: 1rem;
         background-color: var(--color-secondary);
