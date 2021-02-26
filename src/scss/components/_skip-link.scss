@@ -2,8 +2,8 @@
     @include vis-h;
 
     &:focus {
+        @include apply-utility('weight', 'bold');
         font-size: get-size('300');
-        font-weight: 700;
         top: 1rem;
         left: 1rem;
         z-index: 100000;
