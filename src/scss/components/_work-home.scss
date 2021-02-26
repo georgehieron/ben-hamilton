@@ -28,21 +28,6 @@ $max_font_work_link: 7.5rem;
             line-height: 1;
         }
 
-        @include media-query('lg') {
-            .work-item__text {
-                @include fluid-type($min_width, $max_width, $min_font_work_link, $max_font_work_link);
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: none;
-                height: 100%;
-                width: 100%;
-                background-color: rgba(0,0,0,.58);
-                text-align: center;
-                padding: #{get-size('975')};
-            }
-        }
-
         &:hover,
         &:focus {
             img {
@@ -60,8 +45,29 @@ $max_font_work_link: 7.5rem;
             outline: 0;
 
             .work-item__text {
-                outline: .2rem dashed var(--color-base);
+                outline: .2rem dashed var(--color-text);
                 outline-offset: -0.6rem;
+            }
+        }
+
+        @include media-query('lg') {
+            .work-item__text {
+                @include fluid-type($min_width, $max_width, $min_font_work_link, $max_font_work_link);
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,.58);
+                text-align: center;
+                padding: #{get-size('975')};
+            }
+
+            &:focus {
+                .work-item__text {
+                    outline-color: var(--color-base);
+                }
             }
         }
     }
