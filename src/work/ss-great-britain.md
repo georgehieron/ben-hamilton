@@ -44,6 +44,7 @@ components:
       designs
     image2: /images/ragnar-axelsson-behind-the-mountains-0002-1920x1500.jpg
     image2Alt: Four people riding horses through the snow in Iceland.
+    image1Caption: Transparent PNG of colourful dice
   - type: video
     fullheight: false
     video: /images/small.mp4
