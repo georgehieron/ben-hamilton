@@ -23,11 +23,13 @@
 // Import mixins
 @import "mixins/fluid-type";
 
-* {
-    &:focus {
-        outline: .2rem dashed;
-        outline-offset: .2rem;
-    }
+:focus {
+    outline: .2rem dashed;
+    outline-offset: .2rem;
+}
+
+main:focus {
+    outline: none;
 }
 
 body {
