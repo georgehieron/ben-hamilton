@@ -24,9 +24,17 @@
 @import "mixins/fluid-type";
 
 * {
-    &:focus {
-        outline: .2rem dashed;
-        outline-offset: .2rem;
+    &:not(main) {
+        &:focus {
+            outline: .2rem dashed;
+            outline-offset: .2rem;
+        }
+    }
+
+    & main {
+        &:focus {
+            outline: none;
+        }
     }
 }
 
