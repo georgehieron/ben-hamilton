@@ -13,4 +13,12 @@ components:
     image: /images/spike_mobiles1.webp
     imageAlt: Rainbow compass
     caption: Translucent rainbow compass
+  - type: info
+    client: Spike Island
+    agency: Atomic Smash
+    expertise: Workshops; Research; UX/UI Design
+    outcomes: A better user-experience; contemporary design  in line with a
+      newly-launched brand; excellent stakeholder feedback
+    url: https://www.spikeisland.org.uk
+    linkText: Visit site
 ---
