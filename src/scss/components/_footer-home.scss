@@ -53,6 +53,14 @@
     }
 }
 
+[data-user-color-scheme="high-contrast"] {
+    .home-footer {
+        a {
+            color: var(--color-base);
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .home-footer {
         background: var(--color-text);
