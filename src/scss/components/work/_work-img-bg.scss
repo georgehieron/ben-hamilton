@@ -44,15 +44,17 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .work-item {
-        .single-image,
-        .double-image,
-        .video {
-            figure {
-                background-color: var(--color-text);
-            }
-            figcaption {
-                color: var(--color-text);
+    :root:not([data-user-color-scheme]) {
+        .work-item {
+            .single-image,
+            .double-image,
+            .video {
+                figure {
+                    background-color: var(--color-text);
+                }
+                figcaption {
+                    color: var(--color-text);
+                }
             }
         }
     }

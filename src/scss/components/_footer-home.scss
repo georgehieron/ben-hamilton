@@ -62,7 +62,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .home-footer {
-        background: var(--color-text);
+    :root:not([data-user-color-scheme]) {
+        .home-footer {
+            background: var(--color-text);
+        }
     }
 }

@@ -82,12 +82,14 @@ $toggle-button-dimension: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
-    .high-contrast-toggle,
-    .high-contrast-toggle-btn {
-        color: var(--color-base);
-    }
-    .high-contrast-toggle-btn__icon {
-        background-color: var(--color-base);
+    :root:not([data-user-color-scheme]) {
+        .high-contrast-toggle,
+        .high-contrast-toggle-btn {
+            color: var(--color-base);
+        }
+        .high-contrast-toggle-btn__icon {
+            background-color: var(--color-base);
+        }
     }
 }
 

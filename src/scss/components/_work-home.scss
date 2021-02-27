@@ -87,13 +87,15 @@ $max_font_work_link: 7.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
-    .work-items {
-        .work-item {
-            background-color: var(--color-text);
+    :root:not([data-user-color-scheme]) {
+        .work-items {
+            .work-item {
+                background-color: var(--color-text);
 
-            .work-item__text {
-                @include media-query('lg') {
-                    color: var(--color-primary);
+                .work-item__text {
+                    @include media-query('lg') {
+                        color: var(--color-primary);
+                    }
                 }
             }
         }
