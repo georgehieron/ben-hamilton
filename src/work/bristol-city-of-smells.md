@@ -13,7 +13,7 @@ summary: I created a brand for the series and designed this first issue. The
 components:
   - type: singleImage
     fullheight: false
-    image: /images/bco_covers_layered.webp
+    image: /images/bco_covers2.webp
     imageAlt: "The first issue of Bristol / City of ... "
     caption: ""
   - type: testimonial
