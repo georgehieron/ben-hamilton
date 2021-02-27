@@ -22,4 +22,8 @@ components:
     image2Alt: The opening spread of Bristol / City of Smells
     image2Caption: As the reader unfolds the pamphlet, the layered paper textures
       that make up the background begin to be revealed
+  - type: info
+    client: Self-initiated collaboration with Jane Faram
+    agency: Atomic Smash
+    expertise: brand; illustration; graphic design; editorial
 ---
