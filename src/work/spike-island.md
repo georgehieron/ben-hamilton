@@ -1,6 +1,6 @@
 ---
 title: Spike Island
-socialImage: /images/translucent-compass_ll.webp
+socialImage: /images/spike_mobiles1.webp
 featured: true
 displayOrder: 2
 excerpt: Spike Island is an artspace, gallery, venue, café, shop and more.
