@@ -33,4 +33,14 @@ components:
     client: Self-initiated collaboration with Jane Faram
     agency: Atomic Smash
     expertise: brand; illustration; graphic design; editorial
+  - type: singleImage
+    fullheight: false
+    image: /images/bco_inside1.webp
+    imageAlt: The Free Time section of the pamphlet
+    caption: The pamphlet includes a cut-out section entitled Free Time, with quick
+      and free activities to sniff out
+  - type: singleImage
+    fullheight: true
+    image: /images/bco_inside4.webp
+    imageAlt: The back cover, continuing the Free Time section
 ---
