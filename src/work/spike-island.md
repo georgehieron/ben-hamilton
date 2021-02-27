@@ -14,11 +14,6 @@ components:
     image2Alt: Spike Island website screens seen on mobile devices
     image2: /images/spike_mobiles2.webp
     image2Caption: ""
-  - type: singleImage
-    fullheight: true
-    image: /images/spike_ipad1.webp
-    imageAlt: The Spike Island website seen on a tablet
-    caption: ""
   - type: info
     client: Spike Island
     agency: Atomic Smash
@@ -27,4 +22,17 @@ components:
       newly-launched brand; excellent stakeholder feedback
     url: https://www.spikeisland.org.uk
     linkText: Visit site
+  - type: testimonial
+    quote: Hopefully a lovely quote from Jane about what a baddass I am.
+    author: Jane Faram, Communications Manager
+    authorCo: Spike Island
+  - type: singleImage
+    fullheight: false
+    image: /images/spike_ipad2.webp
+    imageAlt: Spike Island website screens seen on a tablet
+  - type: singleImage
+    fullheight: true
+    image: /images/spike_ipad1.webp
+    imageAlt: The Spike Island website seen on a tablet
+    caption: ""
 ---
