@@ -9,10 +9,10 @@ summary: In fact the first challenge with this project was to audit the many
   intuitive navigation system through the site.
 components:
   - type: singleImage
-    fullheight: true
-    image: /images/spike_mobiles1.webp
-    imageAlt: Rainbow compass
-    caption: Translucent rainbow compass
+    fullheight: false
+    image: /images/spike_ipad1.webp
+    imageAlt: The Spike Island website seen on an iPad
+    caption: ""
   - type: info
     client: Spike Island
     agency: Atomic Smash
