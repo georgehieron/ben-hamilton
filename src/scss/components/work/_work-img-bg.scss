@@ -1,18 +1,3 @@
-[data-user-color-scheme="blue"] {
-    .work-item {
-        .single-image,
-        .double-image,
-        .video {
-            figure {
-                background-color: var(--color-primary);
-            }
-            figcaption {
-                color: var(--color-primary);
-            }
-        }
-    }
-}
-
 [data-user-color-scheme="pink"] {
     .work-item {
         .single-image,

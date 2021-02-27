@@ -25,31 +25,6 @@
     }
 }
 
-[data-user-color-scheme="blue"] {
-    .work-item {
-        .single-image,
-        .double-image,
-        .video {
-            &:not(.full-height) {
-                picture,
-                .video__figure {
-            
-                    &:before {
-                        border-color: var(--color-secondary);
-                        background: repeating-linear-gradient(
-                            45deg,
-                            var(--color-secondary),
-                            var(--color-secondary) 2px,
-                            transparent 2px,
-                            transparent #{get-size('500')}
-                        );
-                    }
-                }
-            }
-        }
-    }
-}
-
 [data-user-color-scheme="pink"] {
     .work-item {
         .single-image,

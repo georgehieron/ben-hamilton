@@ -40,11 +40,29 @@
     }
 }
 
+[data-user-color-scheme="pink"] {
+    .work-item {
+        .testimonial {
+            color: $blue-base;
+        }
+    }
+}
+
 [data-user-color-scheme="high-contrast"] {
     .work-item {
         .testimonial {
             background-color: var(--color-text);
             color: var(--color-base);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-user-color-scheme]) {
+        .work-item {
+            .testimonial {
+                color: $blue-base;
+            }
         }
     }
 }

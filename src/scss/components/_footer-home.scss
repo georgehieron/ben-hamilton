@@ -40,12 +40,6 @@
     }
 }
 
-[data-user-color-scheme="blue"] {
-    .home-footer {
-        background: var(--color-primary);
-    }
-}
-
 [data-user-color-scheme="pink"],
 [data-user-color-scheme="high-contrast"] {
     .home-footer {

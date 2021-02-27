@@ -78,24 +78,6 @@
     }
 }
 
-[data-user-color-scheme="blue"] {
-    .work-item {
-        .info {
-            table {
-                border-color: var(--color-secondary);                
-            }
-
-            .marquee-wrap {
-                border-color: var(--color-primary);
-
-                .marquee-link {
-                    color: var(--color-primary);
-                }
-            }
-        }
-    }
-}
-
 [data-user-color-scheme="pink"] {
     .work-item {
         .info {
