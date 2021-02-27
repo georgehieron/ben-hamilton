@@ -9,7 +9,7 @@ summary: In fact the first challenge with this project was to audit the many
   intuitive navigation system through the site.
 components:
   - type: singleImage
-    fullheight: false
+    fullheight: true
     image: /images/spike_ipad1.webp
     imageAlt: The Spike Island website seen on an iPad
     caption: ""
