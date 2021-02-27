@@ -8,10 +8,16 @@ summary: In fact the first challenge with this project was to audit the many
   strands of the organisation, and present the visitor with an updated,
   intuitive navigation system through the site.
 components:
+  - type: doubleImage
+    image1: /images/spike_mobiles1.webp
+    image1Alt: Spike Island website screens seen on mobile devices
+    image2Alt: Spike Island website screens seen on mobile devices
+    image2: /images/spike_mobiles2.webp
+    image2Caption: ""
   - type: singleImage
     fullheight: true
     image: /images/spike_ipad1.webp
-    imageAlt: The Spike Island website seen on an iPad
+    imageAlt: The Spike Island website seen on a tablet
     caption: ""
   - type: info
     client: Spike Island
