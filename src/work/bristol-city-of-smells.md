@@ -2,7 +2,7 @@
 title: Bristol / City of ...
 socialImage: /images/bco_covers3_-2x.webp
 featured: true
-displayOrder: 0
+displayOrder: 1
 excerpt: Bristol / City of ... is a series of alternative guides to inspire its
   reader to explore Bristol via the senses. *Smells* is the first in the series
   and offers writing, places to visit and top tips for anyone equipped with a
