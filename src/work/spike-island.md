@@ -23,7 +23,7 @@ components:
     url: https://www.spikeisland.org.uk
     linkText: Visit site
   - type: testimonial
-    quote: Hopefully a lovely quote from Jane about what a baddass I am.
+    quote: Hopefully a lovely quote from Jane about what a badass I am.
     author: Jane Faram, Communications Manager
     authorCo: Spike Island
   - type: singleImage
