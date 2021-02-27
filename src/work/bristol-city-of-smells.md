@@ -22,14 +22,13 @@ components:
       Roman) found in the newsletters and pamphlets that might get stuffed
       through your letterbox by a local community group.
   - type: doubleImage
-    image1: /images/bco_covers3_-2x.webp
-    image1Alt: The cover of Bristol / City of Smells
-    image1Caption: The cover artwork employs a glitchy, broken-photocopier-inspired
-      title treatment
-    image2: /images/bco_inside5.webp
-    image2Alt: The opening spread of Bristol / City of Smells
-    image2Caption: As the reader unfolds the pamphlet, the layered paper textures
+    image1: /images/bco_inside5.webp
+    image1Alt: The opening spread of Bristol / City of Smells
+    image1Caption: As the reader unfolds the pamphlet, the layered paper textures
       that make up the background begin to be revealed
+    image2: /images/bco_inside6.webp
+    image2Alt: The fully-opened pamphlet of Bristol / City of Smells
+    image2Caption: ""
   - type: info
     client: Self-initiated collaboration with Jane Faram
     agency: Atomic Smash
