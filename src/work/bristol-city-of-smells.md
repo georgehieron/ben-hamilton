@@ -14,15 +14,13 @@ components:
     imageAlt: "The first issue of Bristol / City of ... "
     caption: ""
   - type: testimonial
-    quote: The aesthetic is inspired by home made zines and pamphlets – owing to the
-      fact this is very much a DIY project. The layered textures and colours are
-      taken from the pastel shades of copier paper you might find scattered on
-      the floor of a photocopy room, while the glitchy title text comes from a
-      print-out I manipulated on a photocopier. I must admit I felt a bit of a
-      philistine to use Times New Roman and Arial as the two project fonts but I
-      wanted the typography to reflect the low-fi, default styling found in the
-      newsletters and pamphlets that might get stuffed through your letterbox by
-      a local community group.
+    quote: The aesthetic is inspired by home made zines and pamphlets. The layered
+      textures and colours are taken from the pastel shades of copier paper you
+      might find scattered on the floor of a photocopy room, while the glitchy
+      title text comes from a print-out I manipulated on a photocopier. I wanted
+      the typography to reflect the low-fi, default styling (typically Times New
+      Roman) found in the newsletters and pamphlets that might get stuffed
+      through your letterbox by a local community group.
   - type: doubleImage
     image1: /images/bco_covers3_-2x.webp
     image1Alt: The cover of Bristol / City of Smells
