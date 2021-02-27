@@ -8,6 +8,11 @@ excerpt: Bristol / City of ... is a series of alternative guides to inspire its
 summary: "*Smells* is the first in the series and offers writing, places to
   visit and top tips for anyone equipped with a nose."
 components:
+  - type: singleImage
+    fullheight: false
+    image: /images/bco_covers_layered.webp
+    imageAlt: "The first issue of Bristol / City of ... "
+    caption: ""
   - type: doubleImage
     image1: /images/bco_covers3_-2x.webp
     image1Alt: The cover of Bristol / City of Smells
