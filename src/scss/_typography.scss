@@ -51,6 +51,12 @@ a {
     text-underline-offset: .2rem;
 }
 
+em {
+    font-style: initial;
+    display: inline-block;
+    transform: skew(-15deg) translateX(.1ex);
+}
+
 [data-user-color-scheme="high-contrast"] {
     a {
         color: var(--color-primary);
