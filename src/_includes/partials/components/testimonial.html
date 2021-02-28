@@ -1,8 +1,8 @@
 <section class="testimonial box-flex bg-secondary">
-    <blockquote class="pad-top-700 pad-bottom-700 pad-left-700 pad-right-700">
-        <p class="font-title">{{ item.quote | markdownFilter | safe }}</p>
+    <blockquote class="font-title pad-top-700 pad-bottom-700 pad-left-700 pad-right-700">
+        {{ item.quote | markdownFilter | safe }}
         {% if item.author or item.authorCo %}
-            <footer class="gap-top-600">
+            <footer class="font-base weight-bold gap-top-600">
                 {% if item.author %}
                     <span class="box-block">
                         {{ item.author }}
