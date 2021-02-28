@@ -12,7 +12,7 @@
         </div>
         <div class="sidebar__text">
             <h2 class="h3 color-text gap-bottom-400">{{ sidebar.heading }}</h2>
-            <p>{{ sidebar.copy | markdownFilter | safe }}</p>
+            {{ sidebar.copy | markdownFilter | safe }}
             <div class="marquee-wrap gap-top-400">
                 <a href="{{ sidebar.email }}" class="marquee-link box-block font-title color-text">
                     <span class="marquee-link__text">

@@ -12,8 +12,8 @@
         <section class="work-item__intro">
             <div class="wrapper work-item__intro__inner">
                 <h1 class="color-primary gap-bottom-900">{{ title }}</h1>
-                <p>{{ excerpt | markdownFilter | safe }}</p>
-                <p>{{ summary | markdownFilter | safe }}</p>
+                {{ excerpt | markdownFilter | safe }}
+                {{ summary | markdownFilter | safe }}
             </div>
         </section>
         {% if components %}

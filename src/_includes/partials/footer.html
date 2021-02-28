@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="wrapper--home">
             <h2 class="gap-bottom-975">{{ footer.heading }}</h2>
-            <p class="pad-bottom-300">{{ footer.copy | markdownFilter | safe }}</p>
+            <div class="pad-bottom-300">{{ footer.copy | markdownFilter | safe }}</div>
             <div class="marquee-wrap gap-top-700 gap-bottom-975">
                 <a href="{{ footer.buttonUrl }}" class="marquee-link box-block font-title color-text">
                     <span class="marquee-link__text">
