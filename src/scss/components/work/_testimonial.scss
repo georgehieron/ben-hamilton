@@ -5,6 +5,7 @@
 
         p {
             @include fluid-type($min_width, $max_width, get-size('650'), get-size('900'));
+            line-height: 1.15;
         }
 
         footer {

@@ -4,12 +4,10 @@
 
         table {
             border-collapse: collapse;
-            border-left: .1rem solid var(--color-secondary);
 
             th,
             td {
                 display: block; // Table layout vertical at mobile
-                padding-left: #{get-size('400')};
             }
     
             th {
@@ -18,6 +16,14 @@
             
             td {
                 min-width: 15rem;
+
+                &.outcomes {
+                    max-width: 40ex;
+                }
+
+                @include media-query('sm') {
+                    padding-left: #{get-size('400')};
+                }
             }
 
             tr {
