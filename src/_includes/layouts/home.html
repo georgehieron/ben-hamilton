@@ -37,7 +37,7 @@
                 {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
                     <h2 class="color-primary">{{ writing.heading }}</h2>
-                    <p>{{ writing.copy }}</p>
+                    <p>{{ writing.copy | markdownFilter | safe }}</p>
 
                     {% if writing.articles %}
                         <ol class="writing__articles list--unstyled">

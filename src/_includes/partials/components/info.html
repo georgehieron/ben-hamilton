@@ -22,7 +22,7 @@
             {% if item.outcomes %}
                 <tr>
                     <th scope="row" class="weight-medium">Project Outcomes:</th>
-                    <td>{{ item.outcomes }}</td>
+                    <td>{{ item.outcomes | markdownFilter | safe }}</td>
                 </tr>
             {% endif %}
         </table>

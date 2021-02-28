@@ -1,6 +1,6 @@
 <section class="testimonial box-flex bg-secondary">
     <blockquote class="pad-top-700 pad-bottom-700 pad-left-700 pad-right-700">
-        <p class="font-title">{{ item.quote }}</p>
+        <p class="font-title">{{ item.quote | markdownFilter | safe }}</p>
         {% if item.author or item.authorCo %}
             <footer class="gap-top-600">
                 {% if item.author %}
