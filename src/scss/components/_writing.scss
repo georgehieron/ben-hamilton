@@ -11,36 +11,5 @@
         .article__link {
             text-decoration: none;
         }
-
-        .article__link {
-            &:hover {
-                p.link-text {
-                    @include apply-utility('weight', 'light');
-                }
-            }
-
-            .link-text__wrap {
-                position: relative;
-            }
-
-            p.link-text {
-                position: absolute;
-                top: 0;
-                left: 0;
-                transition: .3s ease-in-out font-weight;
-                will-change: font-weight;
-            }
-
-            .link-text {
-                position: relative;
-                text-decoration: underline;
-                text-decoration-thickness: .1rem;
-                text-underline-offset: .2rem;
-
-                &--placeholder {
-                    opacity: 0;
-                }
-            }
-        }
     }
 }

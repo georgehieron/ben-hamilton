@@ -39,6 +39,10 @@
         }
     }
 
+    .shrinking-link {
+        display: inline-block;
+    }
+
     @include media-query('xl') {
         border-left: 0;
     }
