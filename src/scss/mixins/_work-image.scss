@@ -30,6 +30,11 @@
         }
     }
 
+    &.video__figure {
+        position: relative;
+        top: 1rem;
+    }
+
     img,
     video {
         width: 100%;
@@ -41,6 +46,10 @@
 
         &:not(video) {
             margin-top: #{get-size('700')};
+        }
+
+        &.video__figure {
+            top: 0;
         }
     }
 }

@@ -1,13 +1,19 @@
 <section class="testimonial box-flex bg-secondary">
     <blockquote class="pad-top-700 pad-bottom-700 pad-left-700 pad-right-700">
-        <p class="font-title gap-bottom-600">{{ item.quote }}</p>
-        <footer>
-            <span class="box-block">
-                {{ item.author }}
-            </span>
-            <span class="box-block">
-                {{ item.authorCo }}
-            </span>
-        </footer>
+        <p class="font-title">{{ item.quote }}</p>
+        {% if item.author or item.authorCo %}
+            <footer class="gap-top-600">
+                {% if item.author %}
+                    <span class="box-block">
+                        {{ item.author }}
+                    </span>
+                {% endif %}
+                {% if item.authorCo %}
+                    <span class="box-block">
+                        {{ item.authorCo }}
+                    </span>
+                {% endif %}
+            </footer>
+        {% endif %}
     </blockquote>
 </section>

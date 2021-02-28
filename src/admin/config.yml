@@ -85,7 +85,6 @@ collections:
           - label: "Single Image"
             name: "singleImage"
             widget: "object"
-            summary: "{{fields.imageAlt}}"
             fields:
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Alt Text", name: "imageAlt", widget: "string"}
@@ -94,7 +93,6 @@ collections:
           - label: "Double Image"
             name: "doubleImage"
             widget: "object"
-            summary: "{{fields.image1Alt}}"
             fields:
               - {label: "First Image", name: "image1", widget: "image"}
               - {label: "First Image Alt Text", name: "image1Alt", widget: "string"}
@@ -105,7 +103,6 @@ collections:
           - label: "Testimonial"
             name: "testimonial"
             widget: "object"
-            summary: "{{fields.author}}"
             fields:
               - {label: "Quote", name: "quote", widget: "markdown", minimal: true}
               - {label: "Author", name: "author", widget: "string", required: false}
