@@ -1,7 +1,5 @@
 .work-item {
     .work-item__intro {
-        outline-color: rgba(0,0,0,.1);
-
         @media only screen and (min-width: 64em) {
             margin-left: get-size('1300');
 

@@ -47,11 +47,9 @@
 .work-item {
     display: block;
     width: 100%;
-    margin-bottom: #{get-size('1300')};
+    padding-bottom: #{get-size('1500')};
 
     > section {
-        outline: .2rem dashed;
-
         + section {
             margin-top: #{get-size('700')};
         }
@@ -114,6 +112,7 @@
         height: 100%;
         margin-left: get-size('1300');
         margin-right: get-size('1300');
+        padding-bottom: 0;
 
         > section {
             max-height: calc(100vh - #{get-size('900')});

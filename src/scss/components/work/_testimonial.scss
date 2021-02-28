@@ -1,7 +1,6 @@
 .work-item {
     .testimonial {
         align-items: center;
-        outline-color: rgba(0,0,0,.1);
 
         p {
             @include fluid-type($min_width, $max_width, get-size('650'), get-size('900'));

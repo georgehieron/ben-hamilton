@@ -1,7 +1,5 @@
 .work-item {
     .info {
-        outline-color: rgba(0,0,0,.1);
-
         table {
             border-collapse: collapse;
 
@@ -16,10 +14,7 @@
             
             td {
                 min-width: 15rem;
-
-                &.outcomes {
-                    max-width: 40ex;
-                }
+                max-width: 40ex;
 
                 @include media-query('sm') {
                     padding-left: #{get-size('400')};
@@ -87,10 +82,6 @@
 [data-user-color-scheme="pink"] {
     .work-item {
         .info {
-            table {
-                border-color: var(--color-primary);                
-            }
-
             .marquee-wrap {
                 border-color: var(--color-text);
 
@@ -105,10 +96,6 @@
 [data-user-color-scheme="high-contrast"] {
     .work-item {
         .info {
-            table {
-                border-color: var(--color-text);
-            }
-
             .marquee-wrap {
                 border-color: var(--color-text);
 
@@ -124,10 +111,6 @@
     :root:not([data-user-color-scheme]) {
         .work-item {
             .info {
-                table {
-                    border-color: var(--color-primary);                    
-                }
-
                 .marquee-wrap {
                     border-color: var(--color-text);
 

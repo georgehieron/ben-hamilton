@@ -22,12 +22,12 @@
             {% if item.outcomes %}
                 <tr>
                     <th scope="row" class="weight-medium">Project<br>outcomes:</th>
-                    <td class="outcomes">{{ item.outcomes | markdownFilter | safe }}</td>
+                    <td>{{ item.outcomes | markdownFilter | safe }}</td>
                 </tr>
             {% endif %}
             {% if item.url and item.linkText %}
                 <tr>
-                    <th aria-hidden="true"></th>
+                    <th></th>
                     <td>
                         <div class="marquee-wrap color-primary gap-top-700">
                             <a href="{{ item.url }}" target="_blank" class="marquee-link box-block font-title">
