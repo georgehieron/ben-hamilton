@@ -19,11 +19,11 @@
 }
 
 .marquee-link {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
     position: relative;
     left: 10%;
-    height: 3.625rem;
+    height: 3rem;
     width: 120%;
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
     text-transform: uppercase;
     overflow: hidden;
     transition: 5s linear transform;
@@ -35,6 +35,7 @@
 
     &__text {
         position: absolute;
+        top: -9%;
         left: -20%;
         height: 100%;
         margin: 0;
@@ -42,6 +43,7 @@
         text-align: center;
         animation: scroll-left 5s linear infinite;
         will-change: transform;
+        letter-spacing: .2ex;
 
         > span:first-of-type {
             padding-right: 2rem;
@@ -57,6 +59,14 @@
                 text-decoration: underline;
                 padding-right: 2rem;
             }
+        }
+    }
+
+    @include media-query('md') {
+        height: 3.625rem;
+
+        &__text {
+            top: 0;
         }
     }
 }

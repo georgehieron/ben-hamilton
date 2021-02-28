@@ -55,6 +55,6 @@
 // Keep sidebar aligned right
 @include media-query('xl') {
     .site-wrap {
-        margin-left: 0;
+        margin-left: #{get-size('400')};
     }
 }

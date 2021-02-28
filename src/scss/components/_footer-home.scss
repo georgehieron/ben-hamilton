@@ -38,6 +38,10 @@
             vertical-align: top;
         }
     }
+
+    @include media-query('xl') {
+        border-left: 0;
+    }
 }
 
 [data-user-color-scheme="pink"],

@@ -32,11 +32,11 @@
                 </div>
             </section>
 
-            <section id="writing" class="writing home-section--narrow pad-top-975 pad-bottom-975">
+            <section id="writing" class="writing home-section--narrow pad-top-600 pad-bottom-975">
                 {% set anchor = { url: 'writing', title: 'Writing' } %}
                 {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
-                    <h2 class="color-primary">{{ writing.heading }}</h2>
+                    <h2 class="color-primary gap-bottom-900">{{ writing.heading }}</h2>
                     {{ writing.copy | markdownFilter | safe }}
 
                     {% if writing.articles %}

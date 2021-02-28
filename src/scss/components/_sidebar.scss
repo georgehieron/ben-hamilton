@@ -65,8 +65,8 @@
 
         .theme-toggle {
             position: absolute;
+            top: get-size('400');
             right: get-size('400');
-            bottom: get-size('400');
         }
     }
 
