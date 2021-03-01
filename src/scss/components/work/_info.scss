@@ -14,7 +14,7 @@
             
             td {
                 min-width: 15rem;
-                max-width: 40ex;
+                max-width: 33ch;
 
                 @include media-query('sm') {
                     padding-left: #{get-size('400')};
