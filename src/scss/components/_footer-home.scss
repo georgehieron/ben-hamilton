@@ -15,6 +15,13 @@
         color: var(--color-base);
     }
 
+    .wrapper--home {
+        @include media-query('md') {
+            width: calc(100% - 1.5rem);
+            max-width: 43.75rem;
+        }
+    }
+
     .marquee-wrap {
         max-width: 28rem;
     }
