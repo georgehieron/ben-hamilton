@@ -42,7 +42,7 @@
         line-height: 3.4rem;
         text-align: center;
         animation: scroll-left 5s linear infinite;
-        will-change: transform;
+        // will-change: transform;
         letter-spacing: .2ex;
 
         > span:first-of-type {
@@ -96,4 +96,32 @@
             transform: translateX(-20%); // No movement
         }
     }
+}
+
+
+.marquee span {   
+    display: inline-block;
+    white-space: nowrap;
+    color: #00112C;
+    line-height: 2.2;
+    text-decoration: underline;
+    width: var(--tw);
+    text-shadow: var(--tw) 0 currentColor, 
+                 calc(var(--tw) * 2) 0 currentColor, 
+                 calc(var(--tw) * 3) 0 currentColor,
+                 calc(var(--tw) * 4) 0 currentColor;
+   
+    will-change: transform;
+    animation: marquee var(--ad) linear infinite;
+    animation-play-state: running;
+    letter-spacing: .2ex;
+}
+
+// .marquee:hover span {
+//     animation-play-state: running;
+// }
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
