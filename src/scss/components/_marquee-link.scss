@@ -1,8 +1,6 @@
-@import "mixins/fluid-type";
-
-@keyframes scroll-left {
+@keyframes marquee {
     0% {
-        transform: translateX(calc(100% + 1.13ex));
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
@@ -15,6 +13,7 @@
 
     &:focus-within {
         outline: .2rem dashed;
+        outline-offset: .2rem;
     }
 }
 
@@ -35,54 +34,39 @@
 
     &__text {
         position: absolute;
-        top: -9%;
-        left: -20%;
-        height: 100%;
+        top: 0;
+        left: 0;
         margin: 0;
-        text-align: center;
-        line-height: 3.4rem;
-        letter-spacing: .14ch;
-        // animation: scroll-left 5s linear infinite;
-        will-change: transform;
-        
         animation: marquee 3s linear infinite;
         animation-play-state: running;
+        will-change: transform;
 
         > span:first-of-type {
-            padding-right: 2rem;
-
-            text-shadow: var(--tw) 0 currentColor, 
-            calc(var(--tw) * 2) 0 currentColor, 
-            calc(var(--tw) * 3) 0 currentColor,
-            calc(var(--tw) * 4) 0 currentColor,
-            calc(var(--tw) * 5) 0 currentColor,
-            calc(var(--tw) * 6) 0 currentColor,
-            calc(var(--tw) * 7) 0 currentColor,
-            calc(var(--tw) * 8) 0 currentColor,
-            calc(var(--tw) * 9) 0 currentColor,
-            calc(var(--tw) * 10) 0 currentColor;
+            display: block;
+            padding: 0 1ch;
+            line-height: 2.9rem;
             text-decoration: underline;
-            letter-spacing: .14ch;
+            letter-spacing: 0.14ch;
+            text-shadow: var(--tw) 0 currentColor,
+                calc(var(--tw) * 2) 0 currentColor,
+                calc(var(--tw) * 3) 0 currentColor,
+                calc(var(--tw) * 4) 0 currentColor,
+                calc(var(--tw) * 5) 0 currentColor,
+                calc(var(--tw) * 6) 0 currentColor,
+                calc(var(--tw) * 7) 0 currentColor,
+                calc(var(--tw) * 8) 0 currentColor,
+                calc(var(--tw) * 9) 0 currentColor,
+                calc(var(--tw) * 10) 0 currentColor;
         }
-        
-        // > span:nth-of-type(2) {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     white-space: nowrap;
-
-        //     span {
-        //         text-decoration: underline;
-        //         padding-right: 2rem;
-        //     }
-        // }
     }
 
-    @include media-query('md') {
+    @include media-query("md") {
         height: 3.625rem;
 
         &__text {
-            top: 0;
+            > span:first-of-type {
+                line-height: 3.4rem;
+            }
         }
     }
 }
@@ -111,9 +95,4 @@
             animation-play-state: paused;
         }
     }
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
 }
