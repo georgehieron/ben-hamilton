@@ -50,8 +50,8 @@ document.addEventListener(
                     self.toggleCursorVisibility();
 
                     // Position the dot
-                    self.endX = e.pageX;
-                    self.endY = e.pageY;
+                    self.endX = e.clientX || e.pageX;
+                    self.endY = e.clientY || e.pageY;
                 });
 
                 // Hide/show cursor
