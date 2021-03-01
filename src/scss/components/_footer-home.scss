@@ -17,8 +17,8 @@
 
     .wrapper--home {
         @include media-query('md') {
-            width: calc(100% - 1.5rem);
-            max-width: 43.75rem;
+            width: calc(100% - 1.75rem);
+            max-width: 43.5rem;
         }
     }
 
