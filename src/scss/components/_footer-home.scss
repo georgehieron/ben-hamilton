@@ -1,8 +1,11 @@
 .home-footer {
+    width: calc(100% - calc(#{get-size('500')} * 2));
+    margin-left: auto;
+    margin-right: auto;
     color: var(--color-base);
     background-color: var(--color-primary);
-    border: get-size('500') solid var(--color-base);
-    border-bottom-width: calc(#{get-size('500')} * 3.5);
+    border-top: get-size('500') solid var(--color-base);
+    border-bottom: calc(#{get-size('500')} * 3.5) solid var(--color-base);
 
     @include media-query('md') {
         border-bottom-width: get-size('500');
@@ -43,8 +46,10 @@
         display: inline-block;
     }
 
-    @include media-query('xl') {
-        border-left: 0;
+    @media only screen and (min-width: 91.25em) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 }
 
