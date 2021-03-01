@@ -1,36 +1,37 @@
-.cursor-dot-outline {
+$dot-size: 2.5rem;
+
+.cursor-dot {
     pointer-events: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    $size: 2.5rem;
-    width: $size;
-    height: $size;
-    background-color: var(--color-secondary);
+    width: $dot-size;
+    height: $dot-size;
+    background-color: darken($blue-secondary, 11%);
     border-radius: 50%;
     opacity: 0;
     z-index: 1000;
     transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-                transform 0.3s ease-in-out;
+    transition: opacity .3s ease-in-out,
+                transform .3s ease-in-out;
 }
 
 [data-user-color-scheme="pink"] {
-    .cursor-dot-outline {
-        background: var(--color-primary);
+    .cursor-dot {
+        background: darken($pink-primary, 11%);
     }
 }
 
 [data-user-color-scheme="high-contrast"] {
-    .cursor-dot-outline {
+    .cursor-dot {
         display: none;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-user-color-scheme]) {
-        .cursor-dot-outline {
-            background: var(--color-primary);
+        .cursor-dot {
+            background: darken($pink-primary, 11%);
         }
     }
 }

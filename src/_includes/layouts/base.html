@@ -49,11 +49,12 @@
 </head>
 
 <body>
-<div class="cursor-dot-outline"></div>
-
     <div id="site-wrap" class="site-wrap">
         {% block content %}{% endblock %}
     </div>
+
+    <span class="cursor-dot"></span>
+
     {% if 'layouts/home.html' === layout %}
         {# Netlify Identity Widget redirect #}
         <script>

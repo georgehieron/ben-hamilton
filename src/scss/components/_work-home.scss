@@ -47,9 +47,7 @@ $max_font_work_link: 7.5rem;
             }
 
             .work-item__text {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                opacity: 1;
             }
         }
 
@@ -68,13 +66,16 @@ $max_font_work_link: 7.5rem;
                 position: absolute;
                 top: 0;
                 left: 0;
-                display: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 height: 100%;
                 width: 100%;
                 color: var(--color-base);
                 background-color: rgba(0,0,0,.58);
                 text-align: center;
                 padding: #{get-size('975')};
+                opacity: 0;
             }
 
             &:focus {

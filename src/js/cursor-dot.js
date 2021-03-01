@@ -9,7 +9,7 @@ document.addEventListener(
             endY: window.innerHeight / 2,
             cursorVisible: true,
             cursorEnlarged: false,
-            $outline: document.querySelector(".cursor-dot-outline"),
+            $outline: document.querySelector(".cursor-dot"),
 
             init: function () {
                 // Set up element sizes
@@ -23,7 +23,7 @@ document.addEventListener(
                 var self = this;
 
                 // Anchor hovering
-                document.querySelectorAll("a").forEach(function (el) {
+                document.querySelectorAll("a, button").forEach(function (el) {
                     el.addEventListener("mouseover", function () {
                         self.cursorEnlarged = true;
                         self.toggleCursorSize();
@@ -75,8 +75,8 @@ document.addEventListener(
 
                 self._x += (self.endX - self._x) / self.delay;
                 self._y += (self.endY - self._y) / self.delay;
-                self.$outline.style.top = self._y + "px";
-                self.$outline.style.left = self._x + "px";
+                self.$outline.style.top = (self._y / 16) + "rem";
+                self.$outline.style.left = (self._x / 16) + "rem";
 
                 requestAnimationFrame(this.animateDotOutline.bind(self));
             },
@@ -86,7 +86,7 @@ document.addEventListener(
 
                 if (self.cursorEnlarged) {
                     self.$outline.style.transform =
-                        "translate(-50%, -50%) scale(1.5)";
+                        "translate(-50%, -50%) scale(2)";
                 } else {
                     self.$outline.style.transform =
                         "translate(-50%, -50%) scale(1)";
@@ -97,7 +97,7 @@ document.addEventListener(
                 var self = this;
 
                 if (self.cursorVisible) {
-                    self.$outline.style.opacity = 1;
+                    self.$outline.style.opacity = .75;
                 } else {
                     self.$outline.style.opacity = 0;
                 }
