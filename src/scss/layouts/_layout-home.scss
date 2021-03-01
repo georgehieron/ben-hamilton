@@ -52,6 +52,20 @@
     align-items: flex-start;
 }
 
+@include media-query('md') {
+    .home-header {
+        @include apply-utility('gap-bottom', '975');
+    }
+
+    section.work {
+        .section-anchor {
+            + .home-section--narrow {
+                margin-top: calc(-11.5rem);
+            }
+        }
+    }
+}
+
 // Keep sidebar aligned right
 // @include media-query('xl') {
 @media only screen and (min-width: 92.5em) {

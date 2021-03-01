@@ -12,15 +12,15 @@
 
     <div class="wrapper">
         <article>
-            <section id="work">
+            <section id="work" class="work">
+                {% set anchor = { url: 'work', title: 'Work' } %}
+                {% include "partials/components/section-anchor.html" %}
                 <div class="home-section--narrow pad-top-975">
-                    {% set anchor = { url: 'work', title: 'Work' } %}
-                    {% include "partials/components/section-anchor.html" %}
                     <div class="wrapper--home">
                         <h2 class="color-primary">{{ work.heading }}</h2>
                     </div>
                 </div>
-                <div class="work-items pad-bottom-900">
+                <div class="work-items">
                     {% for item in collections.featuredWork %}
                         <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item box-block gap-bottom-500" aria-label="{{ item.data.title }}">
                             <picture>
@@ -32,7 +32,7 @@
                 </div>
             </section>
 
-            <section id="writing" class="writing home-section--narrow pad-top-600 pad-bottom-975">
+            <section id="writing" class="writing home-section--narrow gap-top-975 pad-top-600 pad-bottom-975">
                 {% set anchor = { url: 'writing', title: 'Writing' } %}
                 {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
