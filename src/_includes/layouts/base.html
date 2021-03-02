@@ -12,6 +12,35 @@
     <script>document.documentElement.classList.remove('no-js');</script>
 
     <style>{% include "css/critical.css" %}</style>
+    <style>
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        cursor: default;
+    }
+
+    .cursor-dot {
+        display: none;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        cursor: default;
+    }
+
+    .cursor-dot {
+        display: none;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+    </style>
 
     {# Add facility for pages to delare an array of critical styles #}
     {% if pageCriticalStyles %}
