@@ -3,7 +3,7 @@ document.addEventListener(
     function () {
         function updateTextWidth() {
             document.querySelectorAll('.marquee-link__text').forEach((link) => {
-                link.style = '--tw: ' + (link.clientWidth / 16) + 'rem';
+                link.style = '--tw: ' + link.clientWidth + 'px';
             });
         }
 
