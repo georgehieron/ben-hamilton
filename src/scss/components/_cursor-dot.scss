@@ -10,7 +10,7 @@ $dot-size: 2.5rem;
     background-color: darken($blue-secondary, 11%);
     border-radius: 50%;
     opacity: 0;
-    z-index: 1000;
+    z-index: 100001;
     transform: translate(-50%, -50%);
     transition: opacity .3s ease-in-out,
                 transform .3s ease-in-out;
