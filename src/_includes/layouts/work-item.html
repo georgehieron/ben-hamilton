@@ -8,6 +8,7 @@
 {% include "partials/header-work.html" %}
 
 <main tabindex="-1" id="main-content" class="main-content">
+
     <article class="work-item">
         <section class="work-item__intro">
             <div class="wrapper work-item__intro__inner">
@@ -16,6 +17,7 @@
                 {{ summary | markdownFilter | safe }}
             </div>
         </section>
+
         {% if components %}
             {% for item in components %}
                 {% if item.type === 'info' %}
@@ -30,6 +32,40 @@
                     {% include "partials/components/video.html" %}
                 {% endif %}
             {% endfor %}
+        {% endif %}
+
+        {# Get the next post in the Featured Work list via the helper #}
+        {% set nextItem = helpers.getNextItem(collections.featuredWork, page) %}
+
+        {% if nextItem %}
+            <footer class="next-item wrapper">
+                {% for item in nextItem %}
+                    <div>
+                        <h2 class="color-primary h1"><span class="box-block p">Next project:</span>{{item.data.title}}</h2>
+                        <div class="marquee-wrap gap-top-400">
+                            <a href="{{ item.url }}" class="marquee-link box-block font-title color-text">
+                                <span class="marquee-link__text">
+                                    <span>View project<span class="visually-hidden">, {{item.data.title}}</span></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="marquee-wrap gap-top-400">
+                            <a href="/" class="marquee-link box-block font-title color-text">
+                                <span class="marquee-link__text">
+                                    <span>Back to home</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="{{ item.url }}" aria-label="View project, {{item.data.title}}" class="next-item__img-link box-block bg-primary">
+                            <picture>
+                                <img src="{{ item.data.socialImage }}" alt="" class="box-block" />
+                            </picture>
+                        </a>
+                    </div>
+                {% endfor %}
+            </footer>
         {% endif %}
     </article>
 

@@ -43,7 +43,6 @@
 .work-item {
     display: block;
     width: 100%;
-    padding-bottom: #{get-size('1500')};
 
     > section {
         + section {
@@ -58,6 +57,28 @@
             width: 100%;
         }
     }
+
+    .next-item {
+        position: relative;
+        margin-top: #{get-size('1500')};
+
+        h2 {
+            span {
+                letter-spacing: initial;
+            }
+        }
+
+        .marquee-wrap {
+            width: 100%;
+            max-width: 28rem;
+        }
+
+        &__img-link {
+            position: relative;
+            top: calc(#{get-size('700')} + 10vh);
+            max-height: 18rem;
+        }
+    }
 }
 
 @media only screen and (min-width: 64em) { 
@@ -70,6 +91,7 @@
         position: fixed;
         height: calc(100vh - 3rem);
         will-change: transform;
+        overflow: visible;
     }
 
     .work-header {
@@ -107,8 +129,6 @@
         flex-wrap: nowrap;
         height: 100%;
         margin-left: get-size('1300');
-        margin-right: get-size('1300');
-        padding-bottom: 0;
 
         > section {
             max-height: calc(100vh - #{get-size('900')});
@@ -124,6 +144,58 @@
             img,
             video {
                 max-width: 100%;
+            }
+        }
+
+        .next-item {
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-self: flex-end;
+            width: 33vw;
+            max-width: max-content;
+            margin-top: 0;
+            margin-left: auto;
+            left: calc(#{get-size('1300')} + 6vw);
+
+            > div:first-of-type {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                padding-right: calc(#{get-size('1500')} + 25vh);
+
+                >:last-child {
+                    margin-bottom: 15vh;
+                }
+            }
+
+            h2 {
+                max-width: 10ch;
+            }
+
+            .marquee-wrap {
+                min-width: 28rem;
+                max-width: 30rem;
+            }
+
+            &__img-link {
+                top: 2rem;
+                right: 0;
+                width: 25vw;
+                height: calc(100% - 4rem);
+                max-height: calc(100% - 4rem);
+            }
+
+            picture {
+                position: relative;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: left;
+                }
             }
         }
     }
@@ -144,7 +216,8 @@
                 font-size: 4vh;
             }
 
-            h1 {
+            h1,
+            h2 {
                 font-size: 8vh;
                 margin-bottom: 4vh;
             }

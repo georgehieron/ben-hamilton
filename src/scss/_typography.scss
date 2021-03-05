@@ -44,6 +44,14 @@ h6,
     @include apply-utility('weight', 'regular');
 }
 
+.p {
+    @include apply-utility('font', 'base');
+    @include apply-utility('weight', 'bold');
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    line-height: 1.333;
+    color: var(--color-text);
+}
+
 a {
     color: var(--color-primary);
     text-decoration: underline;
