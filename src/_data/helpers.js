@@ -8,13 +8,13 @@ module.exports = {
      * @returns {Array} The resulting collection
      */
     getNextItem(collection, item) {
-        let nextItem = [];
+        let nextItem = {};
         for (let i = 0; i < collection.length; i++) {
             if (collection[i].url === item.url) {
                 if (i === collection.length - 1) {
-                    nextItem.push(collection[0]);
+                    nextItem = collection[0];
                 } else {
-                    nextItem.push(collection[i + 1]);
+                    nextItem = collection[i + 1];
                 }
             }
         }

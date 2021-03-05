@@ -39,32 +39,30 @@
 
         {% if nextItem %}
             <footer class="next-item wrapper">
-                {% for item in nextItem %}
-                    <div>
-                        <h2 class="color-primary h1"><span class="box-block p">Next project:</span>{{item.data.title}}</h2>
-                        <div class="marquee-wrap gap-top-400">
-                            <a href="{{ item.url }}" class="marquee-link box-block font-title color-text">
-                                <span class="marquee-link__text">
-                                    <span>View project<span class="visually-hidden">, {{item.data.title}}</span></span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="marquee-wrap gap-top-400">
-                            <a href="/" class="marquee-link box-block font-title color-text">
-                                <span class="marquee-link__text">
-                                    <span>Back to home</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="{{ item.url }}" aria-label="View project, {{item.data.title}}" class="next-item__img-link box-block bg-primary">
-                            <picture>
-                                <img src="{{ item.data.socialImage }}" alt="" class="box-block" />
-                            </picture>
+                <div>
+                    <h2 class="color-primary h1"><span class="box-block p">Next project:</span>{{nextItem.data.title}}</h2>
+                    <div class="marquee-wrap gap-top-400">
+                        <a href="{{ nextItem.url }}" class="marquee-link box-block font-title color-text">
+                            <span class="marquee-link__text">
+                                <span>View project<span class="visually-hidden">, {{nextItem.data.title}}</span></span>
+                            </span>
                         </a>
                     </div>
-                {% endfor %}
+                    <div class="marquee-wrap gap-top-400">
+                        <a href="/" class="marquee-link box-block font-title color-text">
+                            <span class="marquee-link__text">
+                                <span>Back to home</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a href="{{ nextItem.url }}" aria-label="View project, {{nextItem.data.title}}" class="next-item__img-link box-block bg-primary">
+                        <picture>
+                            <img src="{{ nextItem.data.socialImage }}" alt="" class="box-block" />
+                        </picture>
+                    </a>
+                </div>
             </footer>
         {% endif %}
     </article>
