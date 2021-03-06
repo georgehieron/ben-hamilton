@@ -40,6 +40,7 @@
         animation: marquee 3s linear infinite;
         animation-play-state: running;
         will-change: transform;
+        padding: 0 .2ch;
 
         > span:first-of-type {
             display: block;
@@ -54,9 +55,7 @@
                 calc(var(--tw) * 5) 0 currentColor,
                 calc(var(--tw) * 6) 0 currentColor,
                 calc(var(--tw) * 7) 0 currentColor,
-                calc(var(--tw) * 8) 0 currentColor,
-                calc(var(--tw) * 9) 0 currentColor,
-                calc(var(--tw) * 10) 0 currentColor;
+                calc(var(--tw) * 8) 0 currentColor;
         }
     }
 
