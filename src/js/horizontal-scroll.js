@@ -1,5 +1,5 @@
-document.addEventListener(
-    "DOMContentLoaded",
+window.addEventListener(
+    "load",
     function () {
         gsap.registerPlugin(ScrollTrigger, Draggable);
 

@@ -1,5 +1,5 @@
-document.addEventListener(
-    "DOMContentLoaded",
+window.addEventListener(
+    "load",
     function () {
         function updateTextWidth() {
             document.querySelectorAll('.marquee-link__text').forEach((link) => {
@@ -17,9 +17,7 @@ document.addEventListener(
             }, 250);
         });
 
-        setTimeout(function() {
-            updateTextWidth();
-        }, 100);
+        updateTextWidth();
     },
     false
 );
