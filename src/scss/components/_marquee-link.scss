@@ -20,16 +20,16 @@
 .marquee-link {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
     position: relative;
-    left: 10%;
+    left: -2ch;
     height: 3rem;
-    width: 120%;
+    width: calc(100% + 2ch);
     text-transform: uppercase;
     overflow: hidden;
-    transition: 5s linear transform;
-    transform: translateX(-20%);
+    transition: 3s linear transform;
+    transform: translateX(0);
 
     &:hover {
-        transform: translateX(-10%);
+        transform: translateX(2ch);
     }
 
     &__text {
@@ -40,11 +40,10 @@
         animation: marquee 3s linear infinite;
         animation-play-state: paused;
         will-change: transform;
-        padding: 0 .2ch;
 
         > span:first-of-type {
             display: block;
-            padding: 0 1ch;
+            padding-left: 2.5ch;
             line-height: 2.9rem;
             text-decoration: underline;
             letter-spacing: 0.14ch;
