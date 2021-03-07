@@ -4,6 +4,7 @@ document.addEventListener(
         function updateTextWidth() {
             document.querySelectorAll('.marquee-link__text').forEach((link) => {
                 link.style = '--tw: ' + link.clientWidth + 'px';
+                link.style.animationPlayState = 'running';
             });
         }
 
@@ -16,7 +17,9 @@ document.addEventListener(
             }, 250);
         });
 
-        updateTextWidth();
+        setTimeout(function() {
+            updateTextWidth();
+        }, 100);
     },
     false
 );

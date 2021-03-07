@@ -38,7 +38,7 @@
         left: 0;
         margin: 0;
         animation: marquee 3s linear infinite;
-        animation-play-state: running;
+        animation-play-state: paused;
         will-change: transform;
         padding: 0 .2ch;
 
@@ -52,10 +52,7 @@
                 calc(var(--tw) * 2) 0 currentColor,
                 calc(var(--tw) * 3) 0 currentColor,
                 calc(var(--tw) * 4) 0 currentColor,
-                calc(var(--tw) * 5) 0 currentColor,
-                calc(var(--tw) * 6) 0 currentColor,
-                calc(var(--tw) * 7) 0 currentColor,
-                calc(var(--tw) * 8) 0 currentColor;
+                calc(var(--tw) * 5) 0 currentColor;
         }
     }
 
@@ -78,7 +75,7 @@
             }
 
             &__text {
-                animation-play-state: paused;
+                animation-play-state: paused !important;
             }
         }
     }
@@ -91,7 +88,7 @@
         }
 
         &__text {
-            animation-play-state: paused;
+            animation-play-state: paused !important;
         }
     }
 }
