@@ -28,8 +28,14 @@ components:
     authorCo: Spike Island
   - type: singleImage
     fullheight: false
-    image: /images/spike_ipad2.webp
+    image: /images/spike_ipad3_50.webp
     imageAlt: Spike Island website screens seen on a tablet
+    caption: "50"
+  - type: singleImage
+    fullheight: false
+    image: /images/spike_ipad3_75.webp
+    caption: "75"
+    imageAlt: rgrtg
   - type: singleImage
     fullheight: true
     image: /images/spike_ipad1.webp
