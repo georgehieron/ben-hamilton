@@ -27,12 +27,12 @@ components:
     author: Jane Faram, Communications Manager
     authorCo: Spike Island
   - type: singleImage
-    fullheight: false
+    fullheight: true
     image: /images/spike_ipad3_50.webp
     imageAlt: Spike Island website screens seen on a tablet
     caption: "50"
   - type: singleImage
-    fullheight: false
+    fullheight: true
     image: /images/spike_ipad3_75.webp
     caption: "75"
     imageAlt: rgrtg
