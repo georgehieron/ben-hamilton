@@ -24,6 +24,10 @@ components:
     quote: Hopefully a lovely quote from Jane about what a badass I am.
     author: Jane Faram, Communications Manager
     authorCo: Spike Island
+  - type: singleImage
+    fullheight: true
+    image: /images/spike_mobiles2.webp
+    imageAlt: Spike Island shop pages seen on a mobile device
   - type: doubleImage
     image1: /images/spike_ipad2.webp
     image1Alt: Spike Island screens seen on a tablet
@@ -31,10 +35,6 @@ components:
     image2: /images/spike_ipad3.webp
     image2Alt: Spike Island equipment hire seen on a tablet
     image2Caption: The site includes an equipment hire system
-  - type: singleImage
-    fullheight: true
-    image: /images/spike_mobiles2.webp
-    imageAlt: Spike Island shop pages seen on a mobile device
   - type: singleImage
     fullheight: false
     image: /images/spike_mobiles3.webp
