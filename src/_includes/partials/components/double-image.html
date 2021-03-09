@@ -1,7 +1,10 @@
 <section class="double-image box-flex wrapper">
     <figure class="box-block">
         <picture>
-            <img src="{{ item.image1 }}" alt="{{ item.image1Alt }}">
+            <source type="image/webp" srcset="{{ item.image1 }}">
+            <source type="image/jpg" srcset="{{ item.image1 | replace('webp', 'jpg') }}">
+            <source type="image/png" srcset="{{ item.image1 | replace('webp', 'png') }}">
+            <img src="{{ item.image1 | replace('webp', 'png') }}" alt="{{ item.image1Alt }}">
         </picture>
         {% if item.image1Caption %}
             <figcaption class="box-block bg-base pad-top-300">
@@ -12,7 +15,10 @@
 
     <figure class="box-block">
         <picture>
-            <img src="{{ item.image2 }}" alt="{{ item.image2Alt }}">
+            <source type="image/webp" srcset="{{ item.image2 }}">
+            <source type="image/jpg" srcset="{{ item.image2 | replace('webp', 'jpg') }}">
+            <source type="image/png" srcset="{{ item.image2 | replace('webp', 'png') }}">
+            <img src="{{ item.image2 | replace('webp', 'png') }}" alt="{{ item.image2Alt }}">
         </picture>
         {% if item.image2Caption %}
             <figcaption class="box-block bg-base pad-top-300">

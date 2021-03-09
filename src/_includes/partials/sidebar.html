@@ -3,9 +3,24 @@
         <div class="sidebar__theme-toggle--wrap gap-bottom-700">
             <div class="sidebar__theme-toggle">
                 <figure class="sidebar__image">
-                    <img src="{{ sidebar.images.theme1Image }}" alt="{{ sidebar.images.theme1ImageAlt }}" class="sidebar__image__1 width-full">
-                    <img src="{{ sidebar.images.theme2Image }}" alt="{{ sidebar.images.theme2ImageAlt }}" class="sidebar__image__2 width-full">
-                    <img src="{{ sidebar.images.themeHCImage }}" alt="{{ sidebar.images.themeHCImageAlt }}" class="sidebar__image__3 width-full">
+                    <picture class="sidebar__image__1 width-full">
+                        <source type="image/webp" srcset="{{ sidebar.images.theme1Image }}">
+                        <source type="image/jpg" srcset="{{ sidebar.images.theme1Image | replace('webp', 'jpg') }}">
+                        <source type="image/png" srcset="{{ sidebar.images.theme1Image | replace('webp', 'png') }}">
+                        <img src="{{ sidebar.images.theme1Image | replace('webp', 'png') }}" alt="{{ sidebar.images.theme1ImageAlt }}">
+                    </picture>
+                    <picture class="sidebar__image__2 width-full">
+                        <source type="image/webp" srcset="{{ sidebar.images.theme2Image }}">
+                        <source type="image/jpg" srcset="{{ sidebar.images.theme2Image | replace('webp', 'jpg') }}">
+                        <source type="image/png" srcset="{{ sidebar.images.theme2Image | replace('webp', 'png') }}">
+                        <img src="{{ sidebar.images.theme2Image | replace('webp', 'png') }}" alt="{{ sidebar.images.theme2ImageAlt }}">
+                    </picture>
+                    <picture class="sidebar__image__3 width-full">
+                        <source type="image/webp" srcset="{{ sidebar.images.themeHCImage }}">
+                        <source type="image/jpg" srcset="{{ sidebar.images.themeHCImage | replace('webp', 'jpg') }}">
+                        <source type="image/png" srcset="{{ sidebar.images.themeHCImage | replace('webp', 'png') }}">
+                        <img src="{{ sidebar.images.themeHCImage | replace('webp', 'png') }}" alt="{{ sidebar.images.themeHCImageAlt }}">
+                    </picture>
                 </figure>
                 {% include "partials/theme-toggle.html" %}
             </div>
