@@ -1,13 +1,15 @@
 {% extends "layouts/base.html" %}
 
 {% set pageCriticalStyles = ['css/home.css'] %}
-{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js'] %}
+{% set pageCriticalScripts = ['js/gsap-vertical-scroll.js','js/cursor-dot.js','js/marquee-text.js'] %}
 
 {% block content %}
 
-{% include "partials/header-home.html" %}
-
 {% include "partials/sidebar.html" %}
+
+<div id="home-primary" class="home-primary">
+
+{% include "partials/header-home.html" %}
 
 <main tabindex="-1" id="main-content" class="main-content">
 
@@ -71,5 +73,7 @@
 </main>
 
 {% include "partials/footer.html" %}
+
+</div>
 
 {% endblock %}

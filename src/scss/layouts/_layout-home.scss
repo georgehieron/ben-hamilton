@@ -53,6 +53,21 @@
 }
 
 @include media-query('md') {
+    .home-primary {
+        position: fixed;
+        background-color: gold;
+        width: clamp(calc(100% - 22rem), 50%, 60rem);
+        max-width: 60rem;
+    }
+
+    .sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        height: 100% !important;
+        width: clamp(22rem, 33.333%, 30rem) !important;
+    }
+
     .home-header {
         @include apply-utility('gap-bottom', '975');
     }
