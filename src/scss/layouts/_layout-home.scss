@@ -72,3 +72,25 @@
         margin-left: #{get-size('500')};
     }
 }
+
+
+#scroll-outer {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#site-wrap {
+    position: absolute;  
+    overflow: hidden;
+    width: 100%;
+}
+
+.sidebar {
+    height: 100% !important;
+}
