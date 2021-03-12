@@ -6,9 +6,10 @@ document.addEventListener(
             smooth: true,
             tablet: {
                 smooth: true,
+                breakpoint: 768,
             },
             smartphone: {
-                smooth: true,
+                smooth: false,
             },
             reloadOnContextChange: true,
             resetNativeScroll: false
