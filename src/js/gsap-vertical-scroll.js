@@ -31,13 +31,28 @@ document.addEventListener(
                 scrollTrigger: {
                     trigger: anchor,
                     start: "top top",
-                    end: "bottom bottom",
+                    end: "+=" + (anchor.parentElement.offsetHeight - anchor.offsetHeight),
                     pin: true,
                     markers: true,
                     pinReparent: true,
+                    pinSpacing: false,
                 },
             });
         });
+
+        // let sidebar = document.querySelector(".sidebar");
+
+        // gsap.to('.sidebar--internal', {
+        //     scrollTrigger: {
+        //         trigger: sidebar,
+        //         start: "top top",
+        //         end: "+=" + sidebar.offsetHeight,
+        //         pin: true,
+        //         markers: true,
+        //         pinReparent: true,
+        //         pinSpacing: false,
+        //     },
+        // });
     },
     false
 );
