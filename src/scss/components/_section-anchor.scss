@@ -2,13 +2,17 @@
     display: none;
 
     @include media-query('md') {
-        position: sticky;
-        top: 1rem;
-        display: block;
+        position: relative;
+        // position: sticky;
+        // top: 1rem;
+        display: inline-block;
         color: var(--color-secondary);
-        @include sideways;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: .14ch;
+
+        span {
+            @include sideways;
+        }
     }
 }

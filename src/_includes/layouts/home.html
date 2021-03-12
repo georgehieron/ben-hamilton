@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageCriticalStyles = ['css/home.css'] %}
-{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js'] %}
+{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js','js/locomotive.js'] %}
 
 {% block content %}
 
@@ -14,9 +14,9 @@
     <div class="wrapper">
         <article>
             <section id="work" class="work">
-                {% set anchor = { url: 'work', title: 'Work' } %}
+                <div class="home-section--narrow pad-top-700">
+                {% set anchor = { url: 'work', title: 'Work', scrolltarget: 'work' } %}
                 {% include "partials/components/section-anchor.html" %}
-                <div class="home-section--narrow pad-top-975">
                     <div class="wrapper--home">
                         <h2 class="color-primary">{{ work.heading }}</h2>
                     </div>
@@ -37,7 +37,7 @@
             </section>
 
             <section id="writing" class="writing home-section--narrow gap-top-975 pad-top-600 pad-bottom-975">
-                {% set anchor = { url: 'writing', title: 'Writing' } %}
+                {% set anchor = { url: 'writing', title: 'Writing', scrolltarget: 'writing' } %}
                 {% include "partials/components/section-anchor.html" %}
                 <div class="wrapper--home">
                     <h2 class="color-primary gap-bottom-900">{{ writing.heading }}</h2>
