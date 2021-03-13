@@ -58,14 +58,12 @@ document.addEventListener(
                 document.addEventListener("mouseenter", function (e) {
                     self.cursorVisible = true;
                     self.toggleCursorVisibility();
-                    self.$dot.style.opacity = 1;
                     self.$outline.style.opacity = 1;
                 });
 
                 document.addEventListener("mouseleave", function (e) {
                     self.cursorVisible = true;
                     self.toggleCursorVisibility();
-                    self.$dot.style.opacity = 0;
                     self.$outline.style.opacity = 0;
                 });
             },
@@ -86,7 +84,7 @@ document.addEventListener(
 
                 if (self.cursorEnlarged) {
                     self.$outline.style.transform =
-                        "translate(-50%, -50%) scale(2)";
+                        "translate(-50%, -50%) scale(1.5)";
                 } else {
                     self.$outline.style.transform =
                         "translate(-50%, -50%) scale(1)";

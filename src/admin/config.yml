@@ -32,14 +32,14 @@ collections:
             widget: "object"
             fields:
               - {label: "Section Title", name: "title", widget: "string", default: "Work", required: false}
-              - {label: "Heading", name: "heading", widget: "string", default: "Workies!"}
+              - {label: "Heading", name: "heading", widget: "string", default: "Work"}
               - {label: "Item Link Text", name: "itemLinkText", widget: "string", default: "View case study"}
           - label: "Writing"
             name: "writing"
             widget: "object"
             fields:
-              - {label: "Section Title", name: "title", widget: "string", default: "Work", required: false}
-              - {label: "Heading", name: "heading", widget: "string", default: "Thinkings"}
+              - {label: "Section Title", name: "title", widget: "string", default: "Thoughts", required: false}
+              - {label: "Heading", name: "heading", widget: "string", default: "Thoughts"}
               - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
               - label: "Articles"
                 name: "articles"
@@ -66,7 +66,7 @@ collections:
       - {label: "Featured", name: "featured", widget: "boolean", default: true}
       - {label: "Display Order", name: "displayOrder", widget: "number", value_type: "int", default: "0"}
       - {label: "Excerpt", name: "excerpt", widget: "markdown", minimal: true}
-      - {label: "Summary", name: "summary", widget: "markdown", minimal: true}
+      - {label: "Summary", name: "summary", widget: "markdown", minimal: true, required: false}
       - label: "Components"
         name: "components"
         label_singular: "component"
@@ -153,6 +153,6 @@ collections:
         fields:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
-          - {label: "Button URL", name: "button", widget: "string", required: false}
+          - {label: "Button URL", name: "buttonUrl", widget: "string", required: false}
           - {label: "Button Text", name: "buttonText", widget: "string", required: false}
           - {label: "Design Credit", name: "designCredit", widget: "string"}
