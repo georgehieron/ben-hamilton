@@ -34,7 +34,7 @@ components:
   - type: info
     client: Self-initiated collaboration with Jane Faram
     agency: Atomic Smash
-    expertise: brand; illustration; graphic design; editorial
+    expertise: Brand; Illustration; Graphic Design; Editorial
   - type: singleImage
     fullheight: false
     image: /images/bco_inside1.webp
