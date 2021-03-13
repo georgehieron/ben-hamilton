@@ -13,7 +13,7 @@ summary: I created a brand for the series and designed this first issue. The
 components:
   - type: video
     fullheight: false
-    video: /images/vx962-iev7x.webm
+    video: /images/dadstrength_title_2.webm
   - type: singleImage
     fullheight: false
     image: /images/bco_covers2.webp
