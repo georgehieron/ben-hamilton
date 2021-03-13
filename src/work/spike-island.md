@@ -28,7 +28,9 @@ components:
     image2Alt: Spike Island equipment hire seen on a tablet
     image2Caption: ""
   - type: testimonial
-    quote: Hopefully a lovely quote from Jane about what a badass I am.
+    quote: Testimonial (if possible) from Jane about what an absolute pleasure I was
+      to work with and how I'm an all round swell guy with creativity oozing
+      from my pores. Thanks Jane ;) 😂
     author: Jane Faram, Communications Manager
     authorCo: Spike Island
   - type: singleImage
