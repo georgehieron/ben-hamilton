@@ -1,6 +1,6 @@
 ---
 layout: layouts/work-item.html
-title: 3D Illustration
+title: Website launch teaser Illustration
 metaTitle: "3D modelling project "
 metaDesc: 3D modelling project completed with James Hamilton
 socialImage: /images/3d_project_thumb.webp
@@ -11,8 +11,8 @@ excerpt: "I created this 3D illustration as a suite of social media assets to
   unreal setting, contrasted with some of the very real-world analogue tools I
   used to create it: namely pens, pencils and of course erasers for the mistakes
   I made along the way!"
-summary: The illustration was created in collaboration with my brother James who
-  is a Cinema 4D whizz.
+summary: The illustration was created in collaboration with Cinema 4D whizzkid
+  (and also my brother 😉) James Hamilton.
 components:
   - type: singleImage
     fullheight: true
