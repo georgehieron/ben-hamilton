@@ -11,6 +11,9 @@ summary: I created a brand for the series and designed this first issue. The
   aesthetic is inspired by home made zines and pamphlets, to reflect the the
   on-a-budget nature of the publication itself.
 components:
+  - type: video
+    fullheight: false
+    video: /images/vx962-iev7x.webm
   - type: singleImage
     fullheight: false
     image: /images/bco_covers2.webp
