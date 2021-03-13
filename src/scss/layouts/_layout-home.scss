@@ -57,13 +57,13 @@
         @include apply-utility('gap-bottom', '975');
     }
 
-    section.work {
-        .section-anchor {
-            + .home-section--narrow {
-                margin-top: calc(-11.5rem);
-            }
-        }
-    }
+    // section.work {
+    //     .section-anchor {
+    //         + .home-section--narrow {
+    //             margin-top: calc(-11.5rem);
+    //         }
+    //     }
+    // }
 }
 
 // Keep main content aligned left with space

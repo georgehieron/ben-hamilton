@@ -12,10 +12,11 @@
         position: sticky;
         top: 0;
         width: auto;
-        height: 100vh;
+        height: 100%;
         min-width: 22rem;
 
         .sidebar--internal {
+            height: 100vh;
             padding-bottom: get-size('1300');
         }
     }

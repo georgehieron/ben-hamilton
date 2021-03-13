@@ -2,7 +2,7 @@
     {% include "partials/skip-link.html" %}
     <div class="wrapper">
         <div class="home-section--narrow">
-            {% set anchor = { url: 'intro', title: 'Intro' } %}
+            {% set anchor = { url: 'intro', title: 'Intro', scrolltarget: 'intro' } %}
             {% include "partials/components/section-anchor.html" %}
             <div class="wrapper--home">
                 <h1 class="color-primary gap-bottom-900">{{ intro.heading }}</h1>

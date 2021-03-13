@@ -12,14 +12,18 @@
     {% set socialImage = site.url + '/images/meta/social-share.png' %}
 {% endif %}
 
-{# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
+{# If the page's Front Matter has specific metaTitle and/or metaDesc items, switch 
   them into the mix. #}
 {% if metaTitle %}
-    {% set pageTitle = metaTitle %}
+    {% if site.name === metaTitle %}
+        {% set pageTitle = metaTitle %}
+    {% else %}
+        {% set pageTitle = metaTitle + ' - ' + site.name %}
+    {% endif %}
 {% endif %}
 
 {% if not metaDesc %}
-    {% set metaDesc = summary %}
+    {% set metaDesc = excerpt %}
 {% endif %}
 
 <title>{{ pageTitle }}</title>
