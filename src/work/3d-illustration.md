@@ -5,7 +5,7 @@ metaTitle: "3D modelling project "
 metaDesc: 3D modelling project completed with James Hamilton
 socialImage: /images/3d_project_thumb.webp
 featured: true
-displayOrder: 1
+displayOrder: 8
 excerpt: "I created this 3D illustration as a suite of social media assets to
   announce the launch of this website. The tableaux depicts the site in an
   unreal setting, contrasted with some of the very real-world analogue tools I
