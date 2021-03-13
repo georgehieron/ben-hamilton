@@ -30,6 +30,6 @@ components:
     image: /images/blooloop_4.webp
     imageAlt: 3 x colour palettes to categorise content
   - type: video
-    fullheight: true
+    fullheight: false
     video: /images/blooloop_404.webm
 ---
