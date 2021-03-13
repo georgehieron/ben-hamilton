@@ -18,6 +18,10 @@ components:
     fullheight: true
     image: /images/3d_project_1.webp
     imageAlt: The finished scene
+  - type: singleImage
+    fullheight: true
+    image: /images/3d_project_1-2x.webp
+    imageAlt: The finished scene
   - type: doubleImage
     image1: /images/3d_project_2.webp
     image1Alt: A detail from the finished scene
