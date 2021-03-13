@@ -1,9 +1,9 @@
 ---
 layout: layouts/home.html
 title: Ben Hamilton, UX/UI Designer
-metaTitle: Ben Hamilton
+metaTitle: Ben Hamilton, UX/UI Designer, Bristol, UK
 metaDesc: Ben Hamilton, UX/UI Designer, Bristol, UK
-socialImage: /images/ben_hamilton_3d_detail1.jpg
+socialImage: /images/3d_project_1-2x.jpg
 intro:
   title: Intro
   heading: Hi, I'm Ben Hamilton 🤓
@@ -16,8 +16,8 @@ work:
   heading: Work 👨‍🍳
   itemLinkText: View case study
 writing:
-  title: Thinkings 🧠
-  heading: Thinkings 🧠
+  title: Thoughts 🧠
+  heading: Thoughts 🧠
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
   articles:
