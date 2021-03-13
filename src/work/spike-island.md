@@ -16,8 +16,8 @@ components:
     client: Spike Island
     agency: Atomic Smash
     expertise: Workshops; Research; UX/UI Design
-    outcomes: A better user-experience; contemporary design  in line with a
-      newly-launched brand; a scalable website fit for the future; excellent
+    outcomes: A better user-experience; Contemporary design  in line with a
+      newly-launched brand; A scalable website fit for the future; Excellent
       stakeholder feedback
     url: https://www.spikeisland.org.uk
     linkText: Visit site
