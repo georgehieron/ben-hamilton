@@ -29,7 +29,7 @@ components:
     image2Alt: A detail from the finished scene
   - type: info
     client: "Self-initiated collaboration with James Hamilton "
-    expertise: Art Direction, Concept, Design
+    expertise: Art Direction; Concept; Design
   - type: singleImage
     fullheight: true
     image: /images/3d_project_4-2x.webp
