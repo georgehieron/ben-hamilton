@@ -26,7 +26,7 @@ components:
     image1Caption: A clear navigation system was required for this complex site
     image2: /images/spike_ipad3.webp
     image2Alt: Spike Island equipment hire seen on a tablet
-    image2Caption: The site includes an equipment hire system
+    image2Caption: ""
   - type: testimonial
     quote: Hopefully a lovely quote from Jane about what a badass I am.
     author: Jane Faram, Communications Manager
