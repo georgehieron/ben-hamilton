@@ -14,6 +14,9 @@ components:
   - type: video
     fullheight: false
     video: /images/dadstrength_title_2.webm
+  - type: video
+    fullheight: false
+    video: /images/dadstrength_title__vp8.webm
   - type: singleImage
     fullheight: false
     image: /images/bco_covers2.webp
