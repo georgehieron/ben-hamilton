@@ -17,7 +17,8 @@ components:
     agency: Atomic Smash
     expertise: Workshops; Research; UX/UI Design
     outcomes: A better user-experience; contemporary design  in line with a
-      newly-launched brand; excellent stakeholder feedback
+      newly-launched brand; a scalable website fit for the future; excellent
+      stakeholder feedback
     url: https://www.spikeisland.org.uk
     linkText: Visit site
   - type: doubleImage
@@ -27,6 +28,12 @@ components:
     image2: /images/spike_ipad3.webp
     image2Alt: Spike Island equipment hire seen on a tablet
     image2Caption: ""
+  - type: singleImage
+    fullheight: false
+    image: /images/spike_sketch_symbols.webp
+    imageAlt: The library of components that make up the site
+    caption: The site is built with modular components allowing for easy expansion
+      in the future
   - type: testimonial
     quote: Testimonial (if possible) from Jane about what an absolute pleasure I was
       to work with and how I'm an all round swell guy with creativity oozing
