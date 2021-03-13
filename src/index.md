@@ -12,25 +12,19 @@ intro:
     Experience design, I work as Design Lead with the awesome team at Atomic
     Smash in the beautiful city of Bristol, UK
 work:
-  title: Work
-  heading: Workies! 🐕
+  title: Work 👨‍🍳
+  heading: Work 👨‍🍳
   itemLinkText: View case study
 writing:
-  title: Writing
+  title: Thinkings 🧠
   heading: Thinkings 🧠
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
   articles:
     - date: 07.11.20
-      title: New website launch
+      title: Can you build a creative website with accessibility at its heart?
       url: https://www.linkedin.com/
     - date: 22.10.20
-      title:  Developing a design library for ForrestBrown
-      url: "#"
-    - date: 28.10.20
-      title:  Nurturing great relationships between design and development teams
-      url: "#"
-    - date: 28.08.20
-      title: "Switching to Figma: what I’ve found out in the first 6 weeks"
-      url: "#"
+      title: Some things web design can learn from my toaster
+      url: https://www.linkedin.com/
 ---
