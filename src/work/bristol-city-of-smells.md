@@ -1,6 +1,6 @@
 ---
 title: Bristol / City of ...
-socialImage: /images/bco_covers_0.gif
+socialImage: /images/bco_covers1.gif
 featured: true
 displayOrder: 10
 excerpt: "*Bristol / City of ...* is a series of alternative guides to inspire
