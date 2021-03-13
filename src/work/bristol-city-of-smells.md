@@ -3,13 +3,13 @@ title: Bristol / City of ...
 socialImage: /images/bco_covers0_-2x.gif
 featured: true
 displayOrder: 1
-excerpt: Bristol / City of ... is a series of alternative guides to inspire its
-  reader to explore Bristol via the senses. *Smells* is the first in the series
-  and offers writing, places to visit and top tips for anyone equipped with a
-  nose.
+excerpt: "*Bristol / City of ...* is a series of alternative guides to inspire
+  its reader to explore Bristol via the senses. *Smells* is the first in the
+  series and offers writing, places to visit and top tips for anyone equipped
+  with a nose."
 summary: I created a brand for the series and designed this first issue. The
   aesthetic is inspired by home made zines and pamphlets, to reflect the the
-  *on-a-budget* nature of the publication itself.
+  on-a-budget nature of the publication itself.
 components:
   - type: singleImage
     fullheight: false
