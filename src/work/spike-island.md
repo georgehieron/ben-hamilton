@@ -2,7 +2,7 @@
 title: Spike Island
 socialImage: /images/spike_mobiles1.webp
 featured: true
-displayOrder: 2
+displayOrder: 7
 excerpt: Spike Island is an artspace, gallery, venue, café, shop and more.
 summary: In fact the first challenge with this project was to audit the many
   strands of the organisation, and present the visitor with an updated,
