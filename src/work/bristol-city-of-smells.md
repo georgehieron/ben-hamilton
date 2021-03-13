@@ -1,6 +1,6 @@
 ---
 title: Bristol / City of ...
-socialImage: /images/bco_covers0_-2x.gif
+socialImage: /images/bco_covers_0.gif
 featured: true
 displayOrder: 10
 excerpt: "*Bristol / City of ...* is a series of alternative guides to inspire
@@ -11,12 +11,6 @@ summary: I created a brand for the series and designed this first issue. The
   aesthetic is inspired by home made zines and pamphlets, to reflect the the
   on-a-budget nature of the publication itself.
 components:
-  - type: video
-    fullheight: false
-    video: /images/dadstrength_title_2.webm
-  - type: video
-    fullheight: false
-    video: /images/dadstrength_title__vp8.webm
   - type: singleImage
     fullheight: false
     image: /images/bco_covers2.webp
