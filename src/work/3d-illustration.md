@@ -31,8 +31,8 @@ components:
     client: "Self-initiated collaboration with James Hamilton "
     expertise: Art Direction, Concept, Design
   - type: singleImage
-    fullheight: false
-    image: /images/3d_project_4.webp
+    fullheight: true
+    image: /images/3d_project_4-2x.webp
     imageAlt: A detail from the finished scene
   - type: doubleImage
     image1: /images/3d_project_5.webp
