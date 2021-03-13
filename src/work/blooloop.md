@@ -5,7 +5,7 @@ metaTitle: Blooloop news website
 metaDesc: Blooloop news website
 socialImage: /images/blooloop_1.webp
 featured: true
-displayOrder: "0"
+displayOrder: 9
 excerpt: Blooloop.com is the world’s most read news source for visitor
   attractions professionals. I updated their website to give it a fresh,
   contemporary look.
