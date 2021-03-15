@@ -5,8 +5,7 @@ document.addEventListener(
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
             tablet: {
-                smooth: true,
-                breakpoint: 768,
+                smooth: false,
             },
             smartphone: {
                 smooth: false,

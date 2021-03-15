@@ -17,6 +17,10 @@ window.addEventListener(
             }, 250);
         });
 
+        window.addEventListener("orientationchange", function(e) {
+            updateTextWidth();
+        });
+
         updateTextWidth();
     },
     false
