@@ -11,17 +11,9 @@ const images = () => {
             imagemin(
                 [
                     imagemin.mozjpeg({ quality: 60, progressive: true }),
-                    imagemin.gifsicle({
-                        interlaced: true,
-                        optimizationLevel: 3
-                    }),
-                    imagemin.optipng({
-                        optimizationLevel: 5,
-                        interlaced: null,
-                    }),
                 ],
                 {
-                    silent: true,
+                    verbose: true,
                 }
             )
         )
