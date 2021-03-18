@@ -10,7 +10,7 @@
 <main tabindex="-1" id="main-content" class="main-content">
 
     <article class="work-item">
-        <section class="work-item__intro">
+        <section class="work-item__intro pad-top-400">
             <div class="wrapper work-item__intro__inner">
                 <h1 class="color-primary gap-bottom-900">{{ title }}</h1>
                 {{ excerpt | markdownFilter | safe }}
@@ -38,7 +38,7 @@
         {% set nextItem = helpers.getNextItem(collections.featuredWork, page) %}
 
         {% if nextItem %}
-            <footer class="next-item wrapper">
+            <footer class="next-item wrapper pad-top-400">
                 <div>
                     <h2 class="color-primary h1"><span class="box-block p">Next project:</span>{{nextItem.data.title}}</h2>
                     <div class="marquee-wrap gap-top-400">

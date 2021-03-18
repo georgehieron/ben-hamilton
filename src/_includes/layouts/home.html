@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageCriticalStyles = ['css/home.css'] %}
-{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js','js/locomotive.js'] %}
+{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js'] %}
 
 {% block content %}
 
@@ -13,10 +13,12 @@
 
     <div class="wrapper">
         <article>
-            <section id="work" class="work">
-                <div class="home-section--narrow pad-top-700">
-                {% set anchor = { url: 'work', title: 'Work', scrolltarget: 'work' } %}
-                {% include "partials/components/section-anchor.html" %}
+            <section id="{{ work.title }}" class="work">
+                {% if work.title %}
+                    {% set anchor = { url: work.title, title: work.title } %}
+                    {% include "partials/components/section-anchor.html" %}
+                {% endif %}
+                <div class="home-section--narrow pad-top-975">
                     <div class="wrapper--home">
                         <h2 class="color-primary">{{ work.heading }}</h2>
                     </div>
@@ -36,9 +38,11 @@
                 </div>
             </section>
 
-            <section id="thoughts" class="writing home-section--narrow gap-top-975 pad-top-600 pad-bottom-975">
-                {% set anchor = { url: 'thoughts', title: 'Thoughts', scrolltarget: 'thoughts' } %}
-                {% include "partials/components/section-anchor.html" %}
+            <section id="{{ writing.title }}" class="writing home-section--narrow gap-top-975 pad-top-600 pad-bottom-975">
+                {% if writing.title %}
+                    {% set anchor = { url: writing.title, title: writing.title } %}
+                    {% include "partials/components/section-anchor.html" %}
+                {% endif %}
                 <div class="wrapper--home">
                     <h2 class="color-primary gap-bottom-900">{{ writing.heading }}</h2>
                     {{ writing.copy | markdownFilter | safe }}

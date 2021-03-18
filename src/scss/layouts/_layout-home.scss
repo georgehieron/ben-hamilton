@@ -57,13 +57,18 @@
         @include apply-utility('gap-bottom', '975');
     }
 
-    // section.work {
-    //     .section-anchor {
-    //         + .home-section--narrow {
-    //             margin-top: calc(-11.5rem);
-    //         }
-    //     }
-    // }
+    section.work {
+        position: relative;
+
+        .section-anchor {
+            + .home-section--narrow {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                padding-top: 0;
+            }
+        }
+    }
 }
 
 // Keep main content aligned left with space

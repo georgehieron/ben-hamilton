@@ -2,8 +2,10 @@
     {% include "partials/skip-link.html" %}
     <div class="wrapper">
         <div class="home-section--narrow">
-            {% set anchor = { url: 'intro', title: 'Intro', scrolltarget: 'intro' } %}
-            {% include "partials/components/section-anchor.html" %}
+            {% if intro.title %}
+                {% set anchor = { url: intro.title, title: intro.title } %}
+                {% include "partials/components/section-anchor.html" %}
+            {% endif %}
             <div class="wrapper--home">
                 <h1 class="color-primary gap-bottom-900">{{ intro.heading }}</h1>
                 {{ intro.copy | markdownFilter | safe }}

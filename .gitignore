@@ -14,3 +14,5 @@ node_modules
 dist
 src/_includes/css
 src/_includes/js
+# Local Netlify folder
+.netlify

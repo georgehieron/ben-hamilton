@@ -2,9 +2,8 @@
     display: none;
 
     @include media-query('md') {
-        position: relative;
-        // position: sticky;
-        // top: 1rem;
+        position: sticky;
+        top: 1rem;
         display: inline-block;
         color: var(--color-secondary);
         text-transform: uppercase;

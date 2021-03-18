@@ -160,7 +160,6 @@
             display: flex;
             flex-wrap: nowrap;
             align-content: center;
-            justify-self: flex-end;
             width: 33vw;
             max-width: max-content;
             margin-top: 0;
@@ -170,12 +169,9 @@
             > div:first-of-type {
                 display: flex;
                 flex-wrap: wrap;
-                align-content: center;
+                align-content: flex-start;
+                margin-top: 15vh;
                 padding-right: calc(#{get-size('1500')} + 25vh);
-
-                >:last-child {
-                    margin-bottom: 15vh;
-                }
             }
 
             h2 {
