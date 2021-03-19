@@ -160,6 +160,21 @@
         &__image__3 {
             @include sidebar-img-visible;
         }
+
+        .marquee-wrap {
+            .marquee-link {    
+                &:hover,
+                &:focus {
+                    background-color: var(--color-base);
+    
+                    .marquee-link__text {
+                        span {
+                            color: var(--color-text);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -72,6 +72,21 @@
         a {
             color: var(--color-base);
         }
+
+        .marquee-wrap {
+            .marquee-link {    
+                &:hover,
+                &:focus {
+                    background-color: var(--color-base);
+    
+                    .marquee-link__text {
+                        span {
+                            color: var(--color-text);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

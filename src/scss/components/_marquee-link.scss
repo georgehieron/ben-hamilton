@@ -86,11 +86,11 @@
             &:hover,
             &:focus {
                 transform: none; // No movement
-                background-color: currentColor;
+                background-color: var(--color-text);
 
                 .marquee-link__text {
                     span {
-                        color: var(--color-text);
+                        color: var(--color-base);
                     }
                 }
             }
@@ -118,7 +118,7 @@
             &:hover,
             &:focus {
                 transform: none; // No movement
-                background-color: currentColor;
+                background-color: var(--color-text);
 
                 .marquee-link__text {
                     span {
