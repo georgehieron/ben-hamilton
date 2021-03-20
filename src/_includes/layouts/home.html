@@ -28,9 +28,7 @@
                         <a href="{{ item.url }}" id="work-item--{{ loop.index }}" class="work-item box-block gap-bottom-500" aria-label="{{ item.data.title }}">
                             <picture>
                                 <source type="image/webp" srcset="{{ item.data.socialImage }}">
-                                <source type="image/jpg" srcset="{{ item.data.socialImage | replace('webp', 'jpg') }}">
-                                <source type="image/png" srcset="{{ item.data.socialImage | replace('webp', 'png') }}">
-                                <img src="{{ item.data.socialImage | replace('webp', 'png') }}" alt="">
+                                <img src="{{ item.data.socialImageFallback }}" alt="">
                             </picture>
                             <span class="work-item__text font-title">{{ work.itemLinkText }}</span>
                         </a>
