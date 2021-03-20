@@ -4,6 +4,7 @@ title: "Blooloop "
 metaTitle: Blooloop news website
 metaDesc: Blooloop news website
 socialImage: /images/blooloop_1.webp
+socialImageFallback: /images/blooloop_1.png
 featured: true
 displayOrder: 9
 excerpt: Blooloop.com is the world’s most read news source for visitor
