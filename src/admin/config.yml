@@ -64,6 +64,7 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Social Image Fallback", name: "socialImageFallback", widget: "image", required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: true}
       - {label: "Display Order", name: "displayOrder", widget: "number", value_type: "int", default: "0"}
       - {label: "Excerpt", name: "excerpt", widget: "markdown", minimal: true}
