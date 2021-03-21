@@ -3,7 +3,7 @@ layout: layouts/work-item.html
 title: Atomic Smash holding page
 metaTitle: Atomic Smash holding page
 metaDesc: An animated single-page design for Atomic Smash
-socialImage: /images/as_holding_1.webp
+socialImage: ""
 featured: true
 displayOrder: "0"
 excerpt: This simple one-page site for Atomic Smash is full of scroll-triggered
