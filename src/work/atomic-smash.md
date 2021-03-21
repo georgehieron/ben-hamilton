@@ -1,8 +1,8 @@
 ---
 layout: layouts/work-item.html
-title: Atomic Smash
-metaTitle: Atomic Smash1
-metaDesc: Atomic Smash2
+title: Atomic Smash holding page
+metaTitle: ""
+metaDesc: ""
 featured: true
 displayOrder: "0"
 excerpt: Atomic Smash3
