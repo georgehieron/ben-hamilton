@@ -4,7 +4,8 @@
     @include media-query('md') {
         position: sticky;
         top: 1rem;
-        display: inline-block;
+        display: block;
+        width: min-content;
         color: var(--color-secondary);
         text-transform: uppercase;
         text-decoration: none;
