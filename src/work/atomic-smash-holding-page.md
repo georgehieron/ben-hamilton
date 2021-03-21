@@ -4,7 +4,7 @@ title: Atomic Smash holding page
 metaTitle: Atomic Smash holding page
 metaDesc: An animated single-page design for Atomic Smash
 socialImage: ""
-featured: true
+featured: false
 displayOrder: "0"
 excerpt: This simple one-page site for Atomic Smash is full of scroll-triggered
   animation and bold typography to add a touch of fun.
