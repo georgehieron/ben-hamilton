@@ -13,11 +13,11 @@ intro:
     Experience design, I work as Design Lead with the awesome team at Atomic
     Smash in the beautiful city of Bristol, UK
 work:
-  title: Work 👨‍🍳
+  title: Work
   heading: Work 👨‍🍳
   itemLinkText: View case study
 writing:
-  title: Thoughts 🧠
+  title: Thoughts
   heading: Thoughts 🧠
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
