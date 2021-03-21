@@ -60,9 +60,7 @@
                     <a href="{{ nextItem.url }}" aria-label="View project, {{nextItem.data.title}}" class="next-item__img-link box-block bg-primary">
                         <picture class="box-block">
                             <source type="image/webp" srcset="{{ nextItem.data.socialImage }}">
-                            <source type="image/jpg" srcset="{{ nextItem.data.socialImage | replace('webp', 'jpg') }}">
-                            <source type="image/png" srcset="{{ nextItem.data.socialImage | replace('webp', 'png') }}">
-                            <img src="{{ nextItem.data.socialImage | replace('webp', 'png') }}" alt="">
+                            <img src="{{ nextItem.data.socialImageFallback }}" alt="">
                         </picture>
                     </a>
                 </div>

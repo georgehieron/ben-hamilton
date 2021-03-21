@@ -2,9 +2,7 @@
     <figure class="box-block">
         <picture>
             <source type="image/webp" srcset="{{ item.image1 }}">
-            <source type="image/jpg" srcset="{{ item.image1 | replace('webp', 'jpg') }}">
-            <source type="image/png" srcset="{{ item.image1 | replace('webp', 'png') }}">
-            <img src="{{ item.image1 | replace('webp', 'png') }}" alt="{{ item.image1Alt }}">
+            <img src="{{ item.image1Fallback }}" alt="{{ item.image1Alt }}">
         </picture>
         {% if item.image1Caption %}
             <figcaption class="box-block bg-base pad-top-300">
@@ -16,9 +14,7 @@
     <figure class="box-block">
         <picture>
             <source type="image/webp" srcset="{{ item.image2 }}">
-            <source type="image/jpg" srcset="{{ item.image2 | replace('webp', 'jpg') }}">
-            <source type="image/png" srcset="{{ item.image2 | replace('webp', 'png') }}">
-            <img src="{{ item.image2 | replace('webp', 'png') }}" alt="{{ item.image2Alt }}">
+            <img src="{{ item.image2Fallback }}" alt="{{ item.image2Alt }}">
         </picture>
         {% if item.image2Caption %}
             <figcaption class="box-block bg-base pad-top-300">

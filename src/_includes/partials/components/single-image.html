@@ -5,9 +5,7 @@
     <figure class="box-block">
         <picture>
             <source type="image/webp" srcset="{{ item.image }}">
-            <source type="image/jpg" srcset="{{ item.image | replace('webp', 'jpg') }}">
-            <source type="image/png" srcset="{{ item.image | replace('webp', 'png') }}">
-            <img src="{{ item.image | replace('webp', 'png') }}" alt="{{ item.imageAlt }}">
+            <img src="{{ item.imageFallback }}" alt="{{ item.imageAlt }}">
         </picture>
         {% if item.caption %}
             <figcaption class="box-block bg-base pad-top-300">

@@ -89,6 +89,7 @@ collections:
             widget: "object"
             fields:
               - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Fallback", name: "imageFallback", widget: "image"}
               - {label: "Alt Text", name: "imageAlt", widget: "string"}
               - {label: "Caption", name: "caption", widget: "string", required: false}
               - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
@@ -97,9 +98,11 @@ collections:
             widget: "object"
             fields:
               - {label: "First Image", name: "image1", widget: "image"}
+              - {label: "First Image Fallback", name: "image1Fallback", widget: "image"}
               - {label: "First Image Alt Text", name: "image1Alt", widget: "string"}
               - {label: "First Image Caption", name: "image1Caption", widget: "string", required: false}
               - {label: "Second Image", name: "image2", widget: "image"}
+              - {label: "Second Image Fallback", name: "image2Fallback", widget: "image"}
               - {label: "Second Image Alt Text", name: "image2Alt", widget: "string"}
               - {label: "Second Image Caption", name: "image2Caption", widget: "string", required: false}
           - label: "Testimonial"
@@ -137,10 +140,13 @@ collections:
             widget: "object"
             fields:
               - {label: "Primary Theme Image", name: "theme1Image", widget: "image"}
+              - {label: "Primary Theme Image Fallback", name: "theme1ImageFallback", widget: "image"}
               - {label: "Primary Image Alt Text", name: "theme1ImageAlt", widget: "string"}
               - {label: "Seconary Theme Image", name: "theme2Image", widget: "image"}
+              - {label: "Seconary Theme Image Fallback", name: "theme2ImageFallback", widget: "image"}
               - {label: "Secondary Image Alt Text", name: "theme2ImageAlt", widget: "string"}
               - {label: "High-Contrast Theme Image", name: "themeHCImage", widget: "image"}
+              - {label: "High-Contrast Theme Image Fallback", name: "themeHCImageFallback", widget: "image"}
               - {label: "High-Contrast Image Alt Text", name: "themeHCImageAlt", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Copy", name: "copy", widget: "markdown", minimal: true, required: false}
