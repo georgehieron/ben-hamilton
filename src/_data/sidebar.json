@@ -5,12 +5,15 @@
   "copy": "Do you want to collaborate on something, ask a question, or just say hello? Find me here:",
   "socialText1": "LinkedIn",
   "images": {
-    "theme1Image": "/images/wide_portrait_blue_-2x-min.jpg",
-    "theme1ImageAlt": "Ben in blue t-shirt",
+    "themeHCImageAlt": "Ben in black t-shirt",
     "theme2Image": "/images/wide_portrait_pink_-2x-min.jpg",
-    "themeHCImage": "/images/wide_portrait_black_-2x-min.jpg",
+    "theme1Image": "/images/wide_portrait_blue_-2x-min.jpg",
+    "theme2ImageFallback": "/images/wide_portrait_pink_-2x-min.jpg",
+    "theme1ImageFallback": "/images/wide_portrait_blue_-2x-min.jpg",
+    "theme1ImageAlt": "Ben in blue t-shirt",
     "theme2ImageAlt": "Ben in pink t-shirt",
-    "themeHCImageAlt": "Ben in black t-shirt"
+    "themeHCImage": "/images/wide_portrait_black_-2x-min.jpg",
+    "themeHCImageFallback": "/images/wide_portrait_black_-2x-min.jpg"
   },
   "email": "mailto:hello@ben-hamilton.co.uk"
 }
