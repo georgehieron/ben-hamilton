@@ -19,6 +19,8 @@ components:
     image2: /images/blooloop_3.webp
     image2Alt: Blooloop.com seen on a tablet
     image2Caption: ""
+    image1Fallback: /images/blooloop_2.png
+    image2Fallback: /images/blooloop_3.png
   - type: info
     client: Blooloop
     agency: Atomic Smash
@@ -30,6 +32,7 @@ components:
     fullheight: true
     image: /images/blooloop_4.webp
     imageAlt: 3 x colour palettes to categorise content
+    imageFallback: /images/blooloop_4.png
   - type: video
     fullheight: false
     video: /images/blooloop_404.webm
