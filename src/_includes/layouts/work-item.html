@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set pageCriticalStyles = ['css/work.css'] %}
-{% set pageCriticalScripts = ['js/horizontal-scroll.js','js/cursor-dot.js','js/marquee-text.js'] %}
+{% set pageCriticalScripts = ['js/horizontal-scroll.js','js/cursor-dot.js','js/marquee-text.js','js/next-work.js'] %}
 
 {% block content %}
 
@@ -40,9 +40,12 @@
         {% if nextItem %}
             <footer class="next-item wrapper pad-top-400">
                 <div>
-                    <h2 class="color-primary h1"><span class="box-block p">Next project:</span>{{nextItem.data.title}}</h2>
+                    <h2 id="next-item__title" class="color-primary h1">
+                        <span class="box-block p">Next project<span id="countdown" class="p"></span>:</span>
+                        {{nextItem.data.title}}
+                    </h2>
                     <div class="marquee-wrap gap-top-400">
-                        <a href="{{ nextItem.url }}" class="marquee-link box-block font-title color-text">
+                        <a id="next-item__view" href="{{ nextItem.url }}" class="marquee-link box-block font-title color-text">
                             <span class="marquee-link__text">
                                 <span>View project<span class="visually-hidden">, {{nextItem.data.title}}</span></span>
                             </span>

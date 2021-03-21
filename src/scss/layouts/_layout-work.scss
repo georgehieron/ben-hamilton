@@ -3,6 +3,12 @@
     overflow: hidden;
 }
 
+.next-item__title {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 .work-header {
     flex-direction: row;
 
