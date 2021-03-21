@@ -16,6 +16,10 @@ components:
     author: Atomic Smash author
     authorCo: Atomic Smash company
   - type: info
-    client: Client
-    agency: Agency
+    client: ""
+    agency: Atomic Smash
+    expertise: UI Design; After Effects
+    outcomes: A fun, interactive holding page which conveys Atomic Smash's
+      personality quickly and effectively
+    url: https://www.atomicsmash.co.uk/
 ---
