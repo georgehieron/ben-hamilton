@@ -4,6 +4,7 @@ title: Website launch teaser Illustration
 metaTitle: "3D modelling project "
 metaDesc: 3D modelling project completed with James Hamilton
 socialImage: /images/3d_project_thumb.webp
+socialImageFallback: /images/3d_project_thumb.jpg
 featured: true
 displayOrder: 8
 excerpt: "I created this 3D illustration as a suite of social media assets to
@@ -18,15 +19,19 @@ components:
     fullheight: true
     image: /images/3d_project_1.webp
     imageAlt: The finished scene
+    imageFallback: /images/3d_project_1-2x.jpg
   - type: singleImage
     fullheight: true
     image: /images/3d_project_1-2x.webp
     imageAlt: The finished scene
+    imageFallback: /images/3d_project_1-2x.jpg
   - type: doubleImage
     image1: /images/3d_project_2.webp
     image1Alt: A detail from the finished scene
     image2: /images/3d_project_3.webp
     image2Alt: A detail from the finished scene
+    image1Fallback: /images/3d_project_2.jpg
+    image2Fallback: /images/3d_project_3.jpg
   - type: info
     client: "Self-initiated collaboration with James Hamilton "
     expertise: Art Direction; Concept; Design
@@ -34,6 +39,7 @@ components:
     fullheight: true
     image: /images/3d_project_4-2x.webp
     imageAlt: A detail from the finished scene
+    imageFallback: /images/3d_project_4-2x.jpg
   - type: doubleImage
     image1: /images/3d_project_5.webp
     image1Alt: A detail from the finished scene
@@ -41,4 +47,6 @@ components:
     image2Caption: We released this teaser version of the final image on social
       media just before this site went live
     image2Alt: A teaser version of the final image
+    image1Fallback: /images/3d_project_5.jpg
+    image2Fallback: /images/3d_project_6.jpg
 ---
