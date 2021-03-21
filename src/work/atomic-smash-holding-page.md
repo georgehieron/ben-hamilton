@@ -1,7 +1,7 @@
 ---
 layout: layouts/work-item.html
 title: Atomic Smash holding page
-metaTitle: Atomic Smash holding page
+metaTitle: Atomic Smash holding pag
 metaDesc: An animated single-page design for Atomic Smash
 socialImage: /images/3d_project_3.webp
 socialImageFallback: /images/3d_project_3.jpg
