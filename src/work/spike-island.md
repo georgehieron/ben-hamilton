@@ -1,6 +1,7 @@
 ---
 title: Spike Island
 socialImage: /images/spike_mobiles1.webp
+socialImageFallback: /images/spike_mobiles1.png
 featured: true
 displayOrder: 7
 excerpt: Spike Island is an artspace, gallery, venue, café, shop and more.
@@ -12,6 +13,7 @@ components:
     fullheight: false
     image: /images/spike_ipad1.webp
     imageAlt: Spike Island home page seen on a tablet
+    imageFallback: /images/spike_ipad1.png
   - type: info
     client: Spike Island
     agency: Atomic Smash
@@ -21,19 +23,22 @@ components:
       stakeholder feedback
     url: https://www.spikeisland.org.uk
     linkText: Visit site
-  - type: doubleImage
-    image1: /images/spike_ipad2.webp
-    image1Alt: Spike Island screens seen on a tablet
+  - image2Caption: ""
     image1Caption: A clear navigation system was required for this complex site
-    image2: /images/spike_ipad3.webp
     image2Alt: Spike Island equipment hire seen on a tablet
-    image2Caption: ""
+    image1Alt: Spike Island screens seen on a tablet
+    image1: /images/spike_ipad2.webp
+    image2: /images/spike_ipad3.webp
+    image1Fallback: /images/spike_ipad2.png
+    image2Fallback: /images/spike_ipad3.png
+    type: doubleImage
   - type: singleImage
     fullheight: false
     image: /images/spike_sketch_symbols.webp
     imageAlt: The library of components that make up the site
     caption: The site is built with modular components allowing for easy expansion
       in the future
+    imageFallback: /images/spike_sketch_symbols.jpg
   - type: testimonial
     quote: Testimonial (if possible) from Jane about what an absolute pleasure I was
       to work with and how I'm an all round swell guy with creativity oozing
@@ -44,8 +49,10 @@ components:
     fullheight: true
     image: /images/spike_mobiles2.webp
     imageAlt: Spike Island shop pages seen on a mobile device
+    imageFallback: /images/spike_mobiles2.png
   - type: singleImage
     fullheight: false
     image: /images/spike_mobiles3.webp
     imageAlt: Spike Island shop pages seen on a mobile device
+    imageFallback: /images/spike_mobiles3.png
 ---
