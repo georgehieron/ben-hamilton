@@ -17,7 +17,7 @@ window.addEventListener(
             );
         }
 
-        var timeleft = 1666;
+        var timeleft = 5;
         let timerRunning = false;
         var downloadTimer;
 
@@ -25,11 +25,11 @@ window.addEventListener(
             if ( timerRunning === false ) {
                 downloadTimer = setInterval(function () {
                     if (timeleft <= 0) {
-                        document.getElementById("countdown").innerHTML = "";
+                        document.getElementById("countdown").innerHTML = " in 0";
                         nextButton.click();
                     } else {
                         document.getElementById("countdown").innerHTML =
-                            " in " + timeleft + " seconds";
+                            " in " + timeleft;
                     }
                     timeleft -= 1;
                 }, 1000);
@@ -39,9 +39,9 @@ window.addEventListener(
         function clearCountdown() {
             if (downloadTimer) {
                 clearInterval(downloadTimer);
-                timeleft = 1666;
+                timeleft = 5;
                 document.getElementById("countdown").innerHTML =
-                " in " + timeleft + " seconds";
+                " in " + timeleft;
             }
         }
         
