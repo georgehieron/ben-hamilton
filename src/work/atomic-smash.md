@@ -12,4 +12,7 @@ components:
     quote: Atomic Smash said this
     author: Atomic Smash author
     authorCo: Atomic Smash company
+  - type: info
+    client: Client
+    agency: Agency
 ---
