@@ -4,6 +4,7 @@ title: Ben Hamilton, UX/UI Designer
 metaTitle: Ben Hamilton, UX/UI Designer, Bristol, UK
 metaDesc: Ben Hamilton, UX/UI Designer, Bristol, UK
 socialImage: /images/3d_project_1-2x.jpg
+socialImageFallback: /images/3d_project_1-2x.jpg
 intro:
   title: Intro
   heading: Hi, I'm Ben Hamilton 🤓
