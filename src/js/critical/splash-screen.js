@@ -1,5 +1,5 @@
-window.addEventListener(
-    "load",
+document.addEventListener(
+    "DOMContentLoaded",
     function () {
         function removeSplash() {
             const splashScreen = document.getElementById('splash-screen');
