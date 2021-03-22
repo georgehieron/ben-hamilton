@@ -3,7 +3,7 @@ title: Spike Island
 socialImage: /images/spike_mobiles1.webp
 socialImageFallback: /images/spike_mobiles1.png
 featured: true
-displayOrder: 7
+displayOrder: 6
 excerpt: Spike Island is an artspace, gallery, venue, café, shop and more.
 summary: In fact the first challenge with this project was to audit the many
   strands of the organisation, and present the visitor with an updated,
@@ -40,9 +40,11 @@ components:
       in the future
     imageFallback: /images/spike_sketch_symbols.jpg
   - type: testimonial
-    quote: Testimonial (if possible) from Jane about what an absolute pleasure I was
-      to work with and how I'm an all round swell guy with creativity oozing
-      from my pores. Thanks Jane ;) 😂
+    quote: As a multifaceted, creative organisation, our requirements for our new
+      website were inevitably complex. Ben worked closely with us to make
+      practical sense of our vision, ensuring we ended up with an accessible and
+      beautifully designed platform that has exciting scope for future
+      evolution.
     author: Jane Faram, Communications Manager
     authorCo: Spike Island
   - type: singleImage
