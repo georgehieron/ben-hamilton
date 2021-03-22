@@ -33,6 +33,17 @@ main:focus {
     outline: 0;
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -2;
+    }
+}
+
 body {
     @include apply-utility('font', 'base');
     @include apply-utility('weight', 'bold');
@@ -40,6 +51,11 @@ body {
     line-height: 1.333;
     background: var(--color-base);
     color: var(--color-text);
+    position: relative;
+
+    &[data-loading] {
+        overflow: hidden;
+    }
 
     @supports (overscroll-behavior: none) {
         @media only screen and (min-width: 64em) {
@@ -56,6 +72,24 @@ button {
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50vh;
+    z-index: 100011;
+
+    &[data-fadeout] {
+        animation: fadeOut .25s ease-in-out;
+        animation-fill-mode: forwards;
     }
 }
 
