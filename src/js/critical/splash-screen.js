@@ -7,11 +7,11 @@ document.addEventListener(
             setTimeout(function () {
                 splashScreen.setAttribute('data-fadeout', '');
                 document.body.removeAttribute('data-loading');
-            }, 250);
+            }, 1000);
 
             setTimeout(function () {
                 splashScreen.style.display = 'none';
-            }, 500);
+            }, 1250);
         }
 
         removeSplash();

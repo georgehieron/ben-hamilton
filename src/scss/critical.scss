@@ -80,15 +80,29 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--color-primary);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50vh;
+    background-size: 50vw 50vh;
     z-index: 100011;
 
     &[data-fadeout] {
         animation: fadeOut .25s ease-in-out;
         animation-fill-mode: forwards;
+    }
+}
+
+[data-user-color-scheme="pink"] {
+    .splash-screen {
+        background-color: var(--color-secondary);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-user-color-scheme]) {
+        .splash-screen {
+            background-color: var(--color-secondary);
+        }
     }
 }
 
