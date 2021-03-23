@@ -8,6 +8,10 @@ document.addEventListener(
                 splashScreen.setAttribute('data-fadeout', '');
                 document.body.removeAttribute('data-loading');
             }, 250);
+
+            setTimeout(function () {
+                splashScreen.style.display = 'none';
+            }, 500);
         }
 
         removeSplash();
