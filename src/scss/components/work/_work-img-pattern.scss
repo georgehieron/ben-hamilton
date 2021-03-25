@@ -15,8 +15,20 @@
                                 var(--color-primary),
                                 var(--color-primary) 2px,
                                 transparent 2px,
-                                transparent #{get-size('500')}
+                                transparent #{get-size('300')}
                             );
+                        }
+
+                        @include media-query('md') {
+                            &:before {
+                                background: repeating-linear-gradient(
+                                    45deg,
+                                    var(--color-primary),
+                                    var(--color-primary) 2px,
+                                    transparent 2px,
+                                    transparent #{get-size('500')}
+                                );
+                            }
                         }
                     }
                 }
@@ -41,8 +53,20 @@
                             var(--color-primary),
                             var(--color-primary) 2px,
                             transparent 2px,
-                            transparent #{get-size('500')}
+                            transparent #{get-size('300')}
                         );
+                    }
+
+                    @include media-query('md') {
+                        &:before {
+                            background: repeating-linear-gradient(
+                                45deg,
+                                var(--color-primary),
+                                var(--color-primary) 2px,
+                                transparent 2px,
+                                transparent #{get-size('500')}
+                            );
+                        }
                     }
                 }
             }
@@ -66,8 +90,20 @@
                             var(--color-text),
                             var(--color-text) 2px,
                             transparent 2px,
-                            transparent #{get-size('500')}
+                            transparent #{get-size('300')}
                         );
+                    }
+
+                    @include media-query('md') {
+                        &:before {
+                            background: repeating-linear-gradient(
+                                45deg,
+                                var(--color-text),
+                                var(--color-text) 2px,
+                                transparent 2px,
+                                transparent #{get-size('500')}
+                            );
+                        }
                     }
                 }
             }

@@ -33,8 +33,8 @@
         &:before {
             content: "";
             position: absolute;
-            top: -#{get-size('400')};
-            left: -#{get-size('400')};
+            top: -.5rem;
+            left: -.5rem;
             display: block;
             width: 100%;
             height: 100%;
@@ -45,8 +45,22 @@
                 $blue-base,
                 $blue-base 2px,
                 transparent 2px,
-                transparent #{get-size('500')}
+                transparent #{get-size('300')}
             );
+        }
+
+        @include media-query('md') {
+            &:before {
+                top: -#{get-size('400')};
+                left: -#{get-size('400')};
+                background: repeating-linear-gradient(
+                    45deg,
+                    $blue-base,
+                    $blue-base 2px,
+                    transparent 2px,
+                    transparent #{get-size('500')}
+                );
+            }
         }
     }
 
