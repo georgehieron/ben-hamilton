@@ -30,7 +30,11 @@
                                 <source type="image/webp" srcset="{{ item.data.socialImage }}">
                                 <img src="{{ item.data.socialImageFallback }}" alt="">
                             </picture>
-                            <span class="work-item__text font-title">{{ work.itemLinkText }}</span>
+                            <div class="work-item__text">
+                                <div>
+                                    <span class="font-title">{{ work.itemLinkText }}</span>
+                                </div>
+                            </div>
                         </a>
                     {% endfor %}
                 </div>

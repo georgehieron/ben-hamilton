@@ -13,6 +13,7 @@ $max_font_work_link: 7.5rem;
         width: calc(100% + calc(#{get-size('700')} * 2));
         margin-left: -#{get-size('700')};
         background-color: var(--color-primary);
+        text-decoration: none;
 
         picture {
             position: relative;
@@ -36,8 +37,15 @@ $max_font_work_link: 7.5rem;
             background-color: var(--color-base);
             padding-top: #{get-size('300')};
             padding-bottom: #{get-size('500')};
-            text-decoration: underline;
             line-height: 1;
+
+            span {
+                background-image: linear-gradient(currentColor, currentColor);
+                background-size: 0 .15rem;
+                background-position: 0 100%;
+                background-repeat: no-repeat;
+                transition: background-size .5s ease-in-out, background-position .5s ease-in-out;
+            }
         }
 
         &:hover,
@@ -48,6 +56,11 @@ $max_font_work_link: 7.5rem;
 
             .work-item__text {
                 opacity: 1;
+
+                span {
+                    background-size: 100% .15rem;
+                    background-position: 0 100%;
+                }
             }
         }
 
@@ -76,6 +89,23 @@ $max_font_work_link: 7.5rem;
                 text-align: center;
                 padding: #{get-size('975')};
                 opacity: 0;
+
+                span {
+                    background-image: linear-gradient(var(--color-base), var(--color-base));
+                    background-size: 0 .333rem;
+                    transition: background-size 1s ease-in-out, background-position 1s ease-in-out;
+                }
+            }
+
+            &:hover,
+            &:focus {
+
+                .work-item__text {
+    
+                    span {
+                        background-size: 100% .333rem;
+                    }
+                }
             }
 
             &:focus {
@@ -93,9 +123,13 @@ $max_font_work_link: 7.5rem;
             .work-item {
                 background-color: var(--color-text);
 
-                .work-item__text {
+                .work-item__text { 
                     @include media-query('lg') {
                         color: var(--color-primary);
+
+                        span {
+                            background-image: linear-gradient(var(--color-primary), var(--color-primary));
+                        }
                     }
                 }
             }
@@ -111,6 +145,10 @@ $max_font_work_link: 7.5rem;
             .work-item__text {
                 @include media-query('lg') {
                     color: var(--color-primary);
+
+                    span {
+                        background-image: linear-gradient(var(--color-primary), var(--color-primary));
+                    }
                 }
             }
         }
