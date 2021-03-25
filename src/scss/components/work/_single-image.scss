@@ -27,6 +27,13 @@
                 @include img-caption;
                 color: var(--color-primary);
             }
+
+            @media only screen and (max-width: 48em) {
+                &.wrapper {
+                    padding-left: #{get-size('400')};
+                    padding-right: #{get-size('400')};
+                }
+            }
         }
 
         &.full-height {

@@ -35,8 +35,8 @@
                 left: -#{get-size('400')};
                 background: repeating-linear-gradient(
                     45deg,
-                    $blue-base,
-                    $blue-base 2px,
+                    var(--color-secondary),
+                    var(--color-secondary) 2px,
                     transparent 2px,
                     transparent #{get-size('500')}
                 );
