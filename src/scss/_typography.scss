@@ -65,6 +65,38 @@ em {
     transform: skew(-15deg) translateX(.1ex);
 }
 
+::-moz-selection {
+    background: rgba(darken($blue-text, 10%),.9);
+    color: var(--color-base);
+}
+
+::selection {
+    background: rgba(darken($blue-text, 10%),.9);
+    color: var(--color-base);
+}
+
+[data-user-color-scheme="pink"] {
+    ::-moz-selection {
+        background: rgba(darken($pink-text, 10%),.9);
+    }
+    
+    ::selection {
+        background: rgba(darken($pink-text, 10%),.9);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-user-color-scheme]) {
+        ::-moz-selection {
+            background: rgba(darken($pink-text, 10%),.9);
+        }
+        
+        ::selection {
+            background: rgba(darken($pink-text, 10%),.9);
+        }
+    }
+}
+
 [data-user-color-scheme="high-contrast"] {
     a {
         color: var(--color-primary);
