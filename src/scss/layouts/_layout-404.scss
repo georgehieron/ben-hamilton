@@ -1,4 +1,37 @@
-$hc-banner-height: #{get-size('900')};
+$hc-banner-height: #{get-size("900")};
+
+@keyframes shake {
+    30% {
+        transform: scale(1.02);
+    }
+    40%,
+    60% {
+        transform: rotate(-3deg) scale(1.02);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.02);
+    }
+    70% {
+        transform: rotate(0deg) scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.splash-screen[style*="display: none;"] {
+    + .site-wrap {
+        .broken-hanger {
+            animation: shake 1s ease-in-out;
+
+            img {
+                &:hover {
+                    animation: shake 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
 
 main,
 .wrapper--404 {
@@ -61,7 +94,7 @@ footer {
         right: 0;
         display: inline-block;
 
-        @include media-query('md') {
+        @include media-query("md") {
             top: auto;
             right: auto;
             left: 0;
@@ -76,14 +109,14 @@ footer {
 
     .hanger-button {
         display: inline-block;
-        margin-top: #{get-size('400')};
-        margin-right: #{get-size('400')};
-    
-        @include media-query('md') {
+        margin-top: #{get-size("400")};
+        margin-right: #{get-size("400")};
+
+        @include media-query("md") {
             margin-top: 0;
             margin-right: 0;
-            margin-bottom: #{get-size('400')};
-            margin-left: #{get-size('400')};
+            margin-bottom: #{get-size("400")};
+            margin-left: #{get-size("400")};
         }
     }
 
@@ -112,7 +145,6 @@ footer {
     .wrapper--404 {
         .marquee-wrap {
             .marquee-link {
-
                 &:hover,
                 &:focus {
                     background-color: var(--color-base);
