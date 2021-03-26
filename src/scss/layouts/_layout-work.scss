@@ -111,6 +111,20 @@
             }
         }
 
+        .countdown {
+            display: inline-block;
+            background-color: var(--color-secondary);
+            height: 1.5em;
+            width: 1.5em;
+            text-align: center;
+            line-height: 1.5;
+            border-radius: 50%;
+
+            &[data-counting="true"] {
+                animation: pulse-blue 1s infinite 1s;
+            }
+        }
+
         .marquee-wrap {
             width: 100%;
             max-width: 28rem;
@@ -218,20 +232,6 @@
 
             h2 {
                 max-width: 10ch;
-            }
-
-            .countdown {
-                display: inline-block;
-                background-color: var(--color-secondary);
-                height: 1.5em;
-                width: 1.5em;
-                text-align: center;
-                line-height: 1.5;
-                border-radius: 50%;
-
-                &[data-counting="true"] {
-                    animation: pulse-blue 1s infinite 1s;
-                }
             }
 
             .marquee-wrap {
