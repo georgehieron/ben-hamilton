@@ -25,11 +25,10 @@ window.addEventListener(
             if ( timerRunning === false ) {
                 downloadTimer = setInterval(function () {
                     if (timeleft <= 0) {
-                        document.getElementById("countdown").innerHTML = " in 0";
+                        document.getElementById("countdown").innerHTML = "0";
                         nextButton.click();
                     } else {
-                        document.getElementById("countdown").innerHTML =
-                            " in " + timeleft;
+                        document.getElementById("countdown").innerHTML = timeleft;
                     }
                     timeleft -= 1;
                 }, 1000);
@@ -40,8 +39,7 @@ window.addEventListener(
             if (downloadTimer) {
                 clearInterval(downloadTimer);
                 timeleft = 5;
-                document.getElementById("countdown").innerHTML =
-                " in " + timeleft;
+                document.getElementById("countdown").innerHTML = timeleft;
             }
         }
         
