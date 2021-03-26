@@ -1,0 +1,33 @@
+{% extends "layouts/base.html" %}
+
+{% set pageCriticalStyles = ['css/not-found.css'] %}
+{% set pageCriticalScripts = ['js/cursor-dot.js','js/marquee-text.js'] %}
+
+{% block content %}
+
+<main tabindex="-1" id="main-content" class="main-content">
+
+    <div class="wrapper wrapper--404 box-flex">
+        <h1 class="box-block gap-top-700">{{title}}</h1>
+
+        <figure class="box-block broken-hanger">
+            <img src="/images/meta/broke_hanger.svg" alt="">
+        </figure>
+
+        <div class="marquee-wrap gap-top-400 gap-bottom-1300">
+            <a href="/" class="marquee-link box-block font-title">
+                <span class="marquee-link__text">
+                    <span>{{ buttonText }}</span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        {% include "partials/theme-toggle.html" %}
+        {% include "partials/high-contrast-toggle.html" %}
+    </footer>
+
+</main>
+
+{% endblock %}

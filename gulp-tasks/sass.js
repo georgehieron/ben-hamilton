@@ -13,6 +13,7 @@ const criticalStyles = [
     "critical.scss",
     "home.scss",
     "work.scss",
+    "not-found.scss",
 ];
 
 // Takes the arguments passed by `dest` and determines where the output file goes

@@ -1,0 +1,115 @@
+$hc-banner-height: #{get-size('900')};
+
+main,
+.wrapper--404 {
+    min-height: 100vh;
+}
+
+main {
+    background-color: var(--color-primary);
+    color: $blue-base;
+}
+
+.wrapper--404 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $hc-banner-height;
+
+    h1 {
+        max-width: 6ch;
+        text-align: center;
+    }
+
+    .broken-hanger {
+        position: relative;
+        width: 40vw;
+        height: 40vw;
+        max-width: 40vh;
+        max-height: 40vh;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .marquee-wrap {
+        width: 100%;
+        max-width: 28rem;
+
+        .marquee-link {
+            color: $blue-base;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .theme-toggle {
+        position: fixed;
+        left: 0;
+        bottom: $hc-banner-height;
+        display: inline-block;
+    }
+
+    .hanger-button,
+    .high-contrast-toggle {
+        position: relative;
+    }
+
+    .hanger-button {
+        display: inline-block;
+        margin-left: #{get-size('400')};
+        margin-bottom: #{get-size('400')};
+    }
+
+    .high-contrast-toggle {
+        position: relative;
+        max-width: none;
+        height: $hc-banner-height;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-user-color-scheme]) {
+        main {
+            background-color: var(--color-secondary);
+        }
+    }
+}
+
+[data-user-color-scheme="pink"] {
+    main {
+        background-color: var(--color-secondary);
+    }
+}
+
+[data-user-color-scheme="high-contrast"] {
+    .wrapper--404 {
+        .marquee-wrap {
+            .marquee-link {
+
+                &:hover,
+                &:focus {
+                    background-color: var(--color-base);
+
+                    .marquee-link__text {
+                        span {
+                            color: var(--color-text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

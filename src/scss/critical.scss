@@ -33,6 +33,10 @@ main:focus {
     outline: 0;
 }
 
+.site-wrap {
+    min-height: 100vh;
+}
+
 @keyframes fadeOut {
     0% {
         opacity: 1;

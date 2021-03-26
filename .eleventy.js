@@ -1,5 +1,7 @@
+const fs = require('fs');
+
 // Import filters
-const markdownFilter = require('./src/filters/markdown-filter.js');
+const markdownFilter = require("./src/filters/markdown-filter.js");
 
 // Transforms
 const htmlMinTransform = require("./src/transforms/html-min-transform.js");
@@ -12,7 +14,7 @@ const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
 
 module.exports = (config) => {
     // Filters
-    config.addFilter('markdownFilter', markdownFilter);
+    config.addFilter("markdownFilter", markdownFilter);
 
     // Only minify HTML if we are in production because it slows builds _right_ down
     if (isProduction) {
@@ -30,9 +32,24 @@ module.exports = (config) => {
     config.setUseGitIgnore(false);
 
     // Copy Static Files to /dist
-    config.addPassthroughCopy('src/fonts');
-    config.addPassthroughCopy('src/images');
-    config.addPassthroughCopy('src/admin/config.yml');
+    config.addPassthroughCopy("src/fonts");
+    config.addPassthroughCopy("src/images");
+    config.addPassthroughCopy("src/admin/config.yml");
+
+    // 404
+    config.setBrowserSyncConfig({
+        callbacks: {
+            ready: function (err, browserSync) {
+                const content_404 = fs.readFileSync("dist/404.html");
+
+                browserSync.addMiddleware("*", (req, res) => {
+                    // Provides the 404 content without redirect.
+                    res.write(content_404);
+                    res.end();
+                });
+            },
+        },
+    });
 
     return {
         markdownTemplateEngine: "njk",
