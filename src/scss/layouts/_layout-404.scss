@@ -57,9 +57,16 @@ footer {
 
     .theme-toggle {
         position: fixed;
-        left: 0;
-        bottom: $hc-banner-height;
+        top: 0;
+        right: 0;
         display: inline-block;
+
+        @include media-query('md') {
+            top: auto;
+            right: auto;
+            left: 0;
+            bottom: $hc-banner-height;
+        }
     }
 
     .hanger-button,
@@ -69,8 +76,15 @@ footer {
 
     .hanger-button {
         display: inline-block;
-        margin-left: #{get-size('400')};
-        margin-bottom: #{get-size('400')};
+        margin-top: #{get-size('400')};
+        margin-right: #{get-size('400')};
+    
+        @include media-query('md') {
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: #{get-size('400')};
+            margin-left: #{get-size('400')};
+        }
     }
 
     .high-contrast-toggle {
