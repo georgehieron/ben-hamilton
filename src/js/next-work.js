@@ -3,6 +3,7 @@ window.addEventListener(
     function () {
         const nextTitle = document.getElementById("next-item__title");
         const nextButton = document.getElementById("next-item__view");
+        const countdownNo = document.getElementById("countdown");
 
         function isInViewport(el) {
             const rect = el.getBoundingClientRect();
@@ -22,13 +23,14 @@ window.addEventListener(
         var downloadTimer;
 
         function startCountdown() {
-            if ( timerRunning === false ) {
+            if (timerRunning === false) {
+                countdownNo.setAttribute("data-counting", "true");
                 downloadTimer = setInterval(function () {
                     if (timeleft <= 0) {
-                        document.getElementById("countdown").innerHTML = "0";
+                        countdownNo.innerHTML = "0";
                         nextButton.click();
                     } else {
-                        document.getElementById("countdown").innerHTML = timeleft;
+                        countdownNo.innerHTML = timeleft;
                     }
                     timeleft -= 1;
                 }, 1000);
@@ -39,10 +41,11 @@ window.addEventListener(
             if (downloadTimer) {
                 clearInterval(downloadTimer);
                 timeleft = 5;
-                document.getElementById("countdown").innerHTML = timeleft;
+                countdownNo.innerHTML = timeleft;
+                countdownNo.setAttribute("data-counting", "false");
             }
         }
-        
+
         var scrollTimer;
 
         document.addEventListener(
@@ -50,20 +53,14 @@ window.addEventListener(
             function () {
                 clearTimeout(scrollTimer);
                 scrollTimer = setTimeout(function () {
-                    const inViewport = isInViewport(nextTitle)
-                        ? true
-                        : false;
+                    const inViewport = isInViewport(nextTitle) ? true : false;
 
                     if (inViewport === true) {
                         startCountdown();
                         timerRunning = true;
-                        // console.log('inview: ' + inViewport);
-                        // console.log('timer: ' + timerRunning);
                     } else {
                         clearCountdown();
                         timerRunning = false;
-                        // console.log('inview: ' + inViewport);
-                        // console.log('timer: ' + timerRunning);
                     }
                 }, 250);
             },

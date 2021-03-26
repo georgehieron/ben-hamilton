@@ -162,7 +162,7 @@ $max_font_work_link: 7.5rem;
             
             &:hover,
             &:focus {
-                background-color: darken(#d0d0d0, 33.333%);
+                background-color: darken($mid-grey, 33.333%);
 
                 img {
                     mix-blend-mode: luminosity;
