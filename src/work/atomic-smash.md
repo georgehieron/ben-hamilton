@@ -1,12 +1,12 @@
 ---
 layout: layouts/work-item.html
 title: Atomic Smash single-pager
-metaTitle: Atomic Smash holding page
+metaTitle: Atomic Smash single-pager
 metaDesc: An animated single-page design for Atomic Smash
 socialImage: /images/as_holding_1.webp
 socialImageFallback: /images/as_holding_1.png
 featured: true
-displayOrder: 7
+displayOrder: 9
 excerpt: This simple one-page site for Atomic Smash is full of scroll-triggered
   animation and bold typography to add a touch of fun.
 summary: ""
