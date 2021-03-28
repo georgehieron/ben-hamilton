@@ -2,7 +2,7 @@
 layout: layouts/work-item.html
 title: "Blooloop "
 metaTitle: Blooloop news website
-metaDesc: Blooloop news website
+metaDesc: A website for leading entertainment and attractions news site, Blooloop
 socialImage: /images/blooloop_2.webp
 socialImageFallback: /images/blooloop_2.png
 featured: false
