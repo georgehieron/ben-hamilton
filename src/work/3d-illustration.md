@@ -1,25 +1,20 @@
 ---
 layout: layouts/work-item.html
-title: Website launch teaser Illustration
-metaTitle: "3D modelling project "
-metaDesc: 3D modelling project completed with James Hamilton
+title: Website launch Illustration
+metaTitle: Website launch Illustration
+metaDesc: A 3D modelling project completed with James Hamilton
 socialImage: /images/3d_project_thumb.webp
 socialImageFallback: /images/3d_project_thumb.jpg
 featured: true
 displayOrder: 8
-excerpt: "I created this 3D illustration as a suite of social media assets to
-  announce the launch of this website. The tableaux depicts the site in an
-  unreal setting, contrasted with some of the very real-world analogue tools I
-  used to create it: namely pens, pencils and of course erasers for the mistakes
-  I made along the way!"
+excerpt: "I created this 3D illustration for a suite of social media assets to
+  announce the launch of my website. The tableaux depicts the site in an unreal
+  setting, contrasted with some of the very real-world analogue tools I used to
+  create it: namely pens, pencils and of course erasers for the mistakes I made
+  along the way."
 summary: The illustration was created in collaboration with Cinema 4D whizzkid
   (and also my brother 😉) James Hamilton.
 components:
-  - type: singleImage
-    fullheight: true
-    image: /images/3d_project_1.webp
-    imageAlt: The finished scene
-    imageFallback: /images/3d_project_1-2x.jpg
   - type: singleImage
     fullheight: true
     image: /images/3d_project_1-2x.webp
