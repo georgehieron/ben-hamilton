@@ -19,7 +19,7 @@ components:
   - type: info
     client: ""
     agency: Atomic Smash
-    expertise: UI Design; After Effects
+    expertise: UI Design; Motion Design
     outcomes: A fun, interactive holding page which conveys Atomic Smash's
       personality quickly and effectively
     url: https://www.atomicsmash.co.uk/
