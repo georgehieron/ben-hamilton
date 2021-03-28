@@ -10,8 +10,8 @@ intro:
   heading: Hi, I'm Ben Hamilton 🤓
   copy: I’m a graphic designer with over a decade's experience creating works for
     print and digital applications. Specialising in User Interface and User
-    Experience design, I work as Design Lead with the awesome team at Atomic
-    Smash in the beautiful city of Bristol, UK
+    Experience design, I work as Design Lead with the awesome team at [Atomic
+    Smash](http://www.atomicsmash.co.uk) in the beautiful city of Bristol, UK
 work:
   title: Work
   heading: Work 👨‍🍳
@@ -22,10 +22,7 @@ writing:
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
   articles:
-    - date: 07.11.20
-      title: Can you build a creative website with accessibility at its heart?
-      url: https://www.linkedin.com/
-    - date: 22.10.20
+    - date: 28.03.21
       title: Some things web design can learn from my toaster
-      url: https://www.linkedin.com/
+      url: https://ben-hamilton.medium.com/some-things-web-design-can-learn-from-my-toaster-72741edd2540
 ---
