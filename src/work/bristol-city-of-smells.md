@@ -1,9 +1,11 @@
 ---
 title: Bristol / City of ...
+metaDesc: A series of alternative guides to inspire its reader to explore
+  Bristol via the senses
 socialImage: /images/bco_covers1.gif
 socialImageFallback: /images/bco_covers1.gif
 featured: true
-displayOrder: 10
+displayOrder: 11
 excerpt: "*Bristol / City of ...* is a series of alternative guides to inspire
   its reader to explore Bristol via the senses. *Smells* is the first in the
   series and offers writing, places to visit and top tips for anyone equipped
