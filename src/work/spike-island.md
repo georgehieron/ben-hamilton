@@ -1,5 +1,8 @@
 ---
 title: Spike Island
+metaTitle: Spike Island website
+metaDesc: New website for Spike Island, an international centre for the
+  development of contemporary art
 socialImage: /images/spike_mobiles1.webp
 socialImageFallback: /images/spike_mobiles1.png
 featured: true
