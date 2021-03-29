@@ -5,7 +5,7 @@ metaTitle: Blooloop news website
 metaDesc: A website for leading entertainment and attractions news site, Blooloop
 socialImage: /images/blooloop_2.webp
 socialImageFallback: /images/blooloop_2.png
-featured: false
+featured: true
 displayOrder: 10
 excerpt: Blooloop.com is the world’s most read news source for visitor
   attractions professionals. I updated their website to give it a fresh,
@@ -33,6 +33,12 @@ components:
     image: /images/blooloop_4.webp
     imageAlt: 3 x colour palettes to categorise content
     imageFallback: /images/blooloop_4.png
+  - type: testimonial
+    quote: We have really enjoyed working with Ben. He has been diligent, organised
+      and innovative throughout, and a real pleasure to deal with. In short, a
+      consummate professional.
+    author: Charles Read, Managing Director
+    authorCo: Blooloop
   - type: video
     fullheight: false
     video: /images/blooloop_404.webm
