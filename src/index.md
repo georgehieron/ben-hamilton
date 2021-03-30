@@ -22,7 +22,10 @@ writing:
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
   articles:
-    - date: 28.03.21
+    - date: 30.03.21
+      title: Easter Eggs, but not as we know them
+      url: https://ben-hamilton.medium.com/easter-eggs-but-not-as-we-know-them-8a25864d6d6b
+    - date: 23.02.21
       title: Some things web design can learn from my toaster
       url: https://ben-hamilton.medium.com/some-things-web-design-can-learn-from-my-toaster-72741edd2540
 ---
