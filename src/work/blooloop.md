@@ -24,7 +24,7 @@ components:
   - type: info
     client: Blooloop
     agency: Atomic Smash
-    expertise: User Experience Design; User Interface Design
+    expertise: User Interface Design
     outcomes: A clean, modern site and a better user experience
     url: https://blooloop.com/
     linkText: visit site
@@ -34,7 +34,9 @@ components:
     imageAlt: 3 x colour palettes to categorise content
     imageFallback: /images/blooloop_4.png
   - type: testimonial
-    quote: We have really enjoyed working with Ben. He has been diligent, organised and innovative throughout, and a real pleasure to deal with. In short, a consummate professional.
+    quote: We have really enjoyed working with Ben. He has been diligent, organised
+      and innovative throughout, and a real pleasure to deal with. In short, a
+      consummate professional.
     author: Charles Read, Managing Director
     authorCo: Blooloop
   - type: video
