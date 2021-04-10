@@ -23,7 +23,7 @@ components:
     outcomes: A fun, interactive holding page which conveys Atomic Smash's
       personality quickly and effectively
     url: https://www.atomicsmash.co.uk/
-    linkText: ""
+    linkText: VISIT SITE
   - type: video
     fullheight: true
     video: /images/as_holding_2.mp4
