@@ -26,6 +26,7 @@ components:
     outcomes: An engaging and easy-to-navigate website that gives the client
       ultimate flexibility for content creation
     url: https://www.bristolideas.co.uk
+    linkText: VISIT SITE
   - type: singleImage
     fullheight: true
     image: /images/bristolideas_3.webp
