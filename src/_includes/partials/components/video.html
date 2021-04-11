@@ -3,12 +3,10 @@
 {% endif %}
 <section class="video{% if heightClass %} {{ heightClass }}{% else %} wrapper{% endif %}">
     <figure class="video__figure">
-        <video playsinline autoplay loop muted width="250">
+        <video playsinline autoplay loop muted poster width="250">
 
-            <source src="{{ item.video }}"
-                    type="video/webm">
-            <source src="{{ item.video | replace('webm', 'mp4') }}"
-                    type="video/mp4">
+            <source src="{{ item.video }}" type="video/webm">
+            <source src="{{ item.video | replace('webm', 'mp4') }}" type="video/mp4">
 
             Sorry, your browser doesn't support embedded videos.
         </video>
