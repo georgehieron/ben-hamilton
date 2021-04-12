@@ -3,7 +3,7 @@
 {% endif %}
 <section class="video{% if heightClass %} {{ heightClass }}{% else %} wrapper{% endif %}">
     <figure class="video__figure">
-        <video playsinline="true" autoplay="true" loop="true" muted="true" preload="true" poster="true" width="250">
+        <video playsinline="true" autoplay="true" controls="true" loop="true" muted="true" preload="true" poster="true" width="250">
 
             <source src="{{ item.video }}" type="video/webm">
             <source src="{{ item.video | replace('webm', 'mp4') }}" type="video/mp4">
