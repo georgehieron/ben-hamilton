@@ -4,7 +4,7 @@
 {% set itemMp4 = item.video | replace('webm', 'mp4') %}
 <section class="video{% if heightClass %} {{ heightClass }}{% else %} wrapper{% endif %}">
     <figure class="video__figure">
-        <video playsinline="" autoplay="" loop="" muted="" preload="" poster="" width="250">
+        <video playsinline autoplay loop muted poster width="250">
 
             <source src="{{ site.url }}{{ item.video }}" type="video/webm">
             <source src="{{ site.url }}{{ itemMp4 }}" type="video/mp4">
