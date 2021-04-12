@@ -3,7 +3,6 @@ window.addEventListener(
     function () {
         function updateTextWidth() {
             document.querySelectorAll('.marquee-link__text').forEach((link) => {
-                console.log(link.offsetWidth);
                 link.style = '--tw: ' + link.offsetWidth + 'px';
                 link.style.animationPlayState = 'running';
             });
