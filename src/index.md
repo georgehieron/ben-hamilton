@@ -22,6 +22,9 @@ writing:
   copy: "I occasionally write things about design, creativity and the web. Here
     are some recent articles:"
   articles:
+    - date: 19.04.21
+      url: https://ben-hamilton.medium.com/creating-a-design-library-for-forrestbrown-6d7bf727bfba
+      title: Creating a design library for ForrestBrown
     - date: 30.03.21
       title: Easter Eggs, but not as we know them
       url: https://ben-hamilton.medium.com/easter-eggs-but-not-as-we-know-them-8a25864d6d6b
