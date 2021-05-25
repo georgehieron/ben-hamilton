@@ -1,0 +1,12 @@
+.awwwards {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    transform-origin: left center;
+    transform: translateY(-50%) scale(.6);
+
+    @include media-query('md') {
+        transform: translateY(-50%) scale(.75);
+    }
+}
