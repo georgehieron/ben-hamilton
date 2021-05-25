@@ -2,18 +2,18 @@
   "heading": "Contact me:",
   "emailText": "Email",
   "socialUrl1": "https://www.linkedin.com/in/ben-hamilton-b5a47b17/",
-  "copy": "Do you want to collaborate on something, ask a question, or just say hello? Find me here:",
+  "copy": "Let me know about a job opportunity, ask a question, or just say hello! Find me here:",
   "socialText1": "LinkedIn",
   "images": {
     "themeHCImageAlt": "Ben in black t-shirt",
-    "theme2Image": "/images/wide_portrait_pink_-2x-min.jpg",
-    "theme1Image": "/images/wide_portrait_blue_-2x-min.jpg",
-    "theme2ImageFallback": "/images/wide_portrait_pink_-2x-min.jpg",
-    "theme1ImageFallback": "/images/wide_portrait_blue_-2x-min.jpg",
+    "theme2Image": "/images/bh_portrait_pink.webp",
+    "theme1Image": "/images/bh_portrait_blue.webp",
+    "theme2ImageFallback": "/images/bh_portrait_pink.jpg",
+    "theme1ImageFallback": "/images/bh_portrait_blue.jpg",
     "theme1ImageAlt": "Ben in blue t-shirt",
     "theme2ImageAlt": "Ben in pink t-shirt",
-    "themeHCImage": "/images/wide_portrait_black_-2x-min.jpg",
-    "themeHCImageFallback": "/images/wide_portrait_black_-2x-min.jpg"
+    "themeHCImage": "/images/bh_portrait_black.webp",
+    "themeHCImageFallback": "/images/bh_portrait_black.jpg"
   },
   "email": "mailto:hello@ben-hamilton.co.uk"
 }
