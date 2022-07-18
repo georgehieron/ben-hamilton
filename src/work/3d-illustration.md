@@ -5,7 +5,7 @@ metaTitle: Website launch Illustration
 metaDesc: A 3D modelling project completed with James Hamilton
 socialImage: /images/3d_project_thumb.webp
 socialImageFallback: /images/3d_project_thumb.jpg
-featured: true
+featured: false
 displayOrder: 8
 excerpt: "I created this 3D illustration for a suite of social media assets to
   announce the launch of my website. The tableaux depicts the site in an unreal
