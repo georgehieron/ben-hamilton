@@ -24,7 +24,7 @@ components:
   - type: info
     client: Blooloop
     agency: Atomic Smash
-    expertise: User Interface Design
+    expertise: User Experience Design; User Interface Design
     outcomes: A clean, modern site and a better user experience
     url: https://blooloop.com/
     linkText: visit site
