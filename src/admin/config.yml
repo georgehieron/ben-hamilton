@@ -117,6 +117,7 @@ collections:
             widget: "object"
             fields:
               - {label: "Video", name: "video", widget: "file"}
+              - {label: "Embed video (get iframe code direct from source)", name: "videoEmbed", widget: "string"}
               - {label: "Full-height", name: "fullheight", widget: "boolean", default: false}
   - label: "Globals"
     name: "globals"
