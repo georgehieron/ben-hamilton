@@ -22,7 +22,7 @@ components:
   - type: info
     client: Bristol Ideas
     agency: Atomic Smash
-    expertise: User Interface Design
+    expertise: User Experience Design; User Interface Design
     outcomes: An engaging and easy-to-navigate website that gives the client
       ultimate flexibility for content creation
     url: https://www.bristolideas.co.uk

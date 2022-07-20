@@ -20,7 +20,7 @@ components:
   - type: info
     client: Spike Island
     agency: Atomic Smash
-    expertise: Workshops; Research; User Interface Design
+    expertise: Workshops; Research; User Experience Design; User Interface Design
     outcomes: A better user-experience; Contemporary design  in line with a
       newly-launched brand; A scalable website fit for the future; Excellent
       stakeholder feedback
