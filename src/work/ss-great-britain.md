@@ -3,6 +3,8 @@ layout: layouts/work-item.html
 title: SS Great Britain
 metaTitle: SS Great Britain website
 metaDesc: New website for SS Great Britain, an historic ship moored in Bristol
+socialImage: /images/ssgb_1.webp
+socialImageFallback: /images/ssgb_1.png
 featured: true
 displayOrder: 2
 excerpt: The SS Great Britain is an historic ship, permanently moored in Bristol.
@@ -33,14 +35,14 @@ components:
     image2Fallback: /images/ssgb_4.png
     image2Alt: SS Great Britain's new webite seen on an iPad
   - type: singleImage
-    fullheight: false
-    image: /images/ssgb_5.webp
-    imageFallback: /images/ssgb_5.png
-    imageAlt: SS Great Britain's new webite seen on an iPad
-  - type: singleImage
     fullheight: true
     image: /images/ssgb_2.webp
     imageFallback: /images/ssgb_2.png
     imageAlt: A selection of screens from SS Great Britain's new webite seen on a
       mobile device
+  - type: singleImage
+    fullheight: false
+    image: /images/ssgb_5.webp
+    imageFallback: /images/ssgb_5.png
+    imageAlt: SS Great Britain's new webite seen on an iPad
 ---
