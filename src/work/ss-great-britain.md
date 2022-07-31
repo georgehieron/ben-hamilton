@@ -32,4 +32,15 @@ components:
     image2: /images/ssgb_4.webp
     image2Fallback: /images/ssgb_4.png
     image2Alt: SS Great Britain's new webite seen on an iPad
+  - type: singleImage
+    fullheight: false
+    image: /images/ssgb_5.webp
+    imageFallback: /images/ssgb_5.png
+    imageAlt: SS Great Britain's new webite seen on an iPad
+  - type: singleImage
+    fullheight: true
+    image: /images/ssgb_2.webp
+    imageFallback: /images/ssgb_2.png
+    imageAlt: A selection of screens from SS Great Britain's new webite seen on a
+      mobile device
 ---
