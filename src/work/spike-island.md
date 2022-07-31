@@ -6,7 +6,7 @@ metaDesc: New website for Spike Island, an international centre for the
 socialImage: /images/spike_mobiles1.webp
 socialImageFallback: /images/spike_mobiles1.png
 featured: true
-displayOrder: 6
+displayOrder: 1
 excerpt: Spike Island is an artspace, gallery, venue, café, shop and more.
 summary: In fact the first challenge with this project was to audit the many
   strands of the organisation, and present the visitor with an updated,
