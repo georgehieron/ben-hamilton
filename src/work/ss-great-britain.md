@@ -25,4 +25,11 @@ components:
       stakeholder feedback
     linkText: Visit site
     url: https://www.ssgreatbritain.org/
+  - type: doubleImage
+    image1: /images/ssgb_3.webp
+    image1Fallback: /images/ssgb_3.png
+    image1Alt: SS Great Britain's new webite seen on an iPad
+    image2: /images/ssgb_4.webp
+    image2Fallback: /images/ssgb_4.png
+    image2Alt: SS Great Britain's new webite seen on an iPad
 ---
