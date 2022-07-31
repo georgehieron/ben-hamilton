@@ -20,4 +20,9 @@ components:
     agency: Atomic Smash
     expertise: Project Management; Workshops; Research; User Experience Design; User
       Interface Design; Motion Design
+    outcomes: A better user-experience; New digital design  mirroring existing brand
+      far more closely; A scalable website fit for the future; Excellent
+      stakeholder feedback
+    linkText: Visit site
+    url: https://www.ssgreatbritain.org/
 ---
