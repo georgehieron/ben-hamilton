@@ -6,7 +6,7 @@ metaDesc: A website for leading entertainment and attractions news site, Blooloo
 socialImage: /images/blooloop_2.webp
 socialImageFallback: /images/blooloop_2.png
 featured: true
-displayOrder: 10
+displayOrder: 4
 excerpt: Blooloop.com is the world’s most read news source for visitor
   attractions professionals. I updated their website to give it a fresh,
   contemporary look.
