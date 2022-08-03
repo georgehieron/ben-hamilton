@@ -6,7 +6,7 @@ metaDesc: New website for Bristol Ideas, an organisation that explores key ideas
 socialImage: /images/bristolideas_1.webp
 socialImageFallback: /images/bristolideas_1.png
 featured: true
-displayOrder: 7
+displayOrder: 3
 excerpt: Bristol Ideas is a partnership organisation that explores the key
   issues of our time through the arts and sciences.
 summary: I designed their new website to create a vibrant, engaging experience
