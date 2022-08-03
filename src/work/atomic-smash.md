@@ -36,7 +36,7 @@ components:
     imageFallback: /images/as_holding_4.png
     imageAlt: The Atomic Smash holding page seen on a tablet
   - type: video
-    fullheight: true
+    fullheight: false
     videoEmbed: <iframe width="560" height="315"
       src="https://www.youtube.com/embed/ONFkffhbCxk" title="YouTube video
       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
