@@ -27,6 +27,12 @@ components:
       stakeholder feedback
     linkText: Visit site
     url: https://www.ssgreatbritain.org/
+  - type: video
+    fullheight: false
+    videoEmbed: <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/_Q41WTMfK2c" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   - type: doubleImage
     image1: /images/ssgb_3.webp
     image1Fallback: /images/ssgb_3.png
