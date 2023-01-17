@@ -11,8 +11,8 @@ intro:
   copy: I’m a designer with over a decade's experience creating works for print
     and digital applications. Specialising in User Interface and User Experience
     design, I work as a Senior Product Designer at Education Software Solutions,
-    crafting a new generation of cloud-based management software for higher and
-    further education.
+    crafting a new generation of management software for higher and further
+    education.
 work:
   title: Work
   heading: Work 👨‍🍳
