@@ -10,8 +10,8 @@ intro:
   heading: Hi, I'm Ben Hamilton 🤓
   copy: I’m a designer with over a decade's experience creating works for print
     and digital applications. Specialising in User Interface and User Experience
-    design, I work as Design Lead with the awesome team at [Atomic
-    Smash](http://www.atomicsmash.co.uk) in the beautiful city of Bristol, UK
+    design, I work as a Senior Product Designer at an Education Software
+    Solutions.
 work:
   title: Work
   heading: Work 👨‍🍳
