@@ -93,7 +93,7 @@
         height: 0;
         overflow: hidden;
         padding-bottom: 100%;
-        
+
         picture {
             visibility: hidden;
             opacity: 0;
@@ -102,6 +102,12 @@
             position: absolute;
             height: 100%;
             transition: .3s ease-in-out opacity, 0s linear visibility .3s;
+        }
+    }
+
+    &__text {
+        p + p {
+            margin-top: 1em;
         }
     }
 }
@@ -176,11 +182,11 @@
         }
 
         .marquee-wrap {
-            .marquee-link {    
+            .marquee-link {
                 &:hover,
                 &:focus {
                     background-color: var(--color-base);
-    
+
                     .marquee-link__text {
                         span {
                             color: var(--color-text);
