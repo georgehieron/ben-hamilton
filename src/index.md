@@ -8,11 +8,11 @@ socialImageFallback: /images/3d_project_1-2x.jpg
 intro:
   title: Intro
   heading: Hi, I'm Ben Hamilton 🤓
-  copy: I’m a designer with over a decade's experience creating works for print
-    and digital applications. Specialising in User Interface and User Experience
-    design, I work as a Senior Product Designer at Education Software Solutions,
-    crafting a new generation of management software for higher and further
-    education.
+  copy: I’m a designer with over fifteen years' experience creating works for
+    digital applications. Specialising in User Interface and User Experience
+    design, I work as Senior Product Designer at Haysto, overseeing a complex
+    CRM product and online portal which makes mortgages possible for customers
+    who have been turned away elsewhere.
 work:
   title: Work
   heading: Work 👨‍🍳
